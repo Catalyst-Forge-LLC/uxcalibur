@@ -5,7 +5,7 @@ kind: work
 title: Build the first developer proof
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T20:53:56Z
+updated_at: 2026-10-05T21:55:53Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -26,7 +26,8 @@ data:
       text: Runnable synthetic flow
       status: pending
     - id: A2
-      text: Actual scoped report with traceable evidence
+      text: Actual scoped report identifies the intended outcome, focus, exclusions,
+        criteria, and traceable evidence; recommendations respect that scope.
       status: pending
     - id: A3
       text: Targeted check fails before the cut and passes afterward
@@ -42,6 +43,10 @@ data:
       status: pending
     - id: A7
       text: Usage describes real capabilities and processing limits
+      status: pending
+    - id: A8
+      text: An actual pass on a named aspect respects focus and exclusions; necessary
+        excluded-area dependencies are stated without silently expanding scope.
       status: pending
   verification_refs: []
 ---

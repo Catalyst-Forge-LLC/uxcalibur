@@ -6,7 +6,9 @@ Created 2026-10-05. This is a ForgeTrail project at genesis stage, with a reusab
 
 **Pull a usable interface out of the mess.**
 
-UXcalibur is the sword-in-the-stone pun. Keep the spelling **UXcalibur**, ending in **-ur** like Excalibur. The name is the brief: find the knots in a real interface and make the few cuts that let people finish what they came to do.
+UXcalibur is the sword-in-the-stone pun. Keep the spelling **UXcalibur**, ending in **-ur** like Excalibur. The name is the brief: find the knots in a real interface and make the few cuts that help people accomplish their goals or improve their outcomes.
+
+The user can specify the aspects to focus on and the aspects to exclude. State that scope alongside the intended result and observable success or improvement criteria, and use it to guide inspection, ranking, recommendations, and authorized implementation.
 
 This repository begins with the product direction and a working agent skill. A developer edition, CLI, operated service, and possible SaaS offering can grow from the same method. Their interfaces, commercial terms, and runtime architecture are future decisions rather than capabilities already shipped.
 
@@ -14,9 +16,9 @@ This repository begins with the product direction and a working agent skill. A d
 
 A capable app can become exhausting as features accumulate. Primary actions disappear below setup panels. Metadata gets priority over the content someone opened. Search results have hidden scope. Selection loses its place after an update. A control uses a mystery icon. An error offers a generic retry that repeats the wrong operation. A flow ends without a clear next step or pressures people with guilt-inducing copy.
 
-UXcalibur should identify those problems in context, explain why they obstruct the chosen job, and propose a concrete change that an engineer can implement and verify. It should keep useful architecture and capabilities while removing unnecessary effort.
+UXcalibur should identify obstacles, missing support, and improvement opportunities in context, explain how they affect the chosen job or outcome, and propose a concrete change that an engineer can implement and verify. It should keep useful architecture and capabilities while helping people accomplish the job or improve the result, reliability, clarity, or effort within the requested scope.
 
-The output is judgment supported by evidence. A long checklist of heuristics, a cosmetic redesign, or a list of desirable features is insufficient. A predicted improvement in completion must remain a hypothesis until it has been measured.
+The output is judgment supported by evidence. A long checklist of heuristics, a cosmetic redesign, or a list of desirable features is insufficient. A predicted improvement in accomplishment or outcome must remain a hypothesis until it has been measured against the chosen criteria.
 
 ## Origin
 
@@ -47,7 +49,7 @@ Local operation should be a real developer option. External model use, credentia
 
 ## Service and possible SaaS
 
-Begin with the operated service proposition: **one app, one flow, fixed price, concrete cuts**. A customer supplies a staging URL, repository, build, or other agreed evidence. UXcalibur returns the few changes most likely to improve that flow's completion, with enough specificity to execute them.
+Begin with the operated service proposition: **one app, one flow, fixed price, concrete cuts**. A customer supplies a staging URL, repository, build, or other agreed evidence, and can name focus areas and exclusions. UXcalibur returns the few changes most likely to help accomplish the chosen job or improve its outcome within that scope, with enough specificity to execute them.
 
 The default delivery can be a punch list. A PR is a separate agreed delivery: implement the scoped changes, preserve unrelated work, verify the result, and describe the evidence and remaining limits. A review request does not automatically authorize edits, publication, or a production deployment.
 
@@ -59,13 +61,13 @@ The local developer edition and service should share the analysis method, eviden
 
 ### Focused pass — default
 
-Choose one app and one flow, state its completion condition, and return a short ranked cut list. Choose the number of cuts from impact rather than a quota.
+Choose one app and one flow by default, or the bounded aspect the user requests. State the intended result, focus areas, exclusions, and observable success or improvement criteria, then return a short ranked cut list. Choose the number of cuts from impact on that outcome rather than a quota.
 
 For each cut, include:
 
 - The observed knot and its evidence: the screen/state, source, route, or artifact that supports the finding.
-- The likely effect on the person trying to complete the flow, with uncertainty stated.
-- The proposed behavior and why it removes effort or confusion.
+- The likely effect on the person trying to accomplish the job or improve the outcome, with uncertainty stated.
+- The proposed behavior and how it enables accomplishment or improves the result within the requested focus.
 - The implementation scope, supporting data/API dependency, and important preservation rules.
 - An observable acceptance check and meaningful verification method.
 - Status, notes/issues, and the next action when implementation is tracked.
@@ -92,7 +94,7 @@ Connect frontend promises to supporting contracts. Complete counts, server pagin
 
 Preserve useful architecture and user data. A UX pass need not replace a framework, database, visual identity, or service. Use terminology and platform conventions appropriate to the audience.
 
-Verification must match the claim. Builds establish that code builds. State/data tests establish their specific invariants. Rendered interaction checks establish layout, focus, scrolling, and input behavior. Completion improvements require measurement. Record inaccessible evidence and unrun checks plainly.
+Verification must match the claim and the user's chosen criteria. Builds establish that code builds. State/data tests establish their specific invariants. Rendered interaction checks establish layout, focus, scrolling, and input behavior. Accomplishment or outcome improvements require corresponding evidence and measurement. Record inaccessible evidence and unrun checks plainly.
 
 ## ForgeTrail project direction
 

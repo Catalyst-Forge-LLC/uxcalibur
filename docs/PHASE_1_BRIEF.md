@@ -11,7 +11,7 @@ Read sections 1–4 for the proposed scope, section 8 for decisions, and section
 
 ## 1. Problem and outcome
 
-UXcalibur helps an engineer find the few interface changes that make a chosen job easier to finish. It starts with actual evidence, identifies the obstacle and supporting implementation contracts, and returns a ranked cut list with observable acceptance checks. Detailed upgrade specifications remain available when explicitly requested.
+UXcalibur helps people accomplish their chosen job or improve its outcome through a few justified interface changes. The user can specify the aspects to focus on and the aspects to exclude. It starts with actual evidence, identifies obstacles, missing support, or improvement opportunities and their supporting implementation contracts, and returns a ranked cut list with checks matched to the intended outcome. Detailed upgrade specifications remain available when explicitly requested.
 
 The first useful delivery should demonstrate the method already present in this repo: a developer invokes the repository skill against a running local fixture, gets an actionable report, implements a justified cut, and verifies the changed interaction. This is a proof of actionability on a synthetic example. It does not establish improved customer completion, conversion, or general accuracy.
 
@@ -21,7 +21,7 @@ Done for this slice means a fresh agent can follow the documented invocation, in
 
 **Primary user:** An engineer with a coding agent and access to their application's source and running interface.
 
-**UXcalibur hero flow:** Choose one app and one flow → state its completion condition and available evidence → invoke the versioned skill → inspect source and rendered behavior → receive ranked cuts → implement the selected cut within authorized scope → run its acceptance checks → save evidence and status.
+**UXcalibur hero flow:** Choose the app and bounded flow or aspect → state the intended outcome, focus areas, exclusions, success or improvement criteria, and available evidence → invoke the versioned skill → inspect relevant source and rendered behavior → receive ranked cuts within that scope → implement the selected cut within authorized scope → run its acceptance checks → save evidence and status.
 
 **Proposed demonstration:** A local synthetic review inbox. The person searches for a known note, opens a long note, reads it, and returns to the same results to continue browsing. Completion means the correct stable note ID was opened and useful search/list context survives return. The fixture is the subject being reviewed; it is not a UXcalibur dashboard.
 
@@ -32,6 +32,7 @@ Secondary coverage within the same flow: keyboard use, duplicate display titles,
 ## 3. Constraints and v1 boundaries
 
 - Keep the supplied genesis direction and existing skill contents as the baseline.
+- Treat accomplishment, result quality, and other user-selected improvement criteria as valid outcomes alongside effort. Carry explicit focus areas and exclusions into inspection, ranking, recommendations, and implementation; name conflicts with necessary dependencies rather than silently expanding scope.
 - Use only synthetic fixture data. DictaWhisper's spec is an origin/reference, not customer data to copy into this repository.
 - Run the fixture locally. No account, database service, analytics, payment system, or hosted analyzer is needed for this proof.
 - The user's coding agent performs the analysis. Its provider, credentials, permissions, and data processing are configured by the user/host. Describe those boundaries in the usage instructions; do not promise all analysis is offline simply because the fixture is local.
@@ -76,7 +77,7 @@ Keep the fixture test data immutable and its baseline behavior reproducible. Rec
 
 | Entity | Required content |
 | --- | --- |
-| Pass | App/flow boundary, completion condition, invocation, method version or source digest, evidence access and limits |
+| Pass | App/flow or aspect boundary, intended outcome, focus areas, exclusions, success or improvement criteria, invocation, method version or source digest, evidence access and limits |
 | Observation | Stable evidence ID, source/UI state, reproduction steps, certainty, artifact or source locator |
 | Cut | Stable ID, rank and rationale, observed obstacle, likely user consequence, proposed behavior, confidence |
 | Implementation contract | Owned files/data behavior, prerequisites, preservation rules, failure/recovery semantics relevant to the cut |
@@ -127,6 +128,7 @@ Decision status here must match the corresponding ledger record.
 | D2 / `decision-kickoff-memory` | Commit a self-contained ForgeTrail Lite workspace and AppLedger; root agent entry point; stay in Plan until concrete brief approval | Accepted setup choice within “review and kick it off” |
 | D3 / `decision-developer-proof` | Skill-only first delivery; synthetic review inbox; scoped report and one implemented cut; proposed fixture/tool stack and folder shape in section 4 | Proposed; owner review required |
 | D4 / `decision-launch-sequence` | Prove the developer flow first; `.dev` FilePress presence next; service offer later; no SaaS commitment | Proposed; owner review required |
+| D5 / `decision-outcome-and-scope` | Help people accomplish goals or improve outcomes; let the user specify focus areas and exclusions throughout the pass | Accepted from owner clarification on 2026-10-05; does not approve D3/D4 or Build |
 
 The physical site layout can be decided when the site milestone starts. Two separate public sites remain plausible; launch order does not abandon either audience.
 
@@ -166,12 +168,13 @@ Proposed acceptance cases:
 | ID | Trigger / context | Observable result / method |
 | --- | --- | --- |
 | A1 | Fresh local fixture start | Search → correct stable note ID → read long content → return is runnable with synthetic data; rendered browser check |
-| A2 | Audit using repository skill | Saved invocation identifies method source and scope; report contains only supported observations/recommendations, dependencies, confidence, acceptance, statuses, and limits; source and rendered evidence review |
+| A2 | Audit using repository skill | Saved invocation identifies method source, intended outcome, focus areas, exclusions, and success/improvement criteria; report contains only supported observations/recommendations within that scope, dependencies, confidence, acceptance, statuses, and limits; source and rendered evidence review |
 | A3 | Selected highest-impact cut | Record exact baseline reproduction and failing targeted check before modification; implement the cut; same check passes afterward without unrelated changes |
 | A4 | Keyboard, duplicate titles, no-match recovery, narrow viewport, history navigation | Correct identity and operability remain; chosen cut's focus/scroll/query contract is rendered and checked; unaffected behaviors retain meaningful coverage |
 | A5 | Fresh skill copy in an isolated temporary directory | Skill metadata and all referenced files resolve; documented invocation runs the chosen pass against the fixture; personal installation is not silently modified |
 | A6 | Verification rerun | One documented project command runs the relevant source/reference and behavior checks; report lists exact environment, results, evidence paths, and unrun checks |
 | A7 | Read example as a new user | Understand how to invoke the current skill, what the example proves, host data-processing boundaries, and the explicit detailed-spec alternative; no unbuilt CLI or measured-conversion promise |
+| A8 | Request a pass on the same fixture with a named improvement aspect and an excluded aspect | Inspection and ranked cuts follow the selected outcome and focus; excluded recommendations/changes stay out of scope; any necessary dependency conflict is stated. Review an actual scoped report, rather than only checking its headings. |
 
 Do not mandate a specific continuity cut before observing it. If the actual priority differs, update the selected cut's contract and acceptance while preserving the same one-flow boundary. Record inaccessible rendered evidence or failed checks; neither becomes a passed case.
 
@@ -199,3 +202,7 @@ Kickoff checks on 2026-10-05:
 - `git diff --check`: passed. Independent read-only review found no material inconsistency in scope, decision states, acceptance, or the ledger handoff.
 
 No browser fixture, before/after behavior, dependency compatibility, or fresh-install invocation has been verified; those are the proposed Build acceptance cases. Cursor host artifacts are installed; their enforcement in Codex has not been established. Public publication and domain deployment were not performed.
+
+## 14. Owner clarification, 2026-10-05
+
+The owner clarified: “Not just \"easier to finish\", but accomplish or improve. And the user can specify which aspect should be focused on or excluded.” This updates the accepted purpose and scope contract in the genesis, repository skill, and this brief. It does not constitute approval of the proposed first developer slice or a phase transition. The proof now includes A8 to demonstrate respect for a user-selected focus and exclusion.

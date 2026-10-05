@@ -6,7 +6,7 @@ Contents: frame the assignment; gather evidence; audit effort; choose the model;
 
 ## 1. Frame the assignment around real work
 
-Extract scope, goals, frustrations, existing preferences, and constraints. Identify the primary jobs that explain why the product is used. Separate a stated problem from a hypothesis about its cause.
+Extract scope, goals, frustrations, existing preferences, and constraints. Identify what the user wants to accomplish or improve, the aspects to focus on, the aspects to exclude, and observable success or improvement criteria. Improvement may concern the result or capability as well as effort. Separate a stated problem from a hypothesis about its cause.
 
 "I cannot see the selected item quickly" establishes delayed useful content. It does not dictate tabs, a sidebar, a modal, or a particular width. "Keep browsing while reading an item" adds continuity. Design for these requirements before choosing components.
 
@@ -14,7 +14,9 @@ Capture context affecting the design: task frequency, data volume, common versus
 
 Use this working statement:
 
-> The user should be able to [primary job] from [starting context], with [continuity/effort requirements], while preserving [important existing capabilities and data].
+> Help the user accomplish [job] or improve [outcome] from [starting context], focusing on [aspects], excluding [aspects], preserving [capabilities/data], and checking [observable criteria].
+
+Use focus areas and exclusions throughout the pass. Findings and cuts must belong to that scope. If an excluded area is a necessary dependency, state the limitation and a scoped alternative or required decision rather than silently including it.
 
 ## 2. Build a capability and evidence map
 
@@ -42,7 +44,7 @@ Inspect fictional certainty: capped counts described as totals, saved work descr
 
 Create an audit table with finding, consequence, evidence, correction, and priority. Identify useful baseline behavior and regression risks separately from new capability. Prioritize by user impact, frequency, prerequisite value, and integrity risk; define the priority scale rather than assuming another product's tiers.
 
-For a focused pass, treat the audit as working evidence and publish only the cuts that matter to the chosen completion goal. Buried primary actions, dead ends, guilt-inducing copy, unexplained icons, and flows that lose context are candidates to inspect, not automatic findings. Distinguish an observed obstacle from a hypothesis about abandonment. Quantified completion/conversion claims require actual evidence.
+For a focused pass, treat the audit as working evidence and publish only the cuts that matter to the chosen accomplishment or improvement criteria within the requested focus and exclusions. Include evidence-backed capability gaps or result-quality opportunities when relevant, as well as friction. Buried primary actions, dead ends, guilt-inducing copy, unexplained icons, and flows that lose context are candidates to inspect, not automatic findings. Distinguish observed behavior from a hypothesis about user outcomes. Quantified outcome claims require actual evidence.
 
 ## 4. Choose a coherent product model
 
@@ -108,7 +110,7 @@ Separate Needs review from Verified. A build does not prove acceptance cases. Ke
 
 ## 9. Validate and present the handoff
 
-Check coverage against the inventory/jobs. Trace meaningful recommendations to flow, supporting contract, packet, acceptance case, and tracking entry. Resolve contradictions, hidden scope, circular prerequisites, and proposed APIs described as existing.
+Check coverage against the selected jobs, outcomes, focus areas, and exclusions. Trace meaningful recommendations to flow, supporting contract, packet, acceptance case, and tracking entry. Resolve contradictions, hidden scope, circular prerequisites, and proposed APIs described as existing.
 
 Read as the next implementer: are defaults, combinations, boundaries, failures, source fields, modules, and checks explicit? Fill product-decision gaps rather than adding generic advice.
 

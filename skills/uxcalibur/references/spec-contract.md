@@ -4,7 +4,7 @@ Adapt headings and the number of flows/packets to the product. Depth, behavior, 
 
 ## Document structure
 
-Start with title, scope, date, review state, implementation state, evidence basis, and reading guide. Distinguish proposals from shipped behavior.
+Start with title, scope, intended outcome, focus areas, exclusions, observable success or improvement criteria, date, review state, implementation state, evidence basis, and reading guide. Distinguish proposals from shipped behavior. Apply those scope boundaries to the contracts, packets, and acceptance coverage.
 
 Include these sections, combining only when detailed behavior remains easy to find:
 
@@ -107,7 +107,8 @@ Implement packet [PACKET_ID] from [SPEC_PATH] in this project.
 Read project instructions, dependencies/tracker, relevant interaction/data sections,
 and the packet's acceptance scenarios first. Inspect current implementation;
 proposed contracts are not existing APIs. Preserve unrelated changes, user data,
-and accepted decisions. Use established architecture/conventions.
+and accepted decisions, including the user's focus areas and exclusions.
+Use established architecture/conventions.
 Set the packet In progress and keep dated notes/issues as work proceeds.
 Implement its owned frontend/server/data changes without simulating guarantees.
 Record exact unmet prerequisites and partial progress if delivery is blocked.
@@ -119,4 +120,4 @@ Report the reviewable result and concrete limits. Continue within authorized sco
 
 ## Final quality gate
 
-Every important job has a complete flow; each promise has an owned supporting contract; packets have reachable prerequisite chains; done claims have evidence. Verify links/source references and examples. Missing state, recovery, or tracking means the handoff remains incomplete.
+Every important job within the requested scope has a complete flow; each promise has an owned supporting contract; packets have reachable prerequisite chains; done claims have evidence matched to the chosen accomplishment or improvement criteria. Check that recommendations respect focus areas and exclusions. Verify links/source references and examples. Missing state, recovery, or tracking means the handoff remains incomplete.

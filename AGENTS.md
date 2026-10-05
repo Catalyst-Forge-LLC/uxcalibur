@@ -6,7 +6,7 @@ Start each session by reading `appledger/profiles/forgetrail.yaml`, the latest s
 
 The brief is currently **draft**. Complete authorized planning and setup; obtain explicit approval of the concrete brief before locking it and entering Build. Do not treat a proposed stack, fixture, license, site, or CLI as approved or shipped.
 
-Preserve the spelling **UXcalibur**. Keep the focused pass as the default and detailed specification as an explicit mode. Trace cuts to actual evidence and supporting behavior; never describe a predicted completion improvement as measured.
+Preserve the spelling **UXcalibur**. Help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Keep the focused pass as the default and detailed specification as an explicit mode. Trace cuts to actual evidence and supporting behavior; never describe a predicted outcome improvement as measured.
 
 The repository copy of the skill is the project source. Personal installed copies are separate installations. Keep fixtures synthetic and isolated from customer repositories and data.
 
