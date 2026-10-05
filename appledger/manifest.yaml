@@ -1,0 +1,15 @@
+format: appledger
+format_version: 0.1.0
+ledger_id: ledger-3d7a0b9f-2e6f-40ae-9224-746fe3005301
+application_id: app-b7a2d51c-16c3-463f-b3b8-434a18bd2b41
+repositories:
+  - id: repo-home
+    root: .
+    url: https://github.com/Catalyst-Forge-LLC/uxcalibur
+record_roots:
+  - records
+bindings: []
+profiles:
+  - id: forgetrail
+    version: 0.1.0
+    path: profiles/forgetrail.yaml

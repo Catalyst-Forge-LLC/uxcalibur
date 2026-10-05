@@ -1,0 +1,32 @@
+profile: forgetrail
+profile_version: 0.1.0
+archetype: product
+project_status: active
+current_phase_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
+phase_instances:
+  - id: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
+    phase: plan
+    status: in_progress
+    started_at: 2026-10-05T20:49:07Z
+    criteria:
+      - id: purpose-recorded
+        text: Record supplied purpose, audience, and boundaries
+        status: met
+        evidence_refs:
+          - evidence-genesis-direction
+          - evidence-method-source
+      - id: brief-drafted
+        text: Draft concrete scope, tooling/folders, fixture, packets, and acceptance
+        status: met
+        evidence_refs:
+          - evidence-proof-proposal
+      - id: brief-approved
+        text: Owner approves and locks the concrete brief; major proposed decisions
+          become accepted
+        status: pending
+        evidence_refs: []
+      - id: build-authorized
+        text: Owner explicitly authorizes Plan-to-Build transition
+        status: pending
+        evidence_refs: []
+transitions: []

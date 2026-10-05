@@ -1,0 +1,37 @@
+# ForgeTrail Hooks
+
+Enforces ForgeTrail rules and guards at the host tool level, rather than relying only on prompt requests.
+
+## What is in this directory
+
+- `guard-shell.mjs`: runs pre-commit verification (`pnpm run verify`), prevents npm/yarn when `pnpm-lock.yaml` is present, allows `ingotvault` (asks before `--force-with-lease`), asks before any `git push`, and prompts on destructive git or filesystem operations.
+- `guard-edit.mjs`: guards `.env*` secrets files and `specs/completed/**` or `specs/canonical/**` records against accidental mutation.
+- `session-start.mjs`: on session start, points the session at `appledger/`. When `appledger` is on PATH it appends `appledger orient --budget 300`.
+- `appledger-bin.mjs`: finds the `appledger` command. A missing command is not a failure.
+- `validate-tracking.mjs`: after an edit under `appledger/`, runs `appledger check` when the command is on PATH and reports warnings.
+- `validate-tracking-core.mjs`: standalone zero-dependency tracking validator.
+- `session-stop.mjs`: when a turn ends, reminds the agent to update the appledger session record if project files changed after that record was last written. It stays quiet on follow-up turns, on read-only turns, and when only `appledger/`, `.forgetrail/`, `.cursor/`, or `.claude/` changed.
+- `cursor-hooks.json`: standard Cursor hooks configuration.
+- `claude-settings-hooks.json`: standard Claude Code configuration fragment.
+
+## Host setup
+
+### Cursor
+
+Copy or link `cursor-hooks.json` to `.cursor/hooks.json` in your repository root. The hook scripts reside in `.forgetrail/hooks/`.
+
+### Claude Code
+
+Add the contents of `claude-settings-hooks.json` to `.claude/settings.json` in your project root or user configuration.
+
+## Verification
+
+Run any script with test input via stdin:
+
+```bash
+echo '{"command": "npm install lodash"}' | node .forgetrail/hooks/guard-shell.mjs
+# Output: {"permission":"deny", ...} (when pnpm-lock.yaml is present)
+
+echo '{"command": "git push"}' | node .forgetrail/hooks/guard-shell.mjs
+# Output: {"permission":"ask", ...}
+```

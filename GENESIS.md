@@ -2,6 +2,8 @@
 
 Created 2026-10-05. This is a ForgeTrail project at genesis stage, with a reusable skill foundation and a planned FilePress presence. Whether to launch one or two sites remains to be decided.
 
+**Kickoff, 2026-10-05:** ForgeTrail Lite and AppLedger have now been initialized. The [first developer proof brief](docs/PHASE_1_BRIEF.md) proposes a skill-only delivery, one synthetic review-inbox flow, and one verified implemented cut. The brief is draft; release, fixture/tooling, launch order, and the Plan-to-Build transition have not yet been approved. The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for current phase, decisions, and handoff.
+
 **Pull a usable interface out of the mess.**
 
 UXcalibur is the sword-in-the-stone pun. Keep the spelling **UXcalibur**, ending in **-ur** like Excalibur. The name is the brief: find the knots in a real interface and make the few cuts that let people finish what they came to do.
@@ -131,7 +133,7 @@ The copied skill matches the installed personal skill at `C:\Users\acmegeek\.cod
 | Milestone | Initial state | Outcome |
 | --- | --- | --- |
 | Genesis and skill seed | Complete in this bootstrap | Product direction plus a versioned copy of the method |
-| ForgeTrail kickoff | Not started | Project ledger and first brief with scope/acceptance agreed |
+| ForgeTrail kickoff | In progress | Ledger initialized; first brief drafted; scope/acceptance approval pending |
 | Developer pass proof | Not started | Run a scoped pass against an isolated representative fixture; review the cuts and verify an implemented example |
 | Local distribution | Not started | A deliberate installation/release path and open source license decision |
 | FilePress presence | Not started | Decide one/two sites and build the corresponding audience paths |
