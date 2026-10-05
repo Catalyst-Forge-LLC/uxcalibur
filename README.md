@@ -33,8 +33,12 @@ pnpm test:e2e:install
 pnpm dev
 ```
 
-The synthetic review inbox runs at <http://127.0.0.1:5191>. Its [task and data contract](fixtures/review-inbox/README.md) cover finding a known note, reading its content, and returning to continue reviewing. Check the [delivery tracker](docs/PHASE_1_BRIEF.md) for current proof evidence.
+The synthetic review inbox runs at <http://127.0.0.1:5191>. Its [task and data contract](fixtures/review-inbox/README.md) cover finding a known note, reading its content, and returning to continue reviewing. `pnpm status` checks the local server.
 
-`pnpm verify` runs source/reference validation, type checks, a production build, and rendered browser checks. `pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches and temporary copies stay out of Git.
+The [actual scoped report](examples/review-inbox/report.md) ranks two cuts. The first is implemented: app/browser return restores the originating row, keyboard focus, query, and scroll position, with correct history and safe direct-link recovery. The second, keeping return visible while reading, remains unimplemented. See the [invocation](examples/review-inbox/invocation.md) and [verification evidence](examples/review-inbox/verification.md).
+
+`pnpm verify` validates a fresh isolated skill copy and all method references, checks types, builds the fixture, runs 12 rendered Chromium checks, and replays the preserved baseline against four targeted checks. Those four must fail at the intended continuity assertion before the cut; unexpected failures fail verification. Each browser run owns an isolated local server and port. The verifier needs Git and the baseline commit in the checkout's history. `pnpm test` runs the current built fixture; use `pnpm build` after source changes, or run the complete verifier.
+
+`pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches, rerun evidence, and temporary copies stay out of Git. Only Windows/Chromium execution is verified here; the shell wrappers are provided for other platforms without a runtime claim.
 
 The repository remains private and the development package is marked `private`. The UXcalibur license and public distribution are later decisions; no analyzer CLI or hosted service is shipped here. ForgeTrail's own license is scoped to `.forgetrail/`.

@@ -7,11 +7,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "tsc --noEmit",
-    "test": "playwright test",
+    "test": "node scripts/run-tests.mjs",
     "test:e2e:install": "node scripts/install-browser.mjs",
-    "verify": "pnpm skill:check && pnpm check && pnpm build && pnpm test",
+    "verify": "pnpm skill:copy && pnpm check && pnpm build && pnpm test && pnpm proof:baseline",
     "skill:check": "node scripts/check-skill.mjs",
-    "skill:copy": "node scripts/check-skill.mjs --copy"
+    "skill:copy": "node scripts/check-skill.mjs --copy",
+    "status": "node scripts/status.mjs",
+    "proof:baseline": "node scripts/prove-baseline.mjs"
   },
   "author": "",
   "license": "UNLICENSED",

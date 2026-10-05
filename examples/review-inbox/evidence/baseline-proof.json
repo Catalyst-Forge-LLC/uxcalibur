@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-05T23:22:13.196Z",
+  "baseline": "e9e9b3c53dfca371de1b4ed52094fe2cefde4810",
+  "cut": "K1",
+  "command": "pnpm proof:baseline",
+  "node": "v24.17.0",
+  "playwright": "1.63.0",
+  "sourceDigests": {
+    "index.html": "fe7642ebeb85be3625ff3ed10976e2dcf1203a08310ab219ee02c2c708c2b47a",
+    "src/main.ts": "ba8519e5a5196916d1362d972930e135d5391eea73a5e14390dfce4f9b612c10",
+    "src/data.ts": "c8174c43b744b864ffe1a824f4ff96790c01221a7b5b066d894a21c669586105",
+    "src/style.css": "2ebb40858efb70e075336a8e77a13fb17b241b0bb5dbf1a63f6098ce61766188"
+  },
+  "expectedBehavioralFailures": [
+    "CUT-001 keyboard app return",
+    "CUT-001 narrow keyboard app return",
+    "CUT-001 pointer app return",
+    "CUT-001 browser Back and Forward"
+  ],
+  "unexpectedFailures": 0,
+  "preservedFiles": [
+    "index.html",
+    "src/data.ts",
+    "src/style.css"
+  ],
+  "limitations": [
+    "Synthetic Chromium fixture; this verifies interaction behavior, not customer efficacy."
+  ]
+}

@@ -7,7 +7,7 @@
 **Archetype:** Product, based on the developer and operated-service audiences in [GENESIS.md](../GENESIS.md).
 **Recommended first delivery:** Skill-only proof with one synthetic flow and one verified implemented cut. A CLI is a later decision.
 
-Read sections 1–4 for the proposed scope, section 8 for decisions, and sections 11–12 for the build and acceptance plan. Project phase and decision status live in `appledger/`; this draft does not supersede the genesis direction.
+Read sections 1–4 for the approved scope, section 8 for decisions, and sections 11–12 for the build and acceptance plan. Project phase and decision status live in `appledger/`; this brief does not supersede the genesis direction.
 
 ## 1. Problem and outcome
 
@@ -136,7 +136,7 @@ The physical site layout can be decided when the site milestone starts. Two sepa
 
 | ID | Decision | Resolve by |
 | --- | --- | --- |
-| Q1 / `question-approve-proof` | Approve or adjust the skill-only slice, fixture flow, development stack, folder shape, and acceptance plan | Before entering Build |
+| Q1 / `question-approve-proof` | Answered: owner approved the recommended slice and Build on 2026-10-05 | Complete; section 15 |
 | Q2 / `question-license` | Choose the UXcalibur open-source license and release/distribution route | Before public source distribution or npm release; does not block private proof |
 | Q3 / `question-sites-service` | One/two FilePress sites, launch structure, service delivery/pricing, and whether SaaS becomes useful | After developer proof, before the affected milestone |
 
@@ -156,10 +156,10 @@ These are approved Build work. The packet table is updated with implementation a
 
 | Packet | Result | Depends on | State / next action |
 | --- | --- | --- | --- |
-| P1 | Runnable review-inbox baseline with synthetic data, defined task, meaningful behavior checks, and baseline artifact | Brief approval / Plan-to-Build authorization | Verified baseline; 3 core browser checks pass; continuity acceptance remains pending |
-| P2 | Actual focused pass and portable example report with traceable cuts | P1 | In progress; independent pass using a fresh copy of the repository skill |
-| P3 | One justified fixture cut implemented and acceptance demonstrated before/after | P2 | Not started; select the cut from evidence, then verify it |
-| P4 | Fresh-copy invocation, resolved skill references, honest usage docs, and reproducible verification command | P1–P3 | In progress; fresh copy and usage docs prepared; invocation/complete proof pending |
+| P1 | Runnable review-inbox baseline with synthetic data, defined task, meaningful behavior checks, and baseline artifact | Brief approval / Plan-to-Build authorization | Verified; 3 original core browser checks; baseline e9e9b3c preserved |
+| P2 | Actual focused pass and portable example report with traceable cuts | P1 | Verified; independent fresh-copy invocation and inspected source/rendered evidence; report ranks K1/K2 |
+| P3 | One justified fixture cut implemented and acceptance demonstrated before/after | P2 | Verified; K1 implemented; four intended failures before and same cases pass after; 12 current checks pass |
+| P4 | Fresh-copy invocation, resolved skill references, honest usage docs, and reproducible verification command | P1–P3 | Verified; 5 identical files/3 references; actual invocation; pnpm verify passes |
 
 The runnable spine is the local fixture plus agent invocation and report workflow. Finish these connected steps within the approved Build scope; do not call an empty UI or copied prompt a working proof. Subsequent feature work should come from the proof's issues and evidence before adding a CLI.
 
@@ -210,3 +210,9 @@ The owner clarified: “Not just \"easier to finish\", but accomplish or improve
 ## 15. Initial build authorization, 2026-10-05
 
 The owner said: “excellent. Proceed and use your leans for the initial build.” This approves the revised brief with the recommended skill-only proof, review-inbox fixture, strict TypeScript/Vite/Playwright development harness, and P1–P4/A1–A8 acceptance. D3/D4 are accepted and the project enters Build. License and public distribution remain deferred.
+
+## 16. Initial build result, 2026-10-05
+
+P1–P4 and A1–A8 are verified with [dated evidence and coverage](../examples/review-inbox/verification.md). The actual scoped report follows the selected outcome, focus, and exclusions, using a fresh skill copy. K1 restores in-session review context and correct history; K2 remains unimplemented within the approved one-cut proof. The complete verifier passes with 12 current browser cases and four intended continuity failures replayed at the preserved baseline. Data, page markup, and styling are preserved. Measured customer efficacy, other browsers/screen readers/touch, and refresh/restart context remain unverified.
+
+Build criteria are met. The phase remains Build; this result does not authorize a transition, public distribution, or additional milestones. Section 13 is historical kickoff verification, before this build.

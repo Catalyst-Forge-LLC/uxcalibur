@@ -14,4 +14,6 @@ Decisions: preserve genesis method/domain jobs (D1); ForgeTrail/AppLedger memory
 
 Keep a baseline commit before implementing a cut. Report synthetic evidence as synthetic; a passing fixture check does not measure customer efficacy. Preserve the personal installed skill as a separate installation. Detailed-spec references remain available.
 
+P1–P4 are verified. Baseline: `e9e9b3c53dfca371de1b4ed52094fe2cefde4810`. The actual independent report ranks K1 (return context/history) and K2 (visible return while reading). K1 is implemented and checked; K2 remains unimplemented. `pnpm verify` runs fresh skill-copy/reference checks, types, build, 12 current browser cases, and four intended behavioral failures against the baseline. Evidence and limits: `examples/review-inbox/verification.md`. Build criteria are met; no transition to another phase is authorized.
+
 License/public release, CLI, FilePress launch, service terms, and SaaS remain later decisions. No push/publication/deployment is authorized by this build.

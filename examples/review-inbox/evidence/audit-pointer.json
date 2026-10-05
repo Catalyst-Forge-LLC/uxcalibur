@@ -1,0 +1,46 @@
+{
+  "capturedAt": "2026-10-05T23:12:16.228Z",
+  "method": "Mouse wheel and pointer click; Playwright scrolls offscreen Back into view for click",
+  "observations": [
+    {
+      "id": "pointer-origin",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "query": "Orchard",
+      "scrollTop": 1200,
+      "activeTag": "INPUT",
+      "activeNoteId": null,
+      "activeText": "",
+      "windowScrollY": 0
+    },
+    {
+      "id": "pointer-detail",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "query": null,
+      "scrollTop": null,
+      "activeTag": "H1",
+      "activeNoteId": null,
+      "activeText": "Orchard handoff",
+      "windowScrollY": 0
+    },
+    {
+      "id": "pointer-reading",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "query": null,
+      "scrollTop": null,
+      "activeTag": "H1",
+      "activeNoteId": null,
+      "activeText": "Orchard handoff",
+      "windowScrollY": 800
+    },
+    {
+      "id": "pointer-return",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "query": "Orchard",
+      "scrollTop": 0,
+      "activeTag": "BODY",
+      "activeNoteId": null,
+      "activeText": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox,",
+      "windowScrollY": 0
+    }
+  ]
+}

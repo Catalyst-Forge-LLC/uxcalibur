@@ -1,0 +1,2908 @@
+{
+  "auditStartedAt": "2026-10-05T23:10:40.502Z",
+  "target": "http://127.0.0.1:5191/",
+  "browser": "153.0.8010.12",
+  "method": "Baseline rendered observation, not implementation acceptance or efficacy measurement",
+  "errors": [],
+  "snapshots": [
+    {
+      "id": "initial",
+      "notes": "Fresh list, all records.",
+      "url": "http://127.0.0.1:5191/",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 2,
+      "heading": "Find a note",
+      "search": "",
+      "count": "72 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-002",
+          "title": "Harbor review 2",
+          "accessibleName": "Open Harbor review 2, note-002"
+        },
+        {
+          "id": "note-003",
+          "title": "Workshop review 3",
+          "accessibleName": "Open Workshop review 3, note-003"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-005",
+          "title": "Harbor review 5",
+          "accessibleName": "Open Harbor review 5, note-005"
+        },
+        {
+          "id": "note-006",
+          "title": "Workshop review 6",
+          "accessibleName": "Open Workshop review 6, note-006"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-008",
+          "title": "Harbor review 8",
+          "accessibleName": "Open Harbor review 8, note-008"
+        },
+        {
+          "id": "note-009",
+          "title": "Workshop review 9",
+          "accessibleName": "Open Workshop review 9, note-009"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-011",
+          "title": "Harbor review 11",
+          "accessibleName": "Open Harbor review 11, note-011"
+        },
+        {
+          "id": "note-012",
+          "title": "Workshop review 12",
+          "accessibleName": "Open Workshop review 12, note-012"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-014",
+          "title": "Harbor review 14",
+          "accessibleName": "Open Harbor review 14, note-014"
+        },
+        {
+          "id": "note-015",
+          "title": "Workshop review 15",
+          "accessibleName": "Open Workshop review 15, note-015"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-017",
+          "title": "Harbor review 17",
+          "accessibleName": "Open Harbor review 17, note-017"
+        },
+        {
+          "id": "note-018",
+          "title": "Workshop review 18",
+          "accessibleName": "Open Workshop review 18, note-018"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-020",
+          "title": "Harbor review 20",
+          "accessibleName": "Open Harbor review 20, note-020"
+        },
+        {
+          "id": "note-021",
+          "title": "Workshop review 21",
+          "accessibleName": "Open Workshop review 21, note-021"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-023",
+          "title": "Harbor review 23",
+          "accessibleName": "Open Harbor review 23, note-023"
+        },
+        {
+          "id": "note-024",
+          "title": "Workshop review 24",
+          "accessibleName": "Open Workshop review 24, note-024"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-026",
+          "title": "Harbor review 26",
+          "accessibleName": "Open Harbor review 26, note-026"
+        },
+        {
+          "id": "note-027",
+          "title": "Workshop review 27",
+          "accessibleName": "Open Workshop review 27, note-027"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-029",
+          "title": "Harbor review 29",
+          "accessibleName": "Open Harbor review 29, note-029"
+        },
+        {
+          "id": "note-030",
+          "title": "Workshop review 30",
+          "accessibleName": "Open Workshop review 30, note-030"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-032",
+          "title": "Harbor review 32",
+          "accessibleName": "Open Harbor review 32, note-032"
+        },
+        {
+          "id": "note-033",
+          "title": "Workshop review 33",
+          "accessibleName": "Open Workshop review 33, note-033"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-035",
+          "title": "Harbor review 35",
+          "accessibleName": "Open Harbor review 35, note-035"
+        },
+        {
+          "id": "note-036",
+          "title": "Workshop review 36",
+          "accessibleName": "Open Workshop review 36, note-036"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-038",
+          "title": "Harbor review 38",
+          "accessibleName": "Open Harbor review 38, note-038"
+        },
+        {
+          "id": "note-039",
+          "title": "Workshop review 39",
+          "accessibleName": "Open Workshop review 39, note-039"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-041",
+          "title": "Harbor review 41",
+          "accessibleName": "Open Harbor review 41, note-041"
+        },
+        {
+          "id": "note-042",
+          "title": "Workshop review 42",
+          "accessibleName": "Open Workshop review 42, note-042"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-044",
+          "title": "Harbor review 44",
+          "accessibleName": "Open Harbor review 44, note-044"
+        },
+        {
+          "id": "note-045",
+          "title": "Workshop review 45",
+          "accessibleName": "Open Workshop review 45, note-045"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-047",
+          "title": "Harbor review 47",
+          "accessibleName": "Open Harbor review 47, note-047"
+        },
+        {
+          "id": "note-048",
+          "title": "Workshop review 48",
+          "accessibleName": "Open Workshop review 48, note-048"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-050",
+          "title": "Harbor review 50",
+          "accessibleName": "Open Harbor review 50, note-050"
+        },
+        {
+          "id": "note-051",
+          "title": "Workshop review 51",
+          "accessibleName": "Open Workshop review 51, note-051"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-053",
+          "title": "Harbor review 53",
+          "accessibleName": "Open Harbor review 53, note-053"
+        },
+        {
+          "id": "note-054",
+          "title": "Workshop review 54",
+          "accessibleName": "Open Workshop review 54, note-054"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-056",
+          "title": "Harbor review 56",
+          "accessibleName": "Open Harbor review 56, note-056"
+        },
+        {
+          "id": "note-057",
+          "title": "Workshop review 57",
+          "accessibleName": "Open Workshop review 57, note-057"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-059",
+          "title": "Harbor review 59",
+          "accessibleName": "Open Harbor review 59, note-059"
+        },
+        {
+          "id": "note-060",
+          "title": "Workshop review 60",
+          "accessibleName": "Open Workshop review 60, note-060"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-062",
+          "title": "Harbor review 62",
+          "accessibleName": "Open Harbor review 62, note-062"
+        },
+        {
+          "id": "note-063",
+          "title": "Workshop review 63",
+          "accessibleName": "Open Workshop review 63, note-063"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-065",
+          "title": "Harbor review 65",
+          "accessibleName": "Open Harbor review 65, note-065"
+        },
+        {
+          "id": "note-066",
+          "title": "Workshop review 66",
+          "accessibleName": "Open Workshop review 66, note-066"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-068",
+          "title": "Harbor review 68",
+          "accessibleName": "Open Harbor review 68, note-068"
+        },
+        {
+          "id": "note-069",
+          "title": "Workshop review 69",
+          "accessibleName": "Open Workshop review 69, note-069"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        },
+        {
+          "id": "note-071",
+          "title": "Harbor review 71",
+          "accessibleName": "Open Harbor review 71, note-071"
+        },
+        {
+          "id": "note-072",
+          "title": "Workshop review 72",
+          "accessibleName": "Open Workshop review 72, note-072"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 6207,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 4458.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 4458.015625,
+        "bottom": 4543.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search72 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "searched",
+      "notes": "Literal Orchard query; duplicate display titles retain stable IDs.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 2,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "INPUT",
+        "id": "search",
+        "noteId": null,
+        "text": "",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "keyboard-origin",
+      "notes": "18 Tabs from search: Clear then Orchard rows, ending at note-049.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 2,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 1030,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 673.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 673.015625,
+        "bottom": 758.109375,
+        "inViewport": true
+      },
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "noteId": "note-049",
+        "text": "Orchard handoffnote-049Orchard team note 49: decisions, open questions, and the next handoff.",
+        "accessibleName": "Open Orchard handoff, note-049"
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false,
+      "screenshot": "audit-keyboard-origin.png"
+    },
+    {
+      "id": "detail-top",
+      "notes": "Enter on note-049; heading receives focus and detail starts at top.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 3,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": 90.59375,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": 90.59375,
+        "bottom": 140.5625,
+        "inViewport": true
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": 1243.890625,
+          "width": 670,
+          "height": 102.375,
+          "top": 1243.890625,
+          "bottom": 1346.265625,
+          "inViewport": false
+        }
+      },
+      "unavailable": false
+    },
+    {
+      "id": "handoff",
+      "notes": "Handoff paragraph rendered in viewport after 1 PageDown keys.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 3,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 700,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": -609.40625,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": -609.40625,
+        "bottom": -559.4375,
+        "inViewport": false
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": 543.890625,
+          "width": 670,
+          "height": 102.375,
+          "top": 543.890625,
+          "bottom": 646.265625,
+          "inViewport": true
+        }
+      },
+      "unavailable": false,
+      "screenshot": "audit-handoff.png"
+    },
+    {
+      "id": "detail-end",
+      "notes": "End of long note: return control is outside viewport.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 3,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 1685,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": -1594.40625,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": -1594.40625,
+        "bottom": -1544.4375,
+        "inViewport": false
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": -441.109375,
+          "width": 670,
+          "height": 102.375,
+          "top": -441.109375,
+          "bottom": -338.734375,
+          "inViewport": false
+        }
+      },
+      "unavailable": false,
+      "screenshot": "audit-detail-end.png"
+    },
+    {
+      "id": "keyboard-back-control",
+      "notes": "Reverse Tab from focused heading reaches Back to results and scrolls it into view.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 3,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "noteId": null,
+        "text": "Back to results",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": 90.59375,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": 90.59375,
+        "bottom": 140.5625,
+        "inViewport": true
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": 1243.890625,
+          "width": 670,
+          "height": 102.375,
+          "top": 1243.890625,
+          "bottom": 1346.265625,
+          "inViewport": false
+        }
+      },
+      "unavailable": false
+    },
+    {
+      "id": "app-return",
+      "notes": "App Back to results by keyboard Enter; query retained, list rebuilt.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search24 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false,
+      "screenshot": "audit-app-return.png"
+    },
+    {
+      "id": "first-tab-after-return",
+      "notes": "First Tab after app return; test whether review resumes at originating row.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "INPUT",
+        "id": "search",
+        "noteId": null,
+        "text": "",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "history-after-app-return",
+      "notes": "Browser Back immediately after app Back to results.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": 90.59375,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": 90.59375,
+        "bottom": 140.5625,
+        "inViewport": true
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": 1243.890625,
+          "width": 670,
+          "height": 102.375,
+          "top": 1243.890625,
+          "bottom": 1346.265625,
+          "inViewport": false
+        }
+      },
+      "unavailable": false
+    },
+    {
+      "id": "history-second-back",
+      "notes": "A second browser Back reaches search list.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search24 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "history-forward-detail",
+      "notes": "Browser Forward returns to detail.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": 90.59375,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": 90.59375,
+        "bottom": 140.5625,
+        "inViewport": true
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": 1243.890625,
+          "width": 670,
+          "height": 102.375,
+          "top": 1243.890625,
+          "bottom": 1346.265625,
+          "inViewport": false
+        }
+      },
+      "unavailable": false
+    },
+    {
+      "id": "before-browser-back",
+      "notes": "Long detail at end before native history return.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 1685,
+      "documentHeight": 2485,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": -1594.40625,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": -1594.40625,
+        "bottom": -1544.4375,
+        "inViewport": false
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 221,
+          "y": -441.109375,
+          "width": 670,
+          "height": 102.375,
+          "top": -441.109375,
+          "bottom": -338.734375,
+          "inViewport": false
+        }
+      },
+      "unavailable": false
+    },
+    {
+      "id": "browser-return",
+      "notes": "Browser Back from detail to original result entry.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search24 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false,
+      "screenshot": "audit-browser-return.png"
+    },
+    {
+      "id": "body-and-search",
+      "notes": "Mixed-case whitespace-separated terms include body-only owner/action.",
+      "url": "http://127.0.0.1:5191/?q=orCHard+Mara+Thursday",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "orCHard Mara Thursday",
+      "count": "1 note · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 446,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 325.515625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 325.515625,
+        "bottom": 410.609375,
+        "inViewport": true
+      },
+      "active": {
+        "tag": "INPUT",
+        "id": "search",
+        "noteId": null,
+        "text": "",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "no-match",
+      "notes": "No match has explicit recovery copy.",
+      "url": "http://127.0.0.1:5191/?q=no-such-orchard-note",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "no-such-orchard-note",
+      "count": "0 notes · all 72 records searched",
+      "rows": [],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 446,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": null,
+      "active": {
+        "tag": "INPUT",
+        "id": "search",
+        "noteId": null,
+        "text": "",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "clear-recovery",
+      "notes": "Keyboard Clear restores all 72 records and focuses search.",
+      "url": "http://127.0.0.1:5191/",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "",
+      "count": "72 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-002",
+          "title": "Harbor review 2",
+          "accessibleName": "Open Harbor review 2, note-002"
+        },
+        {
+          "id": "note-003",
+          "title": "Workshop review 3",
+          "accessibleName": "Open Workshop review 3, note-003"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-005",
+          "title": "Harbor review 5",
+          "accessibleName": "Open Harbor review 5, note-005"
+        },
+        {
+          "id": "note-006",
+          "title": "Workshop review 6",
+          "accessibleName": "Open Workshop review 6, note-006"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-008",
+          "title": "Harbor review 8",
+          "accessibleName": "Open Harbor review 8, note-008"
+        },
+        {
+          "id": "note-009",
+          "title": "Workshop review 9",
+          "accessibleName": "Open Workshop review 9, note-009"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-011",
+          "title": "Harbor review 11",
+          "accessibleName": "Open Harbor review 11, note-011"
+        },
+        {
+          "id": "note-012",
+          "title": "Workshop review 12",
+          "accessibleName": "Open Workshop review 12, note-012"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-014",
+          "title": "Harbor review 14",
+          "accessibleName": "Open Harbor review 14, note-014"
+        },
+        {
+          "id": "note-015",
+          "title": "Workshop review 15",
+          "accessibleName": "Open Workshop review 15, note-015"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-017",
+          "title": "Harbor review 17",
+          "accessibleName": "Open Harbor review 17, note-017"
+        },
+        {
+          "id": "note-018",
+          "title": "Workshop review 18",
+          "accessibleName": "Open Workshop review 18, note-018"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-020",
+          "title": "Harbor review 20",
+          "accessibleName": "Open Harbor review 20, note-020"
+        },
+        {
+          "id": "note-021",
+          "title": "Workshop review 21",
+          "accessibleName": "Open Workshop review 21, note-021"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-023",
+          "title": "Harbor review 23",
+          "accessibleName": "Open Harbor review 23, note-023"
+        },
+        {
+          "id": "note-024",
+          "title": "Workshop review 24",
+          "accessibleName": "Open Workshop review 24, note-024"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-026",
+          "title": "Harbor review 26",
+          "accessibleName": "Open Harbor review 26, note-026"
+        },
+        {
+          "id": "note-027",
+          "title": "Workshop review 27",
+          "accessibleName": "Open Workshop review 27, note-027"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-029",
+          "title": "Harbor review 29",
+          "accessibleName": "Open Harbor review 29, note-029"
+        },
+        {
+          "id": "note-030",
+          "title": "Workshop review 30",
+          "accessibleName": "Open Workshop review 30, note-030"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-032",
+          "title": "Harbor review 32",
+          "accessibleName": "Open Harbor review 32, note-032"
+        },
+        {
+          "id": "note-033",
+          "title": "Workshop review 33",
+          "accessibleName": "Open Workshop review 33, note-033"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-035",
+          "title": "Harbor review 35",
+          "accessibleName": "Open Harbor review 35, note-035"
+        },
+        {
+          "id": "note-036",
+          "title": "Workshop review 36",
+          "accessibleName": "Open Workshop review 36, note-036"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-038",
+          "title": "Harbor review 38",
+          "accessibleName": "Open Harbor review 38, note-038"
+        },
+        {
+          "id": "note-039",
+          "title": "Workshop review 39",
+          "accessibleName": "Open Workshop review 39, note-039"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-041",
+          "title": "Harbor review 41",
+          "accessibleName": "Open Harbor review 41, note-041"
+        },
+        {
+          "id": "note-042",
+          "title": "Workshop review 42",
+          "accessibleName": "Open Workshop review 42, note-042"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-044",
+          "title": "Harbor review 44",
+          "accessibleName": "Open Harbor review 44, note-044"
+        },
+        {
+          "id": "note-045",
+          "title": "Workshop review 45",
+          "accessibleName": "Open Workshop review 45, note-045"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-047",
+          "title": "Harbor review 47",
+          "accessibleName": "Open Harbor review 47, note-047"
+        },
+        {
+          "id": "note-048",
+          "title": "Workshop review 48",
+          "accessibleName": "Open Workshop review 48, note-048"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-050",
+          "title": "Harbor review 50",
+          "accessibleName": "Open Harbor review 50, note-050"
+        },
+        {
+          "id": "note-051",
+          "title": "Workshop review 51",
+          "accessibleName": "Open Workshop review 51, note-051"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-053",
+          "title": "Harbor review 53",
+          "accessibleName": "Open Harbor review 53, note-053"
+        },
+        {
+          "id": "note-054",
+          "title": "Workshop review 54",
+          "accessibleName": "Open Workshop review 54, note-054"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-056",
+          "title": "Harbor review 56",
+          "accessibleName": "Open Harbor review 56, note-056"
+        },
+        {
+          "id": "note-057",
+          "title": "Workshop review 57",
+          "accessibleName": "Open Workshop review 57, note-057"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-059",
+          "title": "Harbor review 59",
+          "accessibleName": "Open Harbor review 59, note-059"
+        },
+        {
+          "id": "note-060",
+          "title": "Workshop review 60",
+          "accessibleName": "Open Workshop review 60, note-060"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-062",
+          "title": "Harbor review 62",
+          "accessibleName": "Open Harbor review 62, note-062"
+        },
+        {
+          "id": "note-063",
+          "title": "Workshop review 63",
+          "accessibleName": "Open Workshop review 63, note-063"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-065",
+          "title": "Harbor review 65",
+          "accessibleName": "Open Harbor review 65, note-065"
+        },
+        {
+          "id": "note-066",
+          "title": "Workshop review 66",
+          "accessibleName": "Open Workshop review 66, note-066"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-068",
+          "title": "Harbor review 68",
+          "accessibleName": "Open Harbor review 68, note-068"
+        },
+        {
+          "id": "note-069",
+          "title": "Workshop review 69",
+          "accessibleName": "Open Workshop review 69, note-069"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        },
+        {
+          "id": "note-071",
+          "title": "Harbor review 71",
+          "accessibleName": "Open Harbor review 71, note-071"
+        },
+        {
+          "id": "note-072",
+          "title": "Workshop review 72",
+          "accessibleName": "Open Workshop review 72, note-072"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 6207,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 4458.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 4458.015625,
+        "bottom": 4543.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "INPUT",
+        "id": "search",
+        "noteId": null,
+        "text": "",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "invalid-id",
+      "notes": "Unknown ID route gives honest unavailable state and return.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=unknown",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 3,
+      "heading": "Note unavailable",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Note unavailable",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 196,
+        "y": 90.59375,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": 90.59375,
+        "bottom": 140.5625,
+        "inViewport": true
+      },
+      "answer": null,
+      "unavailable": true
+    },
+    {
+      "id": "invalid-return",
+      "notes": "Unknown ID return retains Orchard query.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 2075,
+        "clientHeight": 446,
+        "rect": {
+          "x": 196,
+          "y": 319.71875,
+          "width": 888,
+          "height": 448,
+          "top": 319.71875,
+          "bottom": 767.71875,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 201.796875,
+        "y": 1703.015625,
+        "width": 876.40625,
+        "height": 85.09375,
+        "top": 1703.015625,
+        "bottom": 1788.109375,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search24 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 800,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false
+    },
+    {
+      "id": "narrow-origin",
+      "notes": "18 Tabs reach correct note ID at 390px width.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "historyLength": 2,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 2002,
+        "scrollHeight": 3257,
+        "clientHeight": 471,
+        "rect": {
+          "x": 20,
+          "y": 373.140625,
+          "width": 350,
+          "height": 472.625,
+          "top": 373.140625,
+          "bottom": 845.765625,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 25.796875,
+        "y": 542.4375,
+        "width": 338.40625,
+        "height": 134.34375,
+        "top": 542.4375,
+        "bottom": 676.78125,
+        "inViewport": true
+      },
+      "active": {
+        "tag": "BUTTON",
+        "id": "",
+        "noteId": "note-049",
+        "text": "Orchard handoffnote-049Orchard team note 49: decisions, open questions, and the next handoff.",
+        "accessibleName": "Open Orchard handoff, note-049"
+      },
+      "windowScrollY": 9,
+      "documentHeight": 887,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false,
+      "screenshot": "audit-narrow-origin.png"
+    },
+    {
+      "id": "narrow-handoff",
+      "notes": "Owner/action paragraph read by native PageDown at 390px width.",
+      "url": "http://127.0.0.1:5191/?q=Orchard&note=note-049",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "historyLength": 3,
+      "heading": "Orchard handoff",
+      "search": null,
+      "count": null,
+      "rows": [],
+      "list": null,
+      "targetRect": null,
+      "active": {
+        "tag": "H1",
+        "id": "",
+        "noteId": null,
+        "text": "Orchard handoff",
+        "accessibleName": null
+      },
+      "windowScrollY": 1476,
+      "documentHeight": 4306,
+      "horizontalOverflow": false,
+      "backRect": {
+        "x": 20,
+        "y": -1398.21875,
+        "width": 136.078125,
+        "height": 49.96875,
+        "top": -1398.21875,
+        "bottom": -1348.25,
+        "inViewport": false
+      },
+      "answer": {
+        "text": "Orchard note 49, section 9. The team reviewed the current work and recorded the decision before moving on. The next reviewer should compare the proposed result with the original request, preserve useful context, and identify the remaining question. The final Orchard handoff owner is Mara; the agreed next action is to review the inventory on Thursday.",
+        "rect": {
+          "x": 37,
+          "y": 548.140625,
+          "width": 316,
+          "height": 230.34375,
+          "top": 548.140625,
+          "bottom": 778.484375,
+          "inViewport": true
+        }
+      },
+      "unavailable": false,
+      "screenshot": "audit-narrow-handoff.png"
+    },
+    {
+      "id": "narrow-return",
+      "notes": "Narrow keyboard return retains query but rebuilds list.",
+      "url": "http://127.0.0.1:5191/?q=Orchard",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "historyLength": 4,
+      "heading": "Find a note",
+      "search": "Orchard",
+      "count": "24 notes · all 72 records searched",
+      "rows": [
+        {
+          "id": "note-001",
+          "title": "Orchard review 1",
+          "accessibleName": "Open Orchard review 1, note-001"
+        },
+        {
+          "id": "note-004",
+          "title": "Orchard review 4",
+          "accessibleName": "Open Orchard review 4, note-004"
+        },
+        {
+          "id": "note-007",
+          "title": "Orchard review 7",
+          "accessibleName": "Open Orchard review 7, note-007"
+        },
+        {
+          "id": "note-010",
+          "title": "Orchard review 10",
+          "accessibleName": "Open Orchard review 10, note-010"
+        },
+        {
+          "id": "note-013",
+          "title": "Orchard review 13",
+          "accessibleName": "Open Orchard review 13, note-013"
+        },
+        {
+          "id": "note-016",
+          "title": "Orchard review 16",
+          "accessibleName": "Open Orchard review 16, note-016"
+        },
+        {
+          "id": "note-019",
+          "title": "Orchard review 19",
+          "accessibleName": "Open Orchard review 19, note-019"
+        },
+        {
+          "id": "note-022",
+          "title": "Orchard review 22",
+          "accessibleName": "Open Orchard review 22, note-022"
+        },
+        {
+          "id": "note-025",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-025"
+        },
+        {
+          "id": "note-028",
+          "title": "Orchard review 28",
+          "accessibleName": "Open Orchard review 28, note-028"
+        },
+        {
+          "id": "note-031",
+          "title": "Orchard review 31",
+          "accessibleName": "Open Orchard review 31, note-031"
+        },
+        {
+          "id": "note-034",
+          "title": "Orchard review 34",
+          "accessibleName": "Open Orchard review 34, note-034"
+        },
+        {
+          "id": "note-037",
+          "title": "Orchard review 37",
+          "accessibleName": "Open Orchard review 37, note-037"
+        },
+        {
+          "id": "note-040",
+          "title": "Orchard review 40",
+          "accessibleName": "Open Orchard review 40, note-040"
+        },
+        {
+          "id": "note-043",
+          "title": "Orchard review 43",
+          "accessibleName": "Open Orchard review 43, note-043"
+        },
+        {
+          "id": "note-046",
+          "title": "Orchard review 46",
+          "accessibleName": "Open Orchard review 46, note-046"
+        },
+        {
+          "id": "note-049",
+          "title": "Orchard handoff",
+          "accessibleName": "Open Orchard handoff, note-049"
+        },
+        {
+          "id": "note-052",
+          "title": "Orchard review 52",
+          "accessibleName": "Open Orchard review 52, note-052"
+        },
+        {
+          "id": "note-055",
+          "title": "Orchard review 55",
+          "accessibleName": "Open Orchard review 55, note-055"
+        },
+        {
+          "id": "note-058",
+          "title": "Orchard review 58",
+          "accessibleName": "Open Orchard review 58, note-058"
+        },
+        {
+          "id": "note-061",
+          "title": "Orchard review 61",
+          "accessibleName": "Open Orchard review 61, note-061"
+        },
+        {
+          "id": "note-064",
+          "title": "Orchard review 64",
+          "accessibleName": "Open Orchard review 64, note-064"
+        },
+        {
+          "id": "note-067",
+          "title": "Orchard review 67",
+          "accessibleName": "Open Orchard review 67, note-067"
+        },
+        {
+          "id": "note-070",
+          "title": "Orchard review 70",
+          "accessibleName": "Open Orchard review 70, note-070"
+        }
+      ],
+      "list": {
+        "scrollTop": 0,
+        "scrollHeight": 3257,
+        "clientHeight": 471,
+        "rect": {
+          "x": 20,
+          "y": 382.140625,
+          "width": 350,
+          "height": 472.625,
+          "top": 382.140625,
+          "bottom": 854.765625,
+          "inViewport": true
+        }
+      },
+      "targetRect": {
+        "x": 25.796875,
+        "y": 2553.4375,
+        "width": 338.40625,
+        "height": 134.34375,
+        "top": 2553.4375,
+        "bottom": 2687.78125,
+        "inViewport": false
+      },
+      "active": {
+        "tag": "BODY",
+        "id": "",
+        "noteId": null,
+        "text": "Review inbox\n      Synthetic local fixture\n    \n    Find a noteSearch the inbox, read a note, and continue your review.Search notesClear search24 notes · all 72",
+        "accessibleName": null
+      },
+      "windowScrollY": 0,
+      "documentHeight": 887,
+      "horizontalOverflow": false,
+      "backRect": null,
+      "answer": null,
+      "unavailable": false,
+      "screenshot": "audit-narrow-return.png"
+    }
+  ],
+  "sourceSha256Before": {
+    "fixtures/review-inbox/src/main.ts": "ba8519e5a5196916d1362d972930e135d5391eea73a5e14390dfce4f9b612c10",
+    "fixtures/review-inbox/src/style.css": "2ebb40858efb70e075336a8e77a13fb17b241b0bb5dbf1a63f6098ce61766188",
+    "fixtures/review-inbox/src/data.ts": "c8174c43b744b864ffe1a824f4ff96790c01221a7b5b066d894a21c669586105"
+  },
+  "auditFinishedAt": "2026-10-05T23:10:43.393Z",
+  "sourceSha256After": {
+    "fixtures/review-inbox/src/main.ts": "ba8519e5a5196916d1362d972930e135d5391eea73a5e14390dfce4f9b612c10",
+    "fixtures/review-inbox/src/style.css": "2ebb40858efb70e075336a8e77a13fb17b241b0bb5dbf1a63f6098ce61766188",
+    "fixtures/review-inbox/src/data.ts": "c8174c43b744b864ffe1a824f4ff96790c01221a7b5b066d894a21c669586105"
+  }
+}

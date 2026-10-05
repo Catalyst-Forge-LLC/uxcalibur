@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-10-05T23:25:51.187Z",
+  "command": "pnpm verify",
+  "environment": {
+    "platform": "win32",
+    "node": "v24.17.0",
+    "pnpm": "10.30.1",
+    "vite": "8.3.2",
+    "typescript": "6.0.3",
+    "playwright": "1.63.0",
+    "chromium": "153.0.8010.12"
+  },
+  "checks": {
+    "freshCopy": {
+      "files": 5,
+      "references": 3,
+      "identical": true
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "currentBrowser": {
+      "passed": 12,
+      "failed": 0,
+      "skipped": 0
+    },
+    "baseline": {
+      "expectedContinuityFailures": 4,
+      "unexpectedFailures": 0
+    },
+    "preservedFixtureFiles": [
+      "index.html",
+      "src/data.ts",
+      "src/style.css"
+    ]
+  },
+  "sourceSha256": {
+    "fixtures/review-inbox/src/main.ts": "8910a908f0440f92dd6e03aac86930f129a24c78f72ef00b24793edf8cc1a575",
+    "tests/continuity.spec.ts": "5e7c4432158518396a98f6843bb52b0474d903cf439f96c7a8a4837bad3e5114",
+    "tests/inbox.spec.ts": "6ac4d6b7bdd0d6180b0101fb4d7a1821492d24d781e38584e3e0d09a95168c77",
+    "scripts/prove-baseline.mjs": "050c3c004d84a1dccbc04b41efd564fb161a76f9251921b88627f13149c43a6f",
+    "scripts/run-tests.mjs": "450b599f5eeb6ef28df1339b38226fa97361ab1e02e70308263899823e4a6709",
+    "scripts/fixture-server.mjs": "9e03d98a6f360aa24b5e12ada26d49af680ffee875ce0bb491b929f07f51564a"
+  },
+  "methodFiles": [
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6536898c579932dc425f3015d3cb52a3c47aaedabd627d576c12ea7f1c10d0a4"
+    },
+    {
+      "path": "references/process.md",
+      "sha256": "2843813d441d9db13f704051d6ec5b711300f94eaaad888384d113a1e9a45d96"
+    },
+    {
+      "path": "references/product-brief.md",
+      "sha256": "73ac6378db5c21a018cfa7ff95bef789220aef947fc21b319879e476cc76e8a7"
+    },
+    {
+      "path": "references/spec-contract.md",
+      "sha256": "fcc07339f0bc90f4623e996d19e881bd667b673e2270437142e2521bbdb9cee7"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1f79e6d9ec9b44f6e21d35f4ec22d73ff3dd0c3eae60837389cf7fafc941a6d8"
+    }
+  ],
+  "cases": [
+    {
+      "title": "CUT-001 keyboard app return",
+      "status": "passed"
+    },
+    {
+      "title": "CUT-001 narrow keyboard app return",
+      "status": "passed"
+    },
+    {
+      "title": "CUT-001 pointer app return",
+      "status": "passed"
+    },
+    {
+      "title": "CUT-001 browser Back and Forward",
+      "status": "passed"
+    },
+    {
+      "title": "searches the full corpus, opens stable identity, and recovers from no match",
+      "status": "passed"
+    },
+    {
+      "title": "keyboard can open a note; narrow view can read and return without horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "title": "deep links and unavailable note IDs recover to usable results",
+      "status": "passed"
+    },
+    {
+      "title": "preserves complete literal AND search, result order, and resets changed-query anchors",
+      "status": "passed"
+    },
+    {
+      "title": "app return traverses its origin and ordinary Back reaches the existing prior page",
+      "status": "passed"
+    },
+    {
+      "title": "Forward from a changed origin uses safe same-query fallback instead of a stale anchor",
+      "status": "passed"
+    },
+    {
+      "title": "rapid app return activations cannot skip the originating results entry",
+      "status": "passed"
+    },
+    {
+      "title": "resize while reading reveals the same anchor within clamped list and page bounds",
+      "status": "passed"
+    }
+  ],
+  "limitations": [
+    "Synthetic behavior proof; no customer efficacy measurement.",
+    "Windows/Chromium only; screen readers, real touch, other engines and restart continuity unverified."
+  ]
+}

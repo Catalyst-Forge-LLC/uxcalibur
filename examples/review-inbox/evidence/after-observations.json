@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-05T23:25:48.919Z",
+  "browser": "153.0.8010.12",
+  "cut": "K1",
+  "observations": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "origin": {
+        "query": "Orchard",
+        "noteId": "note-049",
+        "listScrollTop": 1030,
+        "pageScrollY": 0,
+        "historyLength": 2
+      },
+      "returned": {
+        "query": "Orchard",
+        "noteId": "note-049",
+        "listScrollTop": 1030,
+        "pageScrollY": 0,
+        "historyLength": 3
+      },
+      "screenshot": "after-return-1280.png"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "origin": {
+        "query": "Orchard",
+        "noteId": "note-049",
+        "listScrollTop": 2002,
+        "pageScrollY": 9,
+        "historyLength": 2
+      },
+      "returned": {
+        "query": "Orchard",
+        "noteId": "note-049",
+        "listScrollTop": 2002,
+        "pageScrollY": 9,
+        "historyLength": 3
+      },
+      "screenshot": "after-return-390.png"
+    }
+  ]
+}

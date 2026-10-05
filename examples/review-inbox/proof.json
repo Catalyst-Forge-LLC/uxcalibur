@@ -1,0 +1,14 @@
+{
+  "baseline": "e9e9b3c53dfca371de1b4ed52094fe2cefde4810",
+  "cut": "K1",
+  "sourceFiles": ["index.html", "src/main.ts", "src/data.ts", "src/style.css"],
+  "preservedFiles": ["index.html", "src/data.ts", "src/style.css"],
+  "testFile": "tests/continuity.spec.ts",
+  "expectedFailures": [
+    "CUT-001 keyboard app return",
+    "CUT-001 narrow keyboard app return",
+    "CUT-001 pointer app return",
+    "CUT-001 browser Back and Forward"
+  ],
+  "assertionMarker": "CUT-001: restore the originating review context without an extra history entry"
+}

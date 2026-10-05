@@ -5,7 +5,7 @@ kind: work
 title: Build the first developer proof
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T22:50:42Z
+updated_at: 2026-10-05T23:25:51.187Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -17,38 +17,41 @@ relations:
     target: decision-developer-proof
 claims: []
 data:
-  status: in_progress
-  objective: Complete P1-P4 after brief approval and demonstrate one
-    evidence-backed implemented cut on the isolated fixture.
+  status: done
+  objective: Complete P1-P4 after brief approval and demonstrate one evidence-backed
+    implemented cut on the isolated fixture.
   intake: task
   acceptance_criteria:
     - id: A1
       text: Runnable synthetic flow
-      status: pending
+      status: met
     - id: A2
-      text: Actual scoped report identifies the intended outcome, focus, exclusions,
-        criteria, and traceable evidence; recommendations respect that scope.
-      status: pending
+      text: Actual scoped report identifies the intended outcome, focus, exclusions, criteria,
+        and traceable evidence; recommendations respect that scope.
+      status: met
     - id: A3
       text: Targeted check fails before the cut and passes afterward
-      status: pending
+      status: met
     - id: A4
       text: Keyboard/identity/no-match/reflow/history coverage
-      status: pending
+      status: met
     - id: A5
       text: Fresh-copy invocation and reference resolution
-      status: pending
+      status: met
     - id: A6
       text: Repeatable verifier with honest evidence
-      status: pending
+      status: met
     - id: A7
       text: Usage describes real capabilities and processing limits
-      status: pending
+      status: met
     - id: A8
       text: An actual pass on a named aspect respects focus and exclusions; necessary
         excluded-area dependencies are stated without silently expanding scope.
-      status: pending
-  verification_refs: []
+      status: met
+  verification_refs:
+    - evidence-scoped-audit
+    - evidence-initial-proof
+    - evidence-proof-usage
 ---
 
-P1 baseline is verified for its core behavior; P2/P4 are in progress and P3 has not started. The precise acceptance contracts are in docs/PHASE_1_BRIEF.md section 11. Build authorization is explicitly recorded in evidence-build-approval.
+P1-P4 and A1-A8 are verified. K1 is implemented; K2 remains unimplemented in the approved one-cut proof. See examples/review-inbox/verification.md. Current phase remains Build; no later phase or release is authorized.

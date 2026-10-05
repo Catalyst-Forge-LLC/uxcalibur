@@ -39,36 +39,47 @@ phase_instances:
     criteria:
       - id: A1
         text: Verify developer-proof acceptance A1 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-initial-proof
       - id: A2
         text: Verify developer-proof acceptance A2 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-scoped-audit
       - id: A3
         text: Verify developer-proof acceptance A3 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-initial-proof
       - id: A4
         text: Verify developer-proof acceptance A4 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-initial-proof
       - id: A5
         text: Verify developer-proof acceptance A5 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-scoped-audit
+          - evidence-initial-proof
       - id: A6
         text: Verify developer-proof acceptance A6 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-initial-proof
+          - evidence-proof-usage
       - id: A7
         text: Verify developer-proof acceptance A7 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-proof-usage
       - id: A8
         text: Verify developer-proof acceptance A8 in the locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-scoped-audit
+          - evidence-initial-proof
 transitions:
   - id: transition-plan-build-1
     from_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
