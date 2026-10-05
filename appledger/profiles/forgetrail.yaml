@@ -2,11 +2,11 @@ profile: forgetrail
 profile_version: 0.1.0
 archetype: product
 project_status: active
-current_phase_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
+current_phase_instance: phase-build-1
 phase_instances:
   - id: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
     phase: plan
-    status: in_progress
+    status: completed
     started_at: 2026-10-05T20:49:07Z
     criteria:
       - id: purpose-recorded
@@ -23,10 +23,55 @@ phase_instances:
       - id: brief-approved
         text: Owner approves and locks the concrete brief; major proposed decisions
           become accepted
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-build-approval
       - id: build-authorized
         text: Owner explicitly authorizes Plan-to-Build transition
+        status: met
+        evidence_refs:
+          - evidence-build-approval
+    completed_at: 2026-10-05T22:50:42Z
+  - id: phase-build-1
+    phase: build
+    status: in_progress
+    started_at: 2026-10-05T22:50:42Z
+    criteria:
+      - id: A1
+        text: Verify developer-proof acceptance A1 in the locked brief
         status: pending
         evidence_refs: []
-transitions: []
+      - id: A2
+        text: Verify developer-proof acceptance A2 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A3
+        text: Verify developer-proof acceptance A3 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A4
+        text: Verify developer-proof acceptance A4 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A5
+        text: Verify developer-proof acceptance A5 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A6
+        text: Verify developer-proof acceptance A6 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A7
+        text: Verify developer-proof acceptance A7 in the locked brief
+        status: pending
+        evidence_refs: []
+      - id: A8
+        text: Verify developer-proof acceptance A8 in the locked brief
+        status: pending
+        evidence_refs: []
+transitions:
+  - id: transition-plan-build-1
+    from_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
+    to_instance: phase-build-1
+    at: 2026-10-05T22:50:42Z
+    authorized_by: "Owner: proceed and use recommended choices; evidence-build-approval."

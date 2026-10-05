@@ -4,7 +4,7 @@ This repository develops UXcalibur. Product direction is in `GENESIS.md`; the ve
 
 Start each session by reading `appledger/profiles/forgetrail.yaml`, the latest session record, and `docs/PHASE_1_BRIEF.md`. Read `CONTEXT_PROMPT.md` and `TODO.md` when they exist. Follow `.forgetrail/AGENTS.md` and consult `.forgetrail/FORGETRAIL_LITE.md` for the current phase. The ledger is the authority for phase, decisions, questions, and handoffs.
 
-The brief is currently **draft**. Complete authorized planning and setup; obtain explicit approval of the concrete brief before locking it and entering Build. Do not treat a proposed stack, fixture, license, site, or CLI as approved or shipped.
+The brief is **locked** and the recommended initial Build is authorized (2026-10-05). Implement its P1–P4 scope and verify A1–A8. The selected fixture/tooling is approved; the license, publication, sites, and CLI remain later milestones. Follow the ledger for subsequent phase transitions.
 
 Preserve the spelling **UXcalibur**. Help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Keep the focused pass as the default and detailed specification as an explicit mode. Trace cuts to actual evidence and supporting behavior; never describe a predicted outcome improvement as measured.
 

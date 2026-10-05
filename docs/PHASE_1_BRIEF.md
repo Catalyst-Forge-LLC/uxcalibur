@@ -1,6 +1,6 @@
 # UXcalibur — first developer proof
 
-**Status:** Draft for owner review; no Build transition approved.
+**Status:** Locked. Owner approved the recommended initial build on 2026-10-05.
 
 **Last updated:** 2026-10-05
 
@@ -45,10 +45,10 @@ Secondary coverage within the same flow: keyboard use, duplicate display titles,
 | Area | Choice | Status | Why |
 | --- | --- | --- | --- |
 | Product method | Markdown skill, YAML agent metadata, Markdown references | Established in genesis | The existing delivery already contains the method |
-| Fixture UI | Native HTML/CSS and strict TypeScript with Vite as development/build tooling | Proposed | Small inspectable browser example; no product framework commitment |
-| Fixture data | Immutable local synthetic records with stable IDs | Proposed | Repeatable checks without customer data or a backend |
-| Verification | Focused rendered browser checks with Playwright; source/reference checks using Node | Proposed | Verify actual history, focus, selection, scrolling, and task behavior |
-| Package manager/modules | pnpm; ESM; Node 20+ for development tooling | Proposed | Match workspace practices and ForgeTrail conventions |
+| Fixture UI | Native HTML/CSS and strict TypeScript with Vite as development/build tooling | Confirmed for this build | Small inspectable browser example; no product framework commitment |
+| Fixture data | Immutable local synthetic records with stable IDs | Confirmed for this build | Repeatable checks without customer data or a backend |
+| Verification | Focused rendered browser checks with Playwright; source/reference checks using Node | Confirmed for this build | Verify actual history, focus, selection, scrolling, and task behavior |
+| Package manager/modules | pnpm; ESM; Node 20+ for development tooling | Confirmed for this build | Match workspace practices and ForgeTrail conventions |
 | Project memory | AppLedger and ForgeTrail Lite | Established in genesis; installed during kickoff | Keep phase, decisions, and acceptance evidence across sessions |
 | Git host | Catalyst-Forge-LLC/uxcalibur on GitHub | Supplied by owner | Preserve the requested repository |
 | npm | `uxcalibur` | Name hold observed at `0.0.0` | No new publication in this kickoff |
@@ -126,8 +126,8 @@ Decision status here must match the corresponding ledger record.
 | --- | --- | --- |
 | D1 / `decision-genesis-direction` | UXcalibur naming; focused default; explicit detailed spec; shared method; distinct `.dev` and `.com` audience jobs; ForgeTrail and FilePress direction | Accepted from supplied genesis; not new sign-off on release details |
 | D2 / `decision-kickoff-memory` | Commit a self-contained ForgeTrail Lite workspace and AppLedger; root agent entry point; stay in Plan until concrete brief approval | Accepted setup choice within “review and kick it off” |
-| D3 / `decision-developer-proof` | Skill-only first delivery; synthetic review inbox; scoped report and one implemented cut; proposed fixture/tool stack and folder shape in section 4 | Proposed; owner review required |
-| D4 / `decision-launch-sequence` | Prove the developer flow first; `.dev` FilePress presence next; service offer later; no SaaS commitment | Proposed; owner review required |
+| D3 / `decision-developer-proof` | Skill-only first delivery; synthetic review inbox; scoped report and one implemented cut; proposed fixture/tool stack and folder shape in section 4 | Accepted on 2026-10-05; recommended initial build authorized |
+| D4 / `decision-launch-sequence` | Prove the developer flow first; `.dev` FilePress presence next; service offer later; no SaaS commitment | Accepted on 2026-10-05; recommended initial build authorized |
 | D5 / `decision-outcome-and-scope` | Help people accomplish goals or improve outcomes; let the user specify focus areas and exclusions throughout the pass | Accepted from owner clarification on 2026-10-05; does not approve D3/D4 or Build |
 
 The physical site layout can be decided when the site milestone starts. Two separate public sites remain plausible; launch order does not abandon either audience.
@@ -152,14 +152,14 @@ No architecture questionnaire is needed: the supplied genesis already states the
 
 ## 11. Delivery packets and first feature batch
 
-These are proposed Build work; all implementation statuses are **Not started** and verification is **Not run**.
+These are approved Build work. The packet table is updated with implementation and acceptance evidence as work proceeds.
 
 | Packet | Result | Depends on | State / next action |
 | --- | --- | --- | --- |
-| P1 | Runnable review-inbox baseline with synthetic data, defined task, meaningful behavior checks, and baseline artifact | Brief approval / Plan-to-Build authorization | Not started; build the entire local flow |
-| P2 | Actual focused pass and portable example report with traceable cuts | P1 | Not started; invoke repository skill and inspect source plus UI |
+| P1 | Runnable review-inbox baseline with synthetic data, defined task, meaningful behavior checks, and baseline artifact | Brief approval / Plan-to-Build authorization | Verified baseline; 3 core browser checks pass; continuity acceptance remains pending |
+| P2 | Actual focused pass and portable example report with traceable cuts | P1 | In progress; independent pass using a fresh copy of the repository skill |
 | P3 | One justified fixture cut implemented and acceptance demonstrated before/after | P2 | Not started; select the cut from evidence, then verify it |
-| P4 | Fresh-copy invocation, resolved skill references, honest usage docs, and reproducible verification command | P1–P3 | Not started; document and reproduce the proof |
+| P4 | Fresh-copy invocation, resolved skill references, honest usage docs, and reproducible verification command | P1–P3 | In progress; fresh copy and usage docs prepared; invocation/complete proof pending |
 
 The runnable spine is the local fixture plus agent invocation and report workflow. Finish these connected steps within the approved Build scope; do not call an empty UI or copied prompt a working proof. Subsequent feature work should come from the proof's issues and evidence before adding a CLI.
 
@@ -183,9 +183,9 @@ Do not mandate a specific continuity cut before observing it. If the actual prio
 - [x] Existing product direction reviewed; purpose and audiences recorded from genesis.
 - [x] ForgeTrail Lite and AppLedger initialized without replacing the skill or genesis.
 - [x] Concrete first-delivery recommendation, fixture, folder shape, dependencies, and acceptance drafted.
-- [ ] Owner approves D3/D4, or adjusts the brief.
-- [ ] Approved commitments recorded as accepted decisions; approval evidence and session handoff updated.
-- [ ] Brief locked and explicit Plan-to-Build transition recorded.
+- [x] Owner approves D3/D4 using the recommended choices.
+- [x] Approved commitments recorded as accepted decisions; approval evidence and session handoff updated.
+- [x] Brief locked and explicit Plan-to-Build transition recorded.
 
 After approval: read this brief and the ledger; resolve only changed decisions; lock the approved version; record authorization; merge it into `CONTEXT_PROMPT.md`; enter Build; implement P1–P4; record results and remaining limits. Public release still requires the license and publishing decisions.
 
@@ -206,3 +206,7 @@ No browser fixture, before/after behavior, dependency compatibility, or fresh-in
 ## 14. Owner clarification, 2026-10-05
 
 The owner clarified: “Not just \"easier to finish\", but accomplish or improve. And the user can specify which aspect should be focused on or excluded.” This updates the accepted purpose and scope contract in the genesis, repository skill, and this brief. It does not constitute approval of the proposed first developer slice or a phase transition. The proof now includes A8 to demonstrate respect for a user-selected focus and exclusion.
+
+## 15. Initial build authorization, 2026-10-05
+
+The owner said: “excellent. Proceed and use your leans for the initial build.” This approves the revised brief with the recommended skill-only proof, review-inbox fixture, strict TypeScript/Vite/Playwright development harness, and P1–P4/A1–A8 acceptance. D3/D4 are accepted and the project enters Build. License and public distribution remain deferred.

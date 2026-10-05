@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-10-05T22:56:41.223Z",
+  "source": "skills/uxcalibur",
+  "installed": ".tmp/skill-install-dakCsP/uxcalibur",
+  "references": 3,
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "6536898c579932dc425f3015d3cb52a3c47aaedabd627d576c12ea7f1c10d0a4"
+    },
+    {
+      "path": "references/process.md",
+      "sha256": "2843813d441d9db13f704051d6ec5b711300f94eaaad888384d113a1e9a45d96"
+    },
+    {
+      "path": "references/product-brief.md",
+      "sha256": "73ac6378db5c21a018cfa7ff95bef789220aef947fc21b319879e476cc76e8a7"
+    },
+    {
+      "path": "references/spec-contract.md",
+      "sha256": "fcc07339f0bc90f4623e996d19e881bd667b673e2270437142e2521bbdb9cee7"
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "1f79e6d9ec9b44f6e21d35f4ec22d73ff3dd0c3eae60837389cf7fafc941a6d8"
+    }
+  ]
+}

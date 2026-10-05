@@ -2,7 +2,7 @@
 
 Created 2026-10-05. This is a ForgeTrail project at genesis stage, with a reusable skill foundation and a planned FilePress presence. Whether to launch one or two sites remains to be decided.
 
-**Kickoff, 2026-10-05:** ForgeTrail Lite and AppLedger have now been initialized. The [first developer proof brief](docs/PHASE_1_BRIEF.md) proposes a skill-only delivery, one synthetic review-inbox flow, and one verified implemented cut. The brief is draft; release, fixture/tooling, launch order, and the Plan-to-Build transition have not yet been approved. The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for current phase, decisions, and handoff.
+**Kickoff, 2026-10-05:** ForgeTrail Lite and AppLedger have now been initialized. The [first developer proof brief](docs/PHASE_1_BRIEF.md) proposes a skill-only delivery, one synthetic review-inbox flow, and one verified implemented cut. The revised brief is locked and the recommended initial Build is authorized. The local baseline is running; the scoped pass and implemented proof are in progress. Public release remains a separate decision. The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for current phase, decisions, and handoff.
 
 **Pull a usable interface out of the mess.**
 
@@ -135,8 +135,8 @@ The copied skill matches the installed personal skill at `C:\Users\acmegeek\.cod
 | Milestone | Initial state | Outcome |
 | --- | --- | --- |
 | Genesis and skill seed | Complete in this bootstrap | Product direction plus a versioned copy of the method |
-| ForgeTrail kickoff | In progress | Ledger initialized; first brief drafted; scope/acceptance approval pending |
-| Developer pass proof | Not started | Run a scoped pass against an isolated representative fixture; review the cuts and verify an implemented example |
+| ForgeTrail kickoff | Complete | Ledger initialized; revised brief locked; recommended initial Build approved |
+| Developer pass proof | In progress | Baseline fixture and core checks pass; scoped pass and implemented-cut evidence in progress |
 | Local distribution | Not started | A deliberate installation/release path and open source license decision |
 | FilePress presence | Not started | Decide one/two sites and build the corresponding audience paths |
 | Operated service pilot | Not started | Test the fixed-scope offer and its deliverable before adding SaaS mechanics |

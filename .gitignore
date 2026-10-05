@@ -7,3 +7,8 @@ node_modules/
 build/
 dist/
 coverage/
+.cache/
+.artifacts/
+.tmp/
+test-results/
+playwright-report/

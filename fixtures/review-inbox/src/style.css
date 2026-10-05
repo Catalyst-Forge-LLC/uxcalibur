@@ -1,0 +1,26 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #202a35; background: #f4f6f8; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.6; }
+.masthead { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; padding: 1rem max(1.25rem, calc((100vw - 58rem) / 2)); background: #fff; border-bottom: 1px solid #d3dbe3; }
+.wordmark { font-weight: 750; color: #202a35; text-decoration: none; }
+.masthead span, .intro, .summary { color: #526171; }
+main { max-width: 58rem; margin: 2rem auto; padding: 0 1.25rem; }
+h1 { line-height: 1.2; font-size: clamp(1.7rem, 4vw, 2.3rem); margin-bottom: .6rem; }
+.intro { margin-top: 0; }
+label { display: block; font-weight: 650; margin-bottom: .4rem; }
+.search-controls { display: flex; gap: .7rem; }
+input, button { font: inherit; }
+input { min-width: 0; flex: 1; border: 1px solid #a7b4c2; border-radius: .35rem; padding: .7rem .85rem; background: white; }
+button { cursor: pointer; color: #202a35; background: #fff; border: 1px solid #a7b4c2; border-radius: .35rem; padding: .7rem 1rem; }
+:focus-visible { outline: 3px solid #1167a8; outline-offset: 3px; }
+.result-count { font-size: .9rem; color: #526171; }
+.results { list-style: none; margin: 0; padding: .3rem; height: min(56vh, 34rem); overflow-y: auto; background: #fff; border: 1px solid #d3dbe3; border-radius: .4rem; }
+.results li + li { border-top: 1px solid #e0e5eb; }
+.note { text-align: left; display: grid; grid-template-columns: 1fr auto; gap: .2rem .8rem; width: 100%; border: 0; border-radius: .2rem; padding: 1rem; }
+.note:hover { background: #f1f6fa; }
+.note-id { font-size: .85rem; color: #526171; font-variant-numeric: tabular-nums; }
+.summary { grid-column: 1 / -1; font-size: .95rem; }
+.empty { padding: 1.5rem 1rem; }
+.back { margin-bottom: .7rem; }
+article { max-width: 45rem; background: #fff; border: 1px solid #d3dbe3; padding: 1.5rem; border-radius: .4rem; overflow-wrap: anywhere; }
+@media (max-width: 520px) { main { margin-top: 1.2rem; } .search-controls { flex-direction: column; } .note { grid-template-columns: 1fr; } .summary { grid-column: auto; } article { padding: 1rem; } }

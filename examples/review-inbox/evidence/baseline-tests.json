@@ -1,0 +1,16 @@
+{
+  "command": "pnpm check; pnpm build; pnpm test",
+  "environment": {
+    "node": "v24.17.0",
+    "playwright": "1.63.0",
+    "browser": "Chromium 153.0.8010.12",
+    "viewport": [
+      1280,
+      800
+    ]
+  },
+  "startedAt": "2026-10-05T22:54:46.408Z",
+  "passed": 3,
+  "failed": 0,
+  "scope": "Core baseline behavior; continuity not yet verified."
+}

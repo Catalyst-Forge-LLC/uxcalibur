@@ -5,7 +5,7 @@ kind: work
 title: Build the first developer proof
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T21:55:53Z
+updated_at: 2026-10-05T22:50:42Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -17,7 +17,7 @@ relations:
     target: decision-developer-proof
 claims: []
 data:
-  status: proposed
+  status: in_progress
   objective: Complete P1-P4 after brief approval and demonstrate one
     evidence-backed implemented cut on the isolated fixture.
   intake: task
@@ -51,4 +51,4 @@ data:
   verification_refs: []
 ---
 
-All packets are Not started. The precise acceptance contracts are in docs/PHASE_1_BRIEF.md section 11. Do not infer authorization to build from this work record.
+P1 baseline is verified for its core behavior; P2/P4 are in progress and P3 has not started. The precise acceptance contracts are in docs/PHASE_1_BRIEF.md section 11. Build authorization is explicitly recorded in evidence-build-approval.

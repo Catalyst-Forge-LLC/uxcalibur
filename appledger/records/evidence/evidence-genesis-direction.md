@@ -5,7 +5,7 @@ kind: evidence
 title: Supplied product direction
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T21:55:53Z
+updated_at: 2026-10-05T22:57:33Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -22,8 +22,8 @@ data:
   limitations:
     - Product direction is not evidence of shipped software or approval of the
       new draft.
-  digest: b5a23def8341e2c9206c4122cb758a3c0dd6ee461e93d90a1bb12b0e60d194ff
-  checked_at: 2026-10-05T21:55:53Z
+  digest: 949d7fc11b93dd2db148a12ce68541354878fef829c20461bdf09cdd600c1ef0
+  checked_at: 2026-10-05T22:57:33Z
 ---
 
 Reviewed during kickoff. The added kickoff note records draft status and does not approve the proof.
