@@ -1,0 +1,4 @@
+interface:
+  display_name: "UXcalibur"
+  short_description: "Find UX knots and turn them into implementable cuts"
+  default_prompt: "Use $uxcalibur to audit this app's primary flow and return a ranked cut list with evidence, implementation details, and acceptance checks."
