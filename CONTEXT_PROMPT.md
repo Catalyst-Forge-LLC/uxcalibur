@@ -17,3 +17,5 @@ The first synthetic proof is complete: baseline e9e9b3c53dfca371de1b4ed52094fe2c
 Stack: Markdown/YAML skill; private strict TypeScript, ESM, Vite/Playwright/pnpm proof harness; FilePress getfilepress0.1.50 site. MIT; supported installation paths for Codex, Claude Code, Cursor, actual invocation verified in Codex. No ForgeTrail/AppLedger runtime dependencies.
 
 Post-launch tooling fixes: Wrangler4.147.0, developer Node22.12+, site cookie0.7.2 override; installed package remains Node20.19+. Root audit0; one unpatched moderate build-CLI advisory remains documented. Do not repeat unrelated audit work for a copy/artwork revision. No private data or generated caches should enter commits.
+
+Latest homepage refinement: use familiar visual before/after navigation, hierarchy, and helpful-feedback examples. Label them illustrative and link the fixture-specific implementation proof at /example. Homepage scroll offsets and focus identifiers were removed; site build and rendered checks pass.

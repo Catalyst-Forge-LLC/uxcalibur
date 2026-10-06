@@ -34,10 +34,30 @@ Start with the whole app or choose the part you want to improve. UXcalibur meets
 
 The method works through your existing coding agent. Install the skill, open your project, and ask: **“Use UXcalibur to elevate this app's UX.”** You can also focus on a journey, reshape the visual design, or request a polish pass. [Get started](/install).
 
-<div class="section-rule"><span>03 / See a change carried through</span><span>A small cut, precisely executed</span></div>
+<div class="section-rule"><span>03 / Improvements people notice</span><span>Imagine the difference in your app</span></div>
 
-<div class="example-teaser"><div><p class="eyebrow">One illustration of precision honing</p><h2>Return to where review stopped.</h2><p>A review inbox could find the right note. Returning from it lost the reader's place and keyboard focus. UXcalibur identified the break in the journey; the implemented change restores the exact review context.</p><a href="/example">See the before, after, and checks <span aria-hidden="true">→</span></a></div><dl><div><dt>Before / desktop list scroll</dt><dd>1030 → 0</dd></div><div><dt>After / desktop list scroll</dt><dd>1030 → 1030</dd></div><div><dt>Keyboard return</dt><dd class="small-value">BODY → note-049</dd></div></dl></div>
+<h2 class="examples-heading">Make your app feel obvious, polished, and helpful.</h2>
 
-This synthetic example demonstrates one implemented interaction improvement. It illustrates precision honing; the broader transformation method also addresses product structure, journeys, mental models, and visual design. Customer usability gains were not measured. [Inspect the proof](/example).
+<p class="examples-lead">Help people find their way, understand what matters, and keep moving when something needs attention.</p>
+
+<div class="experience-grid">
+<section class="experience-example">
+<div class="example-intro"><p class="eyebrow">Shape / navigation</p><h3>Find your way.</h3><p>Give features clear names and predictable homes, so people know where to go.</p></div>
+<figure class="experience-illustration"><figcaption>Before</figcaption><div class="mini-ui mini-navigation before"><span class="mini-app-title">Your workspace</span><span class="mini-nav-item">Workspace <span aria-hidden="true">›</span></span><span class="mini-nav-item">Manager <span aria-hidden="true">›</span></span><span class="mini-nav-item">Tools <span aria-hidden="true">›</span></span></div></figure>
+<figure class="experience-illustration"><figcaption>After</figcaption><div class="mini-ui mini-navigation after"><span class="mini-app-title">Your workspace</span><span class="mini-nav-item">Projects <span aria-hidden="true">›</span></span><span class="mini-nav-item">Tasks <span aria-hidden="true">›</span></span><span class="mini-nav-item selected">Files <span aria-hidden="true">›</span></span></div></figure>
+</section>
+<section class="experience-example">
+<div class="example-intro"><p class="eyebrow">Refine / visual hierarchy</p><h3>See what matters.</h3><p>Bring the important content and next action into focus with deliberate visual design.</p></div>
+<figure class="experience-illustration"><figcaption>Before</figcaption><div class="mini-ui mini-project before"><span>Project: Atlas</span><span>Status: On track</span><span>Next step: Review your draft</span><span>Updated today</span></div></figure>
+<figure class="experience-illustration"><figcaption>After</figcaption><div class="mini-ui mini-project after"><div class="mini-project-heading"><strong>Atlas</strong><span class="mini-status">On track</span></div><span class="mini-muted">Updated today</span><span class="mini-primary-action">Review your draft <span aria-hidden="true">→</span></span></div></figure>
+</section>
+<section class="experience-example">
+<div class="example-intro"><p class="eyebrow">Hone / helpful feedback</p><h3>Recover with confidence.</h3><p>Explain what needs attention and how to fix it, right where the person needs help.</p></div>
+<figure class="experience-illustration"><figcaption>Before</figcaption><div class="mini-ui mini-form before"><span class="mini-field-label">Email address</span><span class="mini-field">alex@</span><span class="mini-error">Something went wrong.</span></div></figure>
+<figure class="experience-illustration"><figcaption>After</figcaption><div class="mini-ui mini-form after"><span class="mini-field-label">Email address</span><span class="mini-field">alex@</span><span class="mini-error">Enter a full email, like alex@example.com.</span></div></figure>
+</section>
+</div>
+
+<p class="examples-note">Illustrative before-and-after designs. <a href="/example">Explore a worked example with implementation and verification <span aria-hidden="true">→</span></a></p>
 
 <div class="start-strip"><div><h2>Bring the app. Draw the blade.</h2><p>From an early prototype to a product ready for its next level, give your agent a method for exceptional UX.</p></div><a class="cta cta-primary" href="/install">Install UXcalibur <span aria-hidden="true">↗</span></a></div>

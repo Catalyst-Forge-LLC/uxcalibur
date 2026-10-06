@@ -29,3 +29,5 @@ Current owner-guided positioning pass, 2026-10-06:
 - [x] Verify rendered site and revised method behavior; save reviewable local preview and evidence.
 
 This is a local next-release candidate. Published 0.1.0 and Pages remain the baseline; publication/versioning follows review of the new direction. Historical briefs and proof receipts remain unchanged.
+
+- [x] Replace the technical homepage example with familiar visual before/after improvements; inspect desktop/tablet/mobile and verify the site.
