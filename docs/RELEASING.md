@@ -1,6 +1,6 @@
 # Release UXcalibur
 
-The root package is a private developer harness. Publish only the generated, verified skill package. Node 20.19+ and pnpm 10 are required; Windows execution is verified. No runtime dependency is needed by the installer.
+The root package is a private developer harness. Publish only the generated, verified skill package. The developer checkout/deployment requires Node 22.12+ and pnpm 10; the released installer supports Node 20.19+. Windows execution is verified. No runtime dependency is needed by the installer.
 
 1. Update the version in `packages/uxcalibur/release.json`, installation examples in package/site docs, and any changed skill instructions. Add dependencies with pnpm. Keep skill source under `skills/uxcalibur`.
 2. Install root and site dependencies with `pnpm install --frozen-lockfile` and `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`. Install the pinned browser with `pnpm test:e2e:install` when needed.
@@ -11,7 +11,7 @@ The root package is a private developer harness. Publish only the generated, ver
 7. Verify Wrangler identity and existing Pages project before deploying. Project: `uxcalibur-dev`, production branch `main`. From the root run `pnpm deploy:site --commit-hash RELEASE_SHA --commit-dirty=false`. This invokes the project-local Wrangler directly and avoids Windows executable-shim discovery issues. No provider or account change is implicit.
 8. Check the Pages origin's HTML, static assets, feed, sitemap, headers, narrow/desktop rendering, and navigation. The owner connects `uxcalibur.dev` in Cloudflare after publication; then repeat live checks on the canonical domain.
 
-The site is static FilePress content. It uses `getfilepress` 0.1.50; deployment uses Wrangler 4.120.1. SaaS and service mechanics remain outside this release. LocalHelm raw reports/screenshots are ignored under `.artifacts/localhelm-validation` and must never be included in the public site, npm tarball, or Git history. Public examples use the synthetic fixture.
+The site is static FilePress content. It uses `getfilepress` 0.1.50; deployment uses Wrangler 4.147.0. The site pins cookie 0.7.2 through a narrow override for an upstream security fix. SaaS and service mechanics remain outside this release. LocalHelm raw reports/screenshots are ignored under `.artifacts/localhelm-validation` and must never be included in the public site, npm tarball, or Git history. Public examples use the synthetic fixture.
 
 The installer detects local modifications and requires `--force` before replacing them. Backups remain outside recognized host skill-discovery roots. Preserve its printed backup path when upgrading a personal copy. Legacy Codex installs can be updated with an explicit `--target`; avoid introducing a second copy under a new discovery path.
 

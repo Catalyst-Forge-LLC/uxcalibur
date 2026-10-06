@@ -19,7 +19,10 @@
     "onlyBuiltDependencies": [
       "getfilepress",
       "esbuild"
-    ]
+    ],
+    "overrides": {
+      "cookie": "0.7.2"
+    }
   },
   "devDependencies": {
     "getfilepress": "0.1.50"

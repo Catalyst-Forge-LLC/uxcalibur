@@ -35,7 +35,7 @@ Focused pass is the default. Ask explicitly for a detailed upgrade specification
 
 ## Run the local proof
 
-Requires Node 20.19+ or 22.12+, pnpm 10, and the pinned Chromium test browser. On Windows, `setup.bat` installs development dependencies and the browser, and `run.bat` starts the fixture. macOS/Linux equivalents are `setup.sh` and `run.sh`.
+The developer checkout requires Node 22.12+, pnpm 10, and the pinned Chromium test browser. The released skill installer supports Node 20.19+. On Windows, `setup.bat` installs development dependencies and the browser, and `run.bat` starts the fixture. macOS/Linux equivalents are `setup.sh` and `run.sh`.
 
 ```sh
 pnpm install --frozen-lockfile

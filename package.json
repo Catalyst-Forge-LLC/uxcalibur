@@ -28,12 +28,12 @@
     "@types/node": "^24.19.1",
     "typescript": "6.0.3",
     "vite": "8.3.2",
-    "wrangler": "4.120.1",
+    "wrangler": "4.147.0",
     "yaml": "2.9.1"
   },
   "private": true,
   "type": "module",
   "engines": {
-    "node": "^20.19.0 || >=22.12.0"
+    "node": ">=22.12.0"
   }
 }

@@ -38,3 +38,7 @@ FilePress also emits the duplicate `/home` and unused blog routes in its default
 The generated `.filepress/` directory is ignored. `critical-theme.generated.ts`, `path-mounts.json`, and `redirects.txt` are engine intermediates; authored redirect rules remain in `filepress.config.ts`. Those intermediates and the committed package/lock/config files were checked for local machine paths; none were found.
 
 This establishes these static page and Chromium behaviors, not a complete accessibility audit, screen-reader or real-touch exercise, other browser engines, measured customer efficacy, or actual operation in all three coding-agent runtimes. External source/npm links, release installation, Cloudflare upload, live response headers, and custom-domain DNS/TLS belong to the parent launch verification. Nothing in this subtree publishes, creates Cloudflare resources, or changes domain configuration.
+
+## Security dependency follow-up
+
+The root updated deployment Wrangler to 4.147.0 and the site applies cookie 0.7.2 through a narrow override. FilePress and SvelteKit pins remain unchanged. Production build/content checks and 12-state QA pass again; the npm tarball is unchanged. Root dependency audit is clear; site audit retains one unpatched moderate sprintf-js build CLI advisory, detailed in ../../docs/RELEASE_VERIFICATION.md. One diagnostic config-load transport timeout was observed; the subsequent build verifies the intended custom canonical/pages/links.
