@@ -4,6 +4,8 @@
 
 UXcalibur ships a reusable coding-agent skill and a small npm installer. The agent performs the analysis using its configured model and tools. Use only evidence you authorize your host to process. The repository also includes a synthetic developer proof and the FilePress developer site.
 
+[npm 0.1.0](https://www.npmjs.com/package/uxcalibur/v/0.1.0) · [Developer site](https://uxcalibur-dev.pages.dev) · [Release evidence](docs/RELEASE_VERIFICATION.md). The owner will connect uxcalibur.dev to the published Pages project.
+
 ```sh
 npx uxcalibur@0.1.0 install --agent codex
 npx uxcalibur@0.1.0 install --agent claude

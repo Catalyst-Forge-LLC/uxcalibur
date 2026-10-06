@@ -83,7 +83,7 @@ phase_instances:
     completed_at: 2026-10-06T03:12:42.675Z
   - id: phase-stabilize-release-1
     phase: stabilize
-    status: in_progress
+    status: completed
     started_at: 2026-10-06T03:12:42.675Z
     criteria:
       - id: R1
@@ -103,8 +103,10 @@ phase_instances:
           - evidence-developer-release-candidate
       - id: R4
         text: Verify developer release acceptance R4 in locked brief
-        status: pending
-        evidence_refs: []
+        status: met
+        evidence_refs:
+          - evidence-developer-launch-live
+    completed_at: 2026-10-06T03:30:24.895Z
 transitions:
   - id: transition-plan-build-1
     from_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a

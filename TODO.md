@@ -14,6 +14,8 @@ Next developer launch (owner direction, 2026-10-05):
 - [x] R1 — solidify the skill: clean-checkout setup, supported-host installation, both output modes, and a second real-app pass.
 - [x] R2 — package the method for npm as uxcalibur, with intentional contents, versioning, license, installation/update instructions, and packed-install verification.
 - [x] R3 — build uxcalibur.dev with FilePress: purpose, install/use, worked example, detailed-spec mode, limits, and contribution path.
-- [ ] R4 — complete release checks and publish the concrete package/site to the confirmed accounts; use the accepted public GitHub launch.
+- [x] R4 — complete release checks and publish the concrete package/site to the confirmed accounts; use the accepted public GitHub launch.
 
 Locked release brief: docs/DEVELOPER_RELEASE_BRIEF.md. SaaS is explicitly deferred. .com/service remains later work.
+
+Owner step: attach uxcalibur.dev to Cloudflare Pages project uxcalibur-dev, then verify canonical DNS/TLS.
