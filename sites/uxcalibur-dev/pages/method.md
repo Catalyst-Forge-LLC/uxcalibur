@@ -60,7 +60,7 @@ The revised direction makes the capability concrete: elevate an app's UX through
 | `references/process.md` | Product understanding, assessment, design, and implementation workflow. |
 | `references/spec-contract.md` | Detailed design, flows, packets, acceptance, and tracker contracts. |
 | `references/product-brief.md` | Positioning, story, and deliverables. |
-| `agents/openai.yaml` | Codex-facing skill metadata. |
+| `agents/openai.yaml` | Optional Codex UI metadata; other hosts use the same method. |
 
 The installer distributes the method files. Your coding agent supplies its model, tools, permissions, and data-processing environment. Use app evidence your host is authorized to inspect. A review request produces a review; ask for implementation when you want changes made.
 

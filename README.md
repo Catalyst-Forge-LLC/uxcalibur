@@ -14,6 +14,15 @@ npx uxcalibur@0.1.0 install --agent cursor
 
 Add `--project` from the intended project directory for a project installation. Default personal locations are `~/.agents/skills`, `~/.claude/skills`, and `~/.cursor/skills`. `--target` selects another parent skills directory, including legacy Codex `.codex/skills`; it is exclusive with `--project`. Modified/unmanaged installs require `--force`, which preserves a backup and prints its path. See the [package README](packages/uxcalibur/README.md) for installation, update behavior, and host verification limits.
 
+The next-release source also supports **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**, plus a shared Agent Skills preset. Build it locally to use these presets; npm 0.1.0 does not contain them:
+
+```sh
+pnpm package:build
+node .artifacts/npm-package/bin/uxcalibur.js --list-agents
+```
+
+See [agent compatibility](docs/AGENT_COMPATIBILITY.md) for source installation commands, host directories, invocation, Grok through OpenCode, and additional agents. The installer and method require no fixed model provider.
+
 ## Use the method
 
 An agent that can read this checkout can use the repository version directly:
@@ -26,7 +35,7 @@ Review product structure, journeys, interaction, visual craft, and details.
 Do not implement yet.
 ```
 
-For a normal personal skill installation, copy the entire `skills/uxcalibur` folder into your agent's documented skill directory, including its references and `agents/` metadata. Then invoke `$uxcalibur` with the same outcome and scope. Installation locations depend on the host. This checkout's verification uses a fresh isolated copy without modifying a personal installation.
+For a normal personal skill installation, copy the entire `skills/uxcalibur` folder into your agent's documented skill directory, including its references and metadata. Invoke `$uxcalibur` in Codex, `/uxcalibur` in Claude Code, Cursor, or Grok Build, or ask your host to use the UXcalibur skill. `agents/openai.yaml` is optional Codex UI metadata; other hosts use the same method files. This checkout's verification uses a fresh isolated copy without modifying a personal installation.
 
 A broad app review covers meaningful surfaces and core journeys. A focused refinement or precision polish pass brings the same depth to the selected part. Ask for a detailed upgrade specification to resolve design/flow/state/data contracts and tracked implementation packets, or request implementation when you want changes applied.
 
@@ -50,7 +59,7 @@ The [actual scoped report](examples/review-inbox/report.md) ranks two cuts. The 
 
 `pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches, rerun evidence, and temporary copies stay out of Git. Only Windows/Chromium execution is verified here; the shell wrappers are provided for other platforms without a runtime claim.
 
-The root development package is `private`; the deliberate npm release is assembled from `packages/uxcalibur` and `skills/uxcalibur`. `pnpm package:check` builds a clean package, checks exact tar contents, installs the tarball, and verifies all three host layouts plus upgrade/backup/error paths. `pnpm verify:release` also verifies the proof and builds/checks the FilePress site. Site dependencies use a separate lockfile: `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`.
+The root development package is `private`; the deliberate npm release is assembled from `packages/uxcalibur` and `skills/uxcalibur`. `pnpm package:check` builds a clean package, checks exact tar contents, installs the tarball, and verifies all 12 install presets plus upgrade/backup/error paths. These are installer checks; actual host model invocation has been exercised in Codex. `pnpm verify:release` also verifies the proof and builds/checks the FilePress site. Site dependencies use a separate lockfile: `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`.
 
 UXcalibur is MIT licensed. Attributed ForgeTrail materials retain Apache-2.0. The npm installer has no model runtime, telemetry, or audit execution command. SaaS remains deferred. [Release scope](docs/DEVELOPER_RELEASE_BRIEF.md), [operator runbook](docs/RELEASING.md), and [release verification](docs/RELEASE_VERIFICATION.md) document the developer delivery.
 

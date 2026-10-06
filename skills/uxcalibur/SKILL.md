@@ -10,6 +10,8 @@ Draw out the exceptional experience waiting inside an app. Give the coding agent
 
 Read [references/process.md](references/process.md) for the review and design process. For an implementation-ready specification, also read [references/spec-contract.md](references/spec-contract.md). For UXcalibur positioning or deliverable selection, read [references/product-brief.md](references/product-brief.md). Preserve accepted decisions and progress evidence when updating a spec.
 
+Use the coding host's configured model and available tools. The method requires no particular provider or named tool API; resolve references relative to this skill directory. When interface access or a verification tool is unavailable, state the resulting evidence limit and continue the assessment supported by the access you have. Never present source inspection as a journey you exercised.
+
 ## Match the assignment
 
 - **App review:** when asked to review an app or codebase broadly, inspect its meaningful surfaces and core journeys. Show the current experience, the proposed design direction, and a prioritized path to that experience. Do not silently reduce a whole-app request to one flow or a small finding quota.

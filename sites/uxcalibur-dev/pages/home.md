@@ -8,7 +8,7 @@ order: 0
 
 <div class="cta-row"><a class="cta cta-primary" href="/install">Draw UXcalibur <span aria-hidden="true">↗</span></a><a class="cta cta-secondary" href="/method">See how it works <span aria-hidden="true">→</span></a></div>
 
-<p class="understated">For Codex, Claude Code & Cursor <span aria-hidden="true">/</span> Open source <span aria-hidden="true">/</span> MIT</p>
+<p class="understated">For your coding agent <span aria-hidden="true">/</span> Open source <span aria-hidden="true">/</span> MIT</p>
 
 <div class="origin-note"><p class="eyebrow">The sword from the stone</p><h2>Your app has potential. Draw it out.</h2><p>In the legend, the boy who draws the sword becomes king. Drawing UXcalibur is the same invitation for your app: bring an ambitious prototype or an established product, and uncover the experience it could become.</p></div>
 

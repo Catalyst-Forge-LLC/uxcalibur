@@ -30,9 +30,17 @@ Installation paths and packed file integrity are tested for all three hosts. Age
 
 Host installation references: [Codex](https://learn.chatgpt.com/docs/build-skills), [Claude Code](https://code.claude.com/docs/en/skills), [Cursor](https://prod.cursor.com/help/customization/skills).
 
+## More agents in the source candidate
+
+The unpublished installer adds `grok`, `gemini`, `copilot`, `opencode`, `amp`, `cline`, `kilo`, `roo`, and `generic` presets. Build from the repository with `pnpm package:build`, then run `node .artifacts/npm-package/bin/uxcalibur.js --list-agents`. From your app's directory, use the absolute path to that built CLI with `install --agent grok --project`, replacing `grok` with your host. npm 0.1.0 does not yet recognize the new presets.
+
+The [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) lists documented destinations and source-build commands. Grok Build uses `.grok/skills`; Grok models can also run through OpenCode's xAI provider. Other providers work through the selected host. For future Agent Skills hosts, use the shared `generic` preset or `--target` with their documented skills directory.
+
+All 12 source installer presets are checked in isolated directories, including updates and preserved backups. Model invocation has been exercised in Codex; other hosts' execution is not independently verified. UXcalibur does not install hosts, configure providers, or alter agent settings.
+
 ## Use
 
-In Codex, invoke `$uxcalibur`; in Claude Code or Cursor, invoke `/uxcalibur`. Restart or reload your agent's skills if the new skill is not yet visible.
+In Codex, invoke `$uxcalibur`; in Claude Code, Cursor, or Grok Build, invoke `/uxcalibur`. In other compatible hosts, ask the agent to use the UXcalibur skill. Restart or reload your agent's skills if the new skill is not yet visible.
 
 ```text
 $uxcalibur Review this app's UX. Inspect the codebase and interface,

@@ -1,6 +1,6 @@
 ---
 title: Draw UXcalibur on your app.
-description: Install the UX design skill for Codex, Claude Code, or Cursor. Ask your agent for a whole-app transformation, a focused refinement, or precision polish.
+description: Use UXcalibur with your coding agent, including Grok/xAI and other Agent Skills hosts in the source build. Transform an app, refine its design, or hone the details.
 order: 1
 ---
 
@@ -10,7 +10,7 @@ order: 1
 
 You need **Node.js 20.19+** with npm/npx and a supported coding agent. The npm command installs the method files; your agent works with the app and codebase using its configured model and tools.
 
-<nav class="page-jumps" aria-label="On this page"><a href="#choose-your-agent">Install</a><a href="#wield-the-skill">Use</a><a href="#choose-the-installation-scope">Installation scope</a><a href="#update-and-local-edits">Update</a></nav>
+<nav class="page-jumps" aria-label="On this page"><a href="#choose-your-agent">Install</a><a href="#more-agents-in-the-source-build">More agents</a><a href="#wield-the-skill">Use</a><a href="#choose-the-installation-scope">Installation scope</a><a href="#update-and-local-edits">Update</a></nav>
 
 ## Choose your agent
 
@@ -42,6 +42,46 @@ The personal destination is `~/.cursor/skills/uxcalibur`. Invoke it with **`/uxc
 
 Refresh or reopen the agent session if the new skill is not visible. Installation and packed-file checks cover all three hosts; actual runtime invocation has been verified in Codex.
 
+## More agents in the source build
+
+Use UXcalibur with **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**. Their presets are in the next-release source candidate, together with a shared Agent Skills preset. They are not yet in npm 0.1.0.
+
+Build the installer from the UXcalibur checkout:
+
+```sh
+pnpm package:build
+node .artifacts/npm-package/bin/uxcalibur.js --list-agents
+```
+
+From the app you want to review, run the built installer using its absolute path:
+
+```sh
+node /absolute/path/to/uxcalibur/.artifacts/npm-package/bin/uxcalibur.js install --agent grok --project
+```
+
+Replace `grok` with your preset. Omit `--project` for a personal installation.
+
+| Agent | Preset |
+| --- | --- |
+| Codex | `codex` |
+| Claude Code | `claude` |
+| Cursor | `cursor` |
+| Grok Build (xAI) | `grok` |
+| Gemini CLI | `gemini` |
+| GitHub Copilot | `copilot` |
+| OpenCode | `opencode` |
+| Amp | `amp` |
+| Cline | `cline` |
+| Kilo Code | `kilo` |
+| Roo Code | `roo` |
+| Shared Agent Skills directory | `generic` |
+
+In Grok Build, invoke `/uxcalibur`. In the other new hosts, ask the agent to use the UXcalibur skill. You can also choose a Grok model through [OpenCode's xAI provider](https://opencode.ai/docs/providers/#xai); use the `opencode` preset for that host.
+
+The [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) lists documented discovery paths, reload guidance, and custom installations. All 12 presets pass installer checks in isolated directories; actual model invocation has been exercised in Codex. Your host supplies the model, tools, and app access.
+
+For another Agent Skills host, use `generic` if it discovers `.agents/skills`, or `--target` with its documented parent skills directory. Agents that can read source files can use `SKILL.md` directly with its references.
+
 ## Wield the skill
 
 For a broad app review:
@@ -53,7 +93,7 @@ Show me the experience it could become, with a coherent design direction
 and prioritized changes. Do not implement yet.
 ```
 
-With the revised skill installed, start that request with `$uxcalibur` in Codex or `/uxcalibur` in Claude Code or Cursor. The agent can infer a starting point from the product; add audience or product context if it will help.
+With the revised skill installed, start that request with `$uxcalibur` in Codex or `/uxcalibur` in Claude Code, Cursor, or Grok Build. In other hosts, ask to use the UXcalibur skill. The agent can infer a starting point from the product; add audience or product context if it will help.
 
 Choose a scale when you have one in mind:
 
