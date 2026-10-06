@@ -1,3 +1,5 @@
 # Later work
 
-Capture ideas after the developer proof: deliberate distribution/license, a CLI justified by observed needs, developer FilePress presence, operated-service pilot, and evidence for a SaaS decision. None is part of the current fixture proof.
+The developer npm release and uxcalibur.dev FilePress site are now active work in TODO.md and docs/DEVELOPER_RELEASE_BRIEF.md.
+
+Later: an analyzer CLI justified by observed needs; operated-service pilot; the remaining demonstration cut K2. SaaS is explicitly tabled by the owner and is outside current planning/build work.

@@ -2,7 +2,7 @@
 
 Created 2026-10-05. This is a ForgeTrail project at genesis stage, with a reusable skill foundation and a planned FilePress presence. Whether to launch one or two sites remains to be decided.
 
-**Kickoff, 2026-10-05:** ForgeTrail Lite and AppLedger have now been initialized. The [first developer proof brief](docs/PHASE_1_BRIEF.md) proposes a skill-only delivery, one synthetic review-inbox flow, and one verified implemented cut. The revised brief is locked and the recommended initial Build is authorized. The local baseline is running; the scoped pass and implemented proof are in progress. Public release remains a separate decision. The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for current phase, decisions, and handoff.
+**Current direction, 2026-10-05:** The [first developer proof](examples/review-inbox/verification.md) is complete: actual scoped pass, one implemented cut, and reproduced before/after checks. The installed skill matches the project source. The owner now prioritizes a solid skill, publication to npm as `uxcalibur`, and the FilePress developer site at **uxcalibur.dev**. **SaaS is explicitly deferred.** License, first supported hosts, real-app validation, hosting/DNS, and GitHub visibility are being resolved in the [developer release brief](docs/DEVELOPER_RELEASE_BRIEF.md). The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for phase, decisions, and handoff.
 
 **Pull a usable interface out of the mess.**
 
@@ -136,19 +136,17 @@ The copied skill matches the installed personal skill at `C:\Users\acmegeek\.cod
 | --- | --- | --- |
 | Genesis and skill seed | Complete in this bootstrap | Product direction plus a versioned copy of the method |
 | ForgeTrail kickoff | Complete | Ledger initialized; revised brief locked; recommended initial Build approved |
-| Developer pass proof | In progress | Baseline fixture and core checks pass; scoped pass and implemented-cut evidence in progress |
-| Local distribution | Not started | A deliberate installation/release path and open source license decision |
-| FilePress presence | Not started | Decide one/two sites and build the corresponding audience paths |
-| Operated service pilot | Not started | Test the fixed-scope offer and its deliverable before adding SaaS mechanics |
-| SaaS decision | Deferred | Define from evidence gathered through developer use and the service pilot |
+| Developer pass proof | Verified | Actual scoped report; K1 implemented; 12 current browser checks and four intended failures on the preserved baseline |
+| Developer distribution | Active next milestone | Solid skill and npm release as uxcalibur; MIT/Apache 2.0 choice pending |
+| FilePress developer presence | Active next milestone | Build and publish uxcalibur.dev with installation, method, examples, and contribution paths |
+| Operated service pilot | Later | Outside the current developer launch |
+| SaaS offering | Explicitly deferred | No SaaS planning or implementation in the current developer launch |
 
 ## Open decisions for the next chat
 
-1. First developer release: skill-only, a thin CLI, or both; define the smallest useful scope.
-2. First demonstration flow and fixture; establish what evidence proves the pass is actionable.
-3. Open source license and publishing location.
-4. One or two FilePress sites for the first launch, with a clear job for each domain.
-5. First service delivery: punch list, implemented PR, or separate offers with explicit scope.
-6. Whether and when a SaaS surface adds value beyond the operated service.
+1. Choose MIT or Apache 2.0 for the developer release; npm name uxcalibur is established.
+2. Confirm initial supported agent hosts and the app/outcome for real-world validation.
+3. Confirm uxcalibur.dev hosting/DNS and whether the GitHub repository becomes public.
+4. Preserve .com/service and SaaS direction for later; no commercial-offer intake is needed now.
 
 Start the next chat by reading this file, the copied skill, and ForgeTrail's current kickoff guidance. Preserve these product decisions, record newly agreed decisions in the ledger, and build the first useful slice.

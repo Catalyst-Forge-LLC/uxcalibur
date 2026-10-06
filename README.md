@@ -42,3 +42,5 @@ The [actual scoped report](examples/review-inbox/report.md) ranks two cuts. The 
 `pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches, rerun evidence, and temporary copies stay out of Git. Only Windows/Chromium execution is verified here; the shell wrappers are provided for other platforms without a runtime claim.
 
 The repository remains private and the development package is marked `private`. The UXcalibur license and public distribution are later decisions; no analyzer CLI or hosted service is shipped here. ForgeTrail's own license is scoped to `.forgetrail/`.
+
+The next owner-requested milestone is a solid skill published to npm and the FilePress site at uxcalibur.dev. SaaS is deferred. [Developer release scope and pending decisions](docs/DEVELOPER_RELEASE_BRIEF.md) track that work; the private harness above is the current delivery.

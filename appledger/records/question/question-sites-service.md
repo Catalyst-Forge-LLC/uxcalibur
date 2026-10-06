@@ -5,7 +5,7 @@ kind: question
 title: "Q3: Sites and operated service"
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T20:53:56Z
+updated_at: 2026-10-06T02:58:17.004Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -15,12 +15,11 @@ relations:
     target: app-b7a2d51c-16c3-463f-b3b8-434a18bd2b41
 claims: []
 data:
-  issue: Decide one/two FilePress sites, physical site layout, service
-    pricing/delivery, and whether SaaS adds value after proof and before the
-    affected milestone.
+  issue: Developer site uxcalibur.dev is now selected. Service/commercial delivery remains
+    later work; SaaS is explicitly tabled by the owner.
   status: deferred
   affected_ids:
     - decision-launch-sequence
 ---
 
-Intentionally deferred; this does not block the private fixture proof.
+Resolved developer-first site priority is recorded in decision-developer-launch-priority. Infrastructure is a separate current release question; service/SaaS remain deferred.
