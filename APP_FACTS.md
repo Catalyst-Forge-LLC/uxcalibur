@@ -29,7 +29,7 @@ build:
 generated:
   date: 2026-10-06
   generator: appfacts-cli v0.1.0 (scaffold)
-  inputs_fingerprint: 2185687d3558a473
+  inputs_fingerprint: be1572aa3c621870
 credits:
   generated_with: https://appfacts.dev
   built_by: Catalyst Forge — https://www.catalystforge.com/
@@ -64,6 +64,8 @@ An expert UX method for coding agents, with a dependency-free npm installer.
 | Development | pnpm; Node.js 22.12+; TypeScript and Playwright |
 
 The published installer has no runtime dependencies, model runtime, telemetry, or automatic audit command. FilePress, TypeScript, and Playwright are development dependencies. Cloudflare serves the developer site; it does not perform UX reviews. The agent host governs any model calls or data disclosure during a review or implementation.
+
+The source candidate adds Grok/xAI and other current Agent Skills hosts, for 12 install presets including a shared directory. The method has no fixed model provider. Published npm 0.1.0 retains the original three presets. [Compatibility and verification limits](docs/AGENT_COMPATIBILITY.md) describe the source build.
 
 ## Build and verification
 

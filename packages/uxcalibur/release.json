@@ -7,7 +7,7 @@
   "homepage": "https://uxcalibur.dev",
   "repository": { "type": "git", "url": "git+https://github.com/Catalyst-Forge-LLC/uxcalibur.git" },
   "bugs": { "url": "https://github.com/Catalyst-Forge-LLC/uxcalibur/issues" },
-  "keywords": ["skills", "codex", "claude-code", "cursor", "ux", "accessibility", "audit"],
+  "keywords": ["agent-skills", "skills", "codex", "claude-code", "cursor", "grok", "xai", "gemini-cli", "github-copilot", "opencode", "amp", "cline", "kilo-code", "roo-code", "ux", "design", "accessibility", "audit"],
   "type": "module",
   "bin": { "uxcalibur": "bin/uxcalibur.js" },
   "files": ["bin/", "lib/", "skill/", "README.md", "LICENSE"],

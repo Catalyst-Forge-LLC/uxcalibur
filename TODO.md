@@ -33,3 +33,6 @@ This is a local next-release candidate. Published 0.1.0 and Pages remain the bas
 - [x] Replace the technical homepage example with familiar visual before/after improvements; inspect desktop/tablet/mobile and verify the site.
 
 - [x] Clarify the legend, prepare the Catalyst Forge catalog entry, and add validated AppFacts/SkillFacts labels to the repository and site. Catalyst Forge push/deployment remains the owner’s step.
+
+- [x] Extend the source installer to Grok/xAI and current Agent Skills hosts; verify all 12 presets and document model-provider independence, source installation, and runtime verification limits.
+- [x] Commit compatibility work in separate installer, guidance/site, and metadata/evidence batches. New presets remain unpublished until the next release.

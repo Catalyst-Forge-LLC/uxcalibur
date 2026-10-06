@@ -54,13 +54,15 @@ repository: https://github.com/Catalyst-Forge-LLC/uxcalibur
 | Source version | 0.1.0-dev, an unpublished next-release revision |
 | Status | Preview of the revised source method; npm 0.1.0 remains the published baseline |
 | License | MIT |
-| Kind | Agent skill, installable into Codex, Claude Code, and Cursor |
+| Kind | Agent Skills bundle, with 12 source installer presets |
 
 ## Purpose
 
 Elevate an existing app's user experience through expert UX review, design direction, and actionable implementation guidance.
 
 Review an app broadly, refine a chosen aspect, or hone finishing details. The method produces a coherent design direction and prioritized changes. A detailed specification or implementation follows the user's assignment.
+
+The source installer supports Codex, Claude Code, Cursor, Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. Published npm 0.1.0 supports only the original Codex, Claude Code, and Cursor presets. See the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) for source-build installation and documented host paths.
 
 ## Provenance
 
@@ -80,6 +82,8 @@ This is instructional reach, not a grant of permissions. The host and user's aut
 
 No named tool API is required. Use the agent host's available source, browser, shell, and verification tools.
 
+The method is model-provider independent. Grok Build can discover the native skill; Grok models can also run through a compatible host such as OpenCode. Optional `agents/openai.yaml` metadata describes the Codex UI and does not make an OpenAI runtime a requirement.
+
 ## Bundled artifacts
 
 - `SKILL.md`
@@ -94,7 +98,7 @@ No named tool API is required. Use the agent host's available source, browser, s
 
 The skill contains instructions and metadata, with no executable runtime or telemetry endpoint. It defines no fixed data destination. The host supplies model processing and tools, and may send reviewed content to its configured providers. These labels do not describe the host's telemetry or privacy policy.
 
-The host paths and installer behavior are checked for all three supported hosts. Actual model invocation was exercised in Codex; Claude Code and Cursor invocation remain unverified. Review output and predicted improvements are not measured usability gains.
+All 12 source install presets pass packed-file, isolated personal/project placement, upgrade, backup, and error-path checks. Actual model invocation was exercised in Codex; other host invocations remain unverified. A shared directory is useful only where the host discovers it. Review output and predicted improvements are not measured usability gains.
 
 *Scaffolded with [SkillFacts](https://skillfacts.dev), then reviewed against the full method by Codex for Catalyst Forge.*
 
