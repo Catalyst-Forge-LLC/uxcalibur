@@ -19,3 +19,13 @@ Next developer launch (owner direction, 2026-10-05):
 Locked release brief: docs/DEVELOPER_RELEASE_BRIEF.md. SaaS is explicitly deferred. .com/service remains later work.
 
 Owner step: attach uxcalibur.dev to Cloudflare Pages project uxcalibur-dev, then verify canonical DNS/TLS.
+
+Current owner-guided positioning pass, 2026-10-06:
+
+- [x] Reframe the promise around expert UX transformation and app potential.
+- [x] Teach shape/refine/hone as scales from broad strokes to precision polish.
+- [x] Include conceptual models/metaphors and visual craft in the skill.
+- [x] Update FilePress copy, sword-in-code mark, hero, social card, and current project direction.
+- [x] Verify rendered site and revised method behavior; save reviewable local preview and evidence.
+
+This is a local next-release candidate. Published 0.1.0 and Pages remain the baseline; publication/versioning follows review of the new direction. Historical briefs and proof receipts remain unchanged.

@@ -1,8 +1,10 @@
 # UXcalibur
 
-Help users accomplish goals or improve outcomes with evidence-backed interface changes. Tell your coding agent which app, flow, or aspect to inspect, what outcome matters, what to focus on, and what to exclude.
+**Turn rough apps into exceptional experiences.** Give your coding agent an expert UX method to inspect an app or codebase, design a coherent upgrade, and carry it through implementation. **Shape, refine, hone:** from broad strokes to precision polish.
 
 UXcalibur is a reusable agent skill. The npm command installs its Markdown instructions and references. You supply your agent and app access.
+
+This source README describes the revised next-release method. Published npm 0.1.0 remains unchanged. Use this checkout's `skills/uxcalibur/SKILL.md` to try the revision before it is released.
 
 ## Install
 
@@ -33,12 +35,15 @@ Host installation references: [Codex](https://learn.chatgpt.com/docs/build-skill
 In Codex, invoke `$uxcalibur`; in Claude Code or Cursor, invoke `/uxcalibur`. Restart or reload your agent's skills if the new skill is not yet visible.
 
 ```text
-$uxcalibur Review the review-inbox flow. Help a reviewer find a note,
-read it, and return to the same review context. Focus on navigation,
-continuity, and keyboard access. Exclude branding and backend changes.
+$uxcalibur Review this app's UX. Inspect the codebase and interface,
+then propose an exceptional target experience and a prioritized upgrade plan.
+Consider product structure, core journeys, interaction, and visual design.
+Do not implement yet.
 ```
 
-The default focused pass produces a ranked, actionable cut list. Each cut ties an observed obstacle or opportunity to your outcome, gives supporting behavior, an acceptance check, and confidence. Ask explicitly for a detailed upgrade specification to get full interaction, state, data/API, accessibility, recovery, dependency, and implementation packet contracts.
+A broad request receives an app assessment, coherent design direction, and prioritized implementation guidance. Choose a flow or aspect for a focused refinement, or ask for precision polish. A detailed upgrade specification resolves visual/interaction/state/data contracts, accessibility, recovery, dependencies, and tracked implementation packets.
+
+The sword-from-the-stone story is about elevating the app to its potential. The method also reviews how product concepts, language, metaphors, and onboarding teach people what an app can do and how to use it.
 
 A review produces recommendations. Ask separately for implementation of selected cuts. UXcalibur distinguishes observed evidence, inference, proposed work, and measured results. A passing synthetic fixture demonstrates behavior, not customer usability gains.
 

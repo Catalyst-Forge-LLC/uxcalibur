@@ -1,29 +1,28 @@
 ---
-title: A plan the implementer can follow.
-description: Explicit detailed-spec mode keeps full interaction and supporting contracts, implementation packets, acceptance cases, and progress evidence.
+title: Design the upgrade. Build the experience.
+description: Turn UX design direction into an executable specification, from product structure and visual craft to flows, implementation packets, and verification.
 order: 3
 ---
 
-<p class="doc-kicker">Detailed upgrade specification / explicit mode</p>
+<p class="doc-kicker">The design-to-build handoff</p>
 
-<p class="lead">When you need a broader, implementation-ready review, ask for a detailed specification. Keep the evidence and chosen boundary; expand the contracts and delivery plan.</p>
+<p class="lead">An exceptional experience needs a coherent design and thoughtful execution. A detailed upgrade specification connects the two.</p>
 
-A focused pass is the default. Detailed-spec mode is an explicit request, such as a whole-app upgrade spec or a complete plan for a bounded flow. It retains implementation depth instead of expanding the finding count. See the [full specification contract](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/references/spec-contract.md).
+Ask for a detailed specification when you want implementation-ready design and behavior. It can cover a whole-app transformation, a focused refinement, or a precision polish pass. See the [full specification contract](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/references/spec-contract.md).
 
-## Ask for the result and the boundary
+## Ask for the experience you want to build
 
 This example uses the Codex invocation. In Claude Code or Cursor, start with `/uxcalibur`.
 
 ```text
 $uxcalibur
-Create a detailed upgrade specification for this review inbox.
-Outcome: find, read, and resume the same review with reliable context.
-Focus: navigation continuity, keyboard interaction, and recovery.
-Exclude: branding, note editing/storage, services, and unrelated surfaces.
-Inspect the authorized running UI and source. Preserve useful behavior.
-Include complete flow and supporting contracts, ordered implementation
-packets, acceptance checks, a living tracker, and a starting prompt.
-Save it in the project's established docs location. Do not implement yet.
+Create a detailed UX upgrade specification for this app.
+Inspect its codebase and running interface. Design a coherent target
+experience across product structure, core journeys, interaction,
+visual design, and the details of use. Preserve what already works.
+Include concrete design and behavior, supporting contracts, ordered
+implementation packets, acceptance checks, a tracker, and a starting prompt.
+Do not implement yet.
 ```
 
 This is an invocation template, not a claim that a detailed spec was produced for the example. The [worked proof](/example) used focused mode.
@@ -32,8 +31,8 @@ This is an invocation template, not a claim that a detailed spec was produced fo
 
 | Part | What it resolves |
 | --- | --- |
-| Reading guide and decisions | Intended outcome, focus/exclusions, evidence, current capability, accepted choices, and assumptions. |
-| Coherent interaction model | Entry points, useful content, navigation, controls, state ownership, responsive and input behavior. |
+| Design direction and decisions | Target experience, audience, rationale, evidence, accepted choices, assumptions, and any requested boundaries. |
+| Product and visual system | Mental model, navigation, composition, type/spacing/color roles, component states, and responsive interaction. |
 | Complete flows | Triggers, defaults, actions, transitions, identity/context, persistence, interruption, and recovery. |
 | Supporting contracts | Existing modules and explicit additions; API/data work, compatibility, count/capability semantics. |
 | Ordered packets | Independently deliverable work with stable IDs, prerequisites, owned modules, tasks, and acceptance coverage. |

@@ -1,70 +1,67 @@
 ---
-title: Evidence before a cut.
-description: How UXcalibur connects a chosen user outcome to observations, ranked cuts, implementation contracts, and honest verification.
+title: See the potential. Design the experience.
+description: How UXcalibur guides a coding agent from app assessment to coherent UX design and implementation, at every scale.
 order: 4
 ---
 
-<p class="doc-kicker">The method / versioned source and references</p>
+<p class="doc-kicker">The method / shape, refine, hone</p>
 
-<p class="lead">Start with what a person needs to accomplish or improve. Follow the actual work. Recommend only what the evidence and requested boundary justify.</p>
+<p class="lead">Understand the app as it is. Design the experience it could become. Carry that design through to the details people actually use.</p>
 
-UXcalibur is a skill and its supporting references. The installed files guide your coding agent's judgment; the agent supplies the model, evidence access, tools, and permissions. Read the [skill source](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/SKILL.md) and [full analysis process](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/references/process.md).
+UXcalibur gives your coding agent a reusable method for expert UX work. It combines product understanding, design judgment, source and interface inspection, and implementation guidance. Read the [skill source](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/SKILL.md) and [full process](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/skills/uxcalibur/references/process.md).
 
-## 1. Frame the work
+## Understand the product
 
-Choose an app, one flow or bounded aspect, the desired outcome, focus areas, exclusions, and observable criteria. Better outcomes may mean completion, result quality, useful capability, or less effort. A stated problem is evidence of that problem; it does not dictate a particular component or redesign.
+Inspect what the app does, who uses it, and how its important journeys work. Read the code and product context, and explore the running interface where available. Find its strengths as well as the obstacles and missed opportunities.
 
-> Help the user accomplish [job] or improve [outcome] from [starting context], focusing on [aspects], excluding [aspects], preserving [capabilities/data], and checking [observable criteria].
+Review the mental model, too. Navigation, labels, metaphors, and onboarding teach people what a product is and how to wield it. A confusing product story can need as much design work as a confusing screen.
 
-The boundary carries through inspection, ranking, recommendations, and implementation. If a necessary dependency touches an excluded area, the report should explain the conflict and a scoped alternative or decision.
+For a whole-app request, explore the meaningful surfaces and journeys. For a focused request, bring the same depth to that part. You can name priorities or areas to preserve; the agent can infer a useful starting point from the app itself.
 
-## 2. Map capability and evidence
+## Shape, refine, hone
 
-Read project instructions and relevant product, source, route, API, schema, test, and setup information. Follow representative operations in the running interface where access permits. Check what success proves, how failure reaches the person, what owns state, and what survives a transition or restart.
-
-| Evidence class | What the report should say |
+| Scale | What it can change |
 | --- | --- |
-| Observed | What happened, in which state, and how to reproduce it; artifact or source locator. |
-| Inferred | The likely consequence or cause, with the evidence and confidence behind it. |
-| Proposed | A behavior or supporting contract to implement, clearly separated from existing capability. |
-| Unverified | The assumption, inaccessible evidence, or check that remains unrun. |
+| Shape | Product concepts and metaphors, information architecture, navigation, core journeys, action ownership, and substantial layout. |
+| Refine | Interaction patterns, visual hierarchy, typography, spacing, content, responsive behavior, and accessibility. |
+| Hone | Exact wording, focus, feedback, alignment, transitions, continuity, and loading, empty, or error states. |
 
-A screenshot records a state. Source records possible behavior. Neither alone proves a complete operation.
+These are ways to wield the blade. A prototype may benefit from all three; a mature app may need a focused refinement or a finishing pass. The method chooses the scale that serves the product and your request.
 
-## 3. Rank within the chosen outcome
+## Design one coherent experience
 
-Look for obstacles, missing support, and opportunities that affect the specified job or improvement. Explain consequences in practical terms: waiting, reconstructing context, decoding language, checking acknowledgment, or repeating work. Preserve useful existing behavior and architecture.
+An expert review does more than list issues. It describes how the upgraded app should work and feel, with concrete choices about structure, journeys, interaction, and visual language.
 
-Return the few justified cuts. No fixed count is required, and no actionable finding is a valid result. Rank by consequence and evidence within the selected focus areas. A prediction about improved outcomes stays a prediction until it is measured.
+Group changes around that direction. Explain the important tradeoffs, what deserves preservation, and how the work fits together. Make visual choices specific enough to build: content hierarchy, type roles, spacing, layout, color roles, component states, and responsive behavior.
 
-## 4. Resolve the supporting contract
+## Turn direction into execution
 
-A useful recommendation states more than “make this clearer.” Define the trigger and scope, transitions, affected identity, history/focus/scroll context, persistence, acknowledgment, interruption, and recovery that change implementation decisions.
+Prioritize the work and connect it to the actual codebase. A recommendation should show the current behavior or opportunity, the proposed change, its rationale, affected surfaces, supporting implementation, and checks.
 
-Connect the interface promise to actual ownership. Counts require count semantics. Undo requires reversibility. Progress requires an observable job. Persistence requires an owned storage contract. Missing API or data work belongs in the packet or in an explicit prerequisite.
+A [detailed upgrade specification](/spec) resolves the full design and behavior, dependencies, implementation packets, and progress tracker. When you ask for implementation, the agent carries that work into code and verifies it.
 
-## 5. Verify the chosen result
+## Review the experience that ships
 
-An acceptance check names the fixture/context, action, observable result, and method. Use meaningful unit or integration checks for state/data, rendered checks for interaction, and actual operations when platform capability matters. Preserve unrelated changes and user data.
+Check real journeys and inspect the rendered result at relevant sizes. Review hierarchy, readability, consistency, and detail alongside functional behavior. Counts, progress, persistence, and recovery need actual supporting code.
 
-Track proposed, in-progress, and verified work separately. A passing build or visual preview does not verify every interaction, recovery, or data contract. Keep evidence and unrun checks visible, including failures.
+Keep observation, inference, proposed design, and verified implementation distinct. A polished mockup shows design direction; a passing build shows buildability. Neither establishes measured usability gains.
 
-## Two output modes, shared depth
+## A human-guided pass on UXcalibur
 
-The default [focused pass](/install#invoke-a-focused-pass) is a concise ranked cut list with deep contracts underneath. An explicitly requested [upgrade specification](/spec) retains broader flow, implementation, dependency, and progress detail. Length is not a quality measure.
+This product's own positioning is an example. Its first explanation emphasized “help people accomplish more” and a small list of changes. Human review exposed an unclear product promise and a metaphor that suggested too narrow a tool.
 
-Implementation is a separate authorized step. A report request authorizes the report, its evidence, and its tracker; it does not automatically authorize code changes, integrations, or publication.
+The revised direction makes the capability concrete: elevate an app's UX through expert assessment, design, and execution. The sword-from-the-stone story communicates potential; **shape, refine, hone** explains how to wield the method at different scales. This is a design decision informed by human review, not a measured usability study.
 
 ## Inspect what you install
 
 | File | Purpose |
 | --- | --- |
-| `SKILL.md` | Entry point, scope, deliverable selection, quality rules. |
-| `references/process.md` | The analysis process and evidence-to-implementation workflow. |
-| `references/spec-contract.md` | Detailed specification, flows, packets, acceptance, and tracker contracts. |
-| `references/product-brief.md` | Positioning and deliverable selection. |
+| `SKILL.md` | Purpose, assignment selection, design scales, and execution guidance. |
+| `references/process.md` | Product understanding, assessment, design, and implementation workflow. |
+| `references/spec-contract.md` | Detailed design, flows, packets, acceptance, and tracker contracts. |
+| `references/product-brief.md` | Positioning, story, and deliverables. |
 | `agents/openai.yaml` | Codex-facing skill metadata. |
 
-The installer distributes this versioned method. Your host's configured model, provider, tools, permissions, and data-processing rules remain in effect. Review what evidence you authorize it to read.
+The installer distributes the method files. Your coding agent supplies its model, tools, permissions, and data-processing environment. Use app evidence your host is authorized to inspect. A review request produces a review; ask for implementation when you want changes made.
 
-<div class="doc-next"><a href="/example">See the method in an actual pass <span aria-hidden="true">→</span></a><a href="/contribute">Contribute evidence or improvements <span aria-hidden="true">→</span></a></div>
+<div class="doc-next"><a href="/install">Draw UXcalibur on your app <span aria-hidden="true">→</span></a><a href="/example">Inspect an implemented change <span aria-hidden="true">→</span></a></div>

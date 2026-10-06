@@ -1,56 +1,60 @@
 ---
 name: uxcalibur
 license: MIT
-description: Audit an existing app or tool to help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Produce a ranked, actionable cut list; when requested, expand into a detailed UX upgrade spec with implementation packets, acceptance criteria, and progress tracking.
+description: Elevate an existing app's user experience through expert UX review, design direction, and actionable implementation guidance. Use for whole-app transformations, focused refinements, or precision polish across product structure, user journeys, interaction, visual design, and accessibility.
 ---
 
 # UXcalibur
 
-Pull a usable interface out of the mess. Produce a few justified, implementable changes that help users accomplish their chosen job or improve its outcome, following their focus areas and exclusions. Retain detailed evidence, behavior, failure handling, dependencies, and verification underneath; do not turn the output into a long generic heuristic dump.
+Draw out the exceptional experience waiting inside an app. Give the coding agent an expert UX method to recognize the product's potential, design a coherent upgrade, and execute it when requested. Wield the blade at the scale the work needs: broad strokes, thoughtful refinements, and precision honing.
 
-Read [references/process.md](references/process.md) for the analysis process. For a detailed specification, also read [references/spec-contract.md](references/spec-contract.md). For UXcalibur product positioning or deliverable selection, read [references/product-brief.md](references/product-brief.md). When updating a spec, preserve its accepted decisions and progress evidence.
+Read [references/process.md](references/process.md) for the review and design process. For an implementation-ready specification, also read [references/spec-contract.md](references/spec-contract.md). For UXcalibur positioning or deliverable selection, read [references/product-brief.md](references/product-brief.md). Preserve accepted decisions and progress evidence when updating a spec.
 
-## Choose the deliverable
+## Match the assignment
 
-- **Focused pass (default):** one app, one flow or requested bounded aspect; a ranked cut list of the few changes most likely to enable accomplishment or improve the chosen outcome. Show the observed knot or opportunity, evidence, proposed cut, supporting contract, acceptance check, and confidence for each. Keep analysis deep and the report concise. Rank within the user's focus areas and exclusions, without a mandatory finding count.
-- **Upgrade specification (explicit):** a requested broader or implementation-ready review, such as a whole-app spec. Use the full contracts below and retain implementation detail. This mode preserves the depth of the original workflow.
-- **Implementation (when authorized):** apply the agreed cuts/packet and verify them. Produce a reviewable diff or PR as requested; a report request alone does not authorize code changes or publishing.
+- **App review:** when asked to review an app or codebase broadly, inspect its meaningful surfaces and core journeys. Show the current experience, the proposed design direction, and a prioritized path to that experience. Do not silently reduce a whole-app request to one flow or a small finding quota.
+- **Focused refinement or polish:** when the user selects a flow, aspect, or level of change, bring the same design depth to that scope. A mature product may need precision honing rather than structural change.
+- **Upgrade specification:** when asked for a detailed plan or implementation-ready spec, resolve the design, flow/state/data contracts, implementation packets, acceptance coverage, and progress tracker.
+- **Implementation:** when asked to make the upgrade, carry the authorized design through code and verification. A review request produces the review; it does not itself authorize app changes or publication. Use existing authorization without requiring another ritual approval.
 
-State the chosen app/flow or aspect, intended outcome, and observable success or improvement criteria. If no scope is given, recommend a primary flow from available evidence and make the assumption explicit; ask when the choice materially changes the work. Do not expand a focused pass into a whole-product redesign.
+Infer the app's audience, purpose, and important jobs from available evidence. State material assumptions and inspect the breadth the request implies. Distinguish product requirements from an earlier audit's task-specific boundaries; use the current assignment to determine review scope. Optional focus areas and exclusions guide the work when supplied; do not make users fill out an intake form before inspecting an accessible product. Ask only when missing information would materially change a design decision.
 
-## Scope and outcome
+## Shape, refine, hone
 
-Capture which aspects the user wants focused on or excluded, and carry those boundaries through inspection, ranking, recommendations, and implementation. For example, a request may focus on navigation and accessibility while excluding visual branding. If a necessary supporting change touches an excluded area, explain the dependency or offer a narrower alternative; do not silently expand the scope.
+These are scales of design judgment, not a mandatory sequence or three deliverables:
 
-For a read-only review, inspect entry-point side effects before interacting. Opening a plan or review can write activity or request an app-side model draft; its label, `apply:false`, or HTTP method does not establish safety. Exercise authorized inspection paths and identify source-supported paths that remain untested. State the evidence destination and privacy boundary; retain only needed evidence, and keep private app content out of public examples or repositories unless its publication is authorized.
+- **Shape:** product concepts and mental models, information architecture, navigation, core journeys, action ownership, and substantial layout or capability changes. Identify where a coherent redesign can lift the entire experience.
+- **Refine:** interaction patterns, visual hierarchy, typography, spacing, content, responsive behavior, accessibility, and useful feedback. Make the product feel intentional and consistent across surfaces.
+- **Hone:** precise language, focus and keyboard behavior, alignment, transitions, loading/empty/error states, and small continuity details. Tie polish to the actual experience rather than adding ornament.
 
-For a whole-product review, inspect meaningful surfaces and supporting workflows within those boundaries, including setup, maintenance, recovery, and integrations where relevant. For a narrower request, produce the same depth within that scope.
+Inspect across these scales within the assignment, then choose the changes that serve the product. Preserve effective design. A visual refresh can be the right solution; so can a deeper journey redesign or a targeted finishing pass. Avoid forcing every app into the same aesthetic, layout, or component recipe.
 
-Prefer established documentation/output locations. A focused report leads with the intended outcome, focus areas, exclusions, and ranked cuts; each cut carries enough implementation detail to be actionable. A detailed upgrade spec includes:
+## Define an exceptional target experience
 
-- Review decisions and an evidence-grounded current-state audit.
-- A coherent navigation model and concrete interaction rules for each relevant flow.
-- Responsive/accessibility behavior and honest loading, empty, error, and recovery states.
-- Explicit data/API additions and compatibility constraints.
-- Ordered implementation packets with dependencies, module ownership, steps, and acceptance coverage.
-- A living phase and packet tracker with status, notes, issues, and evidence.
-- A copyable implementation prompt and a clear starting packet.
+Start the deliverable with a concrete diagnosis and design direction: what the app does, where its experience falls short, and how the upgraded experience should work and feel. Describe recognizable before/after behavior rather than repeating "make it world-class." Explain the important product and visual choices so the implementer can create one coherent experience.
 
-A visual preview can clarify spatial behavior and interaction. It supports the contracts; it does not replace them. Distinguish sample content and unverified behavior from a running implementation.
+Cover structure and journeys, interaction, visual craft, content, responsive/accessibility behavior, and state/recovery where relevant. Connect recommendations to actual screens, source, or supplied artifacts. Separate observed behavior, inference, proposed design, and unverified assumptions. Expert recommendations can improve a competent interface without pretending every design opportunity is a proven defect.
 
-## Quality rules
+Assess how the product teaches people what it is and how to use it. Names, labels, metaphors, navigation, and onboarding create its mental model. Reshape confusing concepts when needed, and map the proposed metaphor to real capabilities and controls. Human feedback is useful design evidence; distinguish it from observed runtime behavior and measured usability. A compelling metaphor should clarify the product's range rather than accidentally limit it or require users to learn invented lore.
 
-1. Begin with user jobs, intended outcomes, and requested focus/exclusions; inspect code/interfaces for obstacles, missing support, and improvement opportunities. Tie recommendations to the chosen outcome. Separate observed behavior, inference, recommendation, and unverified assumptions.
-2. Design one coherent model before polishing controls. Optimize common jobs for useful content, continuity, readable language, fewer unnecessary steps, and discoverability.
-3. Write flow contracts: trigger, scope, transition, focus/history/scroll behavior, persistence, acknowledgment, interruption, and recovery. Resolve edge behavior that changes implementation decisions.
-4. Connect frontend promises to actual supporting contracts. Counts, pagination, progress, persistence, Undo, identities, and capabilities require evidence or explicit implementation work.
-5. Preserve existing user data and useful architecture. A UX pass does not inherently require a new framework, database, visual identity, or service.
-6. Make packets reviewable within their dependency chain. Avoid circular prerequisites and unspecified shared work. Include supporting server/data work or name its prerequisite.
-7. Track proposed implementation separately from pre-existing capability. Initialize new packets as Not started unless specified outcomes are verified. Record partial work without invented percentages.
-8. Validate coverage, dependencies, sources, links, example contracts, status consistency, and whether a less capable implementer still has to make a major product decision.
+Prioritize the transformation by user value, design coherence, frequency, dependencies, and risk. Group related changes into a design direction rather than an unrelated heuristic list. Use concrete cuts/refinements with rationale, affected surfaces, proposed behavior/design, supporting work, preservation needs, and observable checks. Give visual direction enough specificity to implement: hierarchy, type roles, spacing rhythm, layout, color roles, states, and platform conventions as appropriate.
 
-A report/spec request authorizes that deliverable and its tracker. Implement when requested; a favorable review comment does not authorize every proposed bulk job, integration, or deployment. During authorized implementation, update status and evidence as part of the work.
+A preview can clarify the target experience. Label sample content and proposed behavior. For substantial visual work, inspect representative rendered screens at relevant sizes; source and a passing build do not establish visual quality.
+
+## Carry design through execution
+
+Connect frontend promises to real support: counts, progress, identities, persistence, acknowledged writes, Undo, and capabilities need existing contracts or owned implementation work. Preserve useful architecture, user data, and unrelated changes. A stronger UX does not inherently require a new framework, database, service, or brand.
+
+An implementation-ready spec includes coherent navigation and flow rules, responsive/accessibility behavior, loading/empty/error/recovery states, explicit data/API changes, ordered packets with dependencies and module ownership, acceptance cases, a living tracker, and a copyable starting prompt. Keep proposed implementation separate from verified capability; initialize new packets as Not started unless their outcomes are demonstrated.
+
+During implementation, verify real journeys and render the changed experience. Review composition and detail as well as functional checks. Update the design/spec and progress evidence as necessary; do not call the transformation complete because code builds.
+
+## Evidence and working boundaries
+
+Honor requested focus areas and exclusions throughout inspection and execution. If a supporting change touches an excluded area, explain the dependency and a scoped alternative. Prefer the project's established output locations.
+
+For a read-only review, inspect entry-point side effects before interacting. Opening a plan or review can write activity or request an app-side model draft; its label, `apply:false`, or HTTP method does not establish safety. Use authorized inspection paths and distinguish exercised behavior from source-supported paths. Retain only needed evidence and keep private app content out of public examples or repositories unless publication is authorized.
 
 ## Completion
 
-Show the saved deliverable, highest-impact changes within scope, and verification limits. For a spec, identify its next packet. Give an invocation when requested. A build or mockup does not prove usability, and a predicted improvement in accomplishment or outcome is not a measured result.
+Show the saved deliverable or reviewable implementation, the design direction and highest-impact changes, and verification limits. For a spec, identify the next packet. "World-class" describes the quality ambition; explain what was designed, implemented, and checked. A mockup or build does not prove usability, and predicted user improvements remain predictions until measured.

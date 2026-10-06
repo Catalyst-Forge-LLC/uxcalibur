@@ -60,7 +60,7 @@ pnpm test:e2e:install
 pnpm verify
 ```
 
-The verifier checks a fresh five-file skill installation and three resolved references, TypeScript, the production build, and 12 current browser cases. It reconstructs baseline commit `e9e9b3c53dfca371de1b4ed52094fe2cefde4810` in an isolated temporary directory and runs the same four targeted continuity cases. They must fail at the expected return-context assertions; launch failures, wrong counts, and unexpected failures fail the proof.
+The verifier checks a fresh six-file skill installation and three resolved references, TypeScript, the production build, and 12 current browser cases. It reconstructs baseline commit `e9e9b3c53dfca371de1b4ed52094fe2cefde4810` in an isolated temporary directory and runs the same four targeted continuity cases. They must fail at the expected return-context assertions; launch failures, wrong counts, and unexpected failures fail the proof.
 
 The dated run used Windows, Node 24.17.0, pnpm 10.30.1, Playwright 1.63.0, and Chromium 153.0.8010.12. See the retained [current receipt](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/examples/review-inbox/evidence/verification.json) and [baseline receipt](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/examples/review-inbox/evidence/baseline-proof.json).
 

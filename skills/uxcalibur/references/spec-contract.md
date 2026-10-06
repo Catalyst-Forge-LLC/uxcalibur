@@ -4,13 +4,13 @@ Adapt headings and the number of flows/packets to the product. Depth, behavior, 
 
 ## Document structure
 
-Start with title, scope, intended outcome, focus areas, exclusions, observable success or improvement criteria, date, review state, implementation state, evidence basis, and reading guide. Distinguish proposals from shipped behavior. Apply those scope boundaries to the contracts, packets, and acceptance coverage.
+Start with title, reviewed app/experience, audience, target design, observable quality criteria, date, review state, implementation state, evidence basis, and reading guide. Include focus areas and exclusions when supplied. Distinguish proposals from shipped behavior. Apply the requested scope to contracts, packets, and acceptance coverage.
 
 Include these sections, combining only when detailed behavior remains easy to find:
 
-1. Review decisions: highest-impact defaults, rationale, tradeoffs, unresolved choices.
-2. Current capability/friction audit: evidence, consequence, correction, priority, useful baseline.
-3. Product structure: surfaces/commands, navigation, action ownership, layout/command hierarchy, launch/reflow.
+1. Design direction and decisions: target experience, broad strokes/refinements/polish, rationale, tradeoffs, unresolved choices.
+2. Current experience audit: structure, journeys, interaction, visual craft, content, evidence, opportunity, priority, useful baseline.
+3. Product and visual system: surfaces/commands, navigation, action ownership, composition, type/spacing/color roles, component states, launch/reflow.
 4. State/continuity: persistence, selection, focus, history/deep links, scroll, async/background changes.
 5. Core flows: full contracts for the actual jobs and supporting workflows; separate complex flows.
 6. Cross-cutting states: loading/empty/error/disabled/interrupted, recovery, accessibility, language, performance.
@@ -96,7 +96,7 @@ These are examples, not required packet names or a three-packet limit.
 
 Each case specifies fixture/context, action, and observed result. Include difficult cases that apply: dense/long content, old data, multiple pages, conflicts, unavailable capabilities, failed writes, stale replies, restart/interruption, keyboard/touch, zoom/reflow.
 
-Unit/integration tests establish state/data behavior; rendered UI checks establish interaction; actual operations may establish platform capabilities. Use meaningful checks and isolated fixtures. Do not make destructive/external experiments on real data a prerequisite of design review.
+Unit/integration tests establish state/data behavior; rendered UI checks establish interaction; actual operations may establish platform capabilities. For visual changes, also inspect representative rendered screens for hierarchy, composition, consistency, readability, responsive layout, and state detail against the specified design direction. Record what was inspected and any remaining shortcomings. Use meaningful checks and isolated fixtures. Do not make destructive/external experiments on real data a prerequisite of design review.
 
 Performance evidence states environment, data size, cold/warm state, and measured values. Accessibility requirements need corresponding interaction/computed-color checks; mockup semantics alone do not establish application compliance.
 
@@ -120,4 +120,4 @@ Report the reviewable result and concrete limits. Continue within authorized sco
 
 ## Final quality gate
 
-Every important job within the requested scope has a complete flow; each promise has an owned supporting contract; packets have reachable prerequisite chains; done claims have evidence matched to the chosen accomplishment or improvement criteria. Check that recommendations respect focus areas and exclusions. Verify links/source references and examples. Missing state, recovery, or tracking means the handoff remains incomplete.
+The target experience is concrete and coherent; every important job within scope has a complete flow; visual direction is implementable; each promise has an owned supporting contract; packets have reachable prerequisite chains; done claims have matching evidence. Check supplied focus areas and exclusions. Verify links/source references and examples. Do not call an experience exceptional from a passing build alone; missing design decisions, state, recovery, or tracking leave the handoff incomplete.

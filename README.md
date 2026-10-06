@@ -1,6 +1,6 @@
 # UXcalibur
 
-**Pull a usable interface out of the mess.** Help users accomplish goals or improve outcomes through a few evidence-backed, implementable changes. Choose which aspects to focus on or exclude.
+**Turn rough apps into exceptional experiences.** Give your coding agent an expert UX method to assess the app, design a coherent upgrade, and carry it through implementation. Wield it at every scale: **shape, refine, hone**.
 
 UXcalibur ships a reusable coding-agent skill and a small npm installer. The agent performs the analysis using its configured model and tools. Use only evidence you authorize your host to process. The repository also includes a synthetic developer proof and the FilePress developer site.
 
@@ -19,19 +19,18 @@ Add `--project` from the intended project directory for a project installation. 
 An agent that can read this checkout can use the repository version directly:
 
 ```text
-Use skills/uxcalibur/SKILL.md to review this app.
-Outcome: [what I want to accomplish or improve].
-Scope: [app and flow or bounded aspect].
-Focus on: [aspects]. Exclude: [aspects].
-Success or improvement criteria: [observable results].
-Evidence available: [source, running UI, screenshots, or other artifacts].
-Return a ranked cut list with evidence, supporting contracts, acceptance checks,
-confidence, and verification limits. This request is for a report.
+Use skills/uxcalibur/SKILL.md to elevate this app's UX.
+Inspect the codebase and running interface. Show me the experience it could
+become, with a coherent design direction and prioritized implementation guidance.
+Review product structure, journeys, interaction, visual craft, and details.
+Do not implement yet.
 ```
 
 For a normal personal skill installation, copy the entire `skills/uxcalibur` folder into your agent's documented skill directory, including its references and `agents/` metadata. Then invoke `$uxcalibur` with the same outcome and scope. Installation locations depend on the host. This checkout's verification uses a fresh isolated copy without modifying a personal installation.
 
-Focused pass is the default. Ask explicitly for a detailed upgrade specification to include full flow/state/data contracts and tracked implementation packets. Authorize implementation when you want the selected changes applied. A report request does not authorize publication or deployment.
+A broad app review covers meaningful surfaces and core journeys. A focused refinement or precision polish pass brings the same depth to the selected part. Ask for a detailed upgrade specification to resolve design/flow/state/data contracts and tracked implementation packets, or request implementation when you want changes applied.
+
+The sword-from-the-stone story is about drawing out an app's potential. The mark puts the sword in code; **shape, refine, hone** explains how to wield it. See [positioning and the human-guided pass](docs/POSITIONING.md). This revised source is a local next-release candidate; npm 0.1.0 and the live site remain the published baseline.
 
 ## Run the local proof
 

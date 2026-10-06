@@ -1,12 +1,12 @@
 # UXcalibur: the analysis process
 
-Turn product evidence into an executable improvement plan. Apply this to web, desktop, mobile, command-line, administrative, and mixed products. Retain requirements depth while changing the product-specific flows, measurements, architecture, examples, and language. The same analysis supports a short focused cut list or an explicitly requested detailed specification; report length is not a measure of analysis quality.
+Turn an existing product into a coherent, expertly designed experience. Apply this to web, desktop, mobile, command-line, administrative, and mixed products. Inspect the breadth requested, define a strong target design, and connect broad strokes, refinements, and precision honing to executable work. The same analysis supports an app review, a focused pass, or a detailed implementation specification; report length is not a measure of design quality.
 
-Contents: frame the assignment; gather evidence; audit effort; choose the model; specify flows; connect contracts; package implementation; track delivery; validate the handoff.
+Contents: frame the assignment; gather evidence; assess design quality; choose the target experience; specify flows; connect contracts; package implementation; track delivery; validate the handoff.
 
 ## 1. Frame the assignment around real work
 
-Extract scope, goals, frustrations, existing preferences, and constraints. Identify what the user wants to accomplish or improve, the aspects to focus on, the aspects to exclude, and observable success or improvement criteria. Improvement may concern the result or capability as well as effort. Separate a stated problem from a hypothesis about its cause.
+Extract scope, audience, product purpose, goals, frustrations, existing preferences, and constraints. For a broad app/codebase request, inspect its meaningful surfaces and core journeys; do not assume the assignment means one flow. Respect a focused request at its stated scale. Infer context from the product before asking questions. Optional focus areas and exclusions guide the review when supplied. Separate a stated problem from a hypothesis about its cause.
 
 "I cannot see the selected item quickly" establishes delayed useful content. It does not dictate tabs, a sidebar, a modal, or a particular width. "Keep browsing while reading an item" adds continuity. Design for these requirements before choosing components.
 
@@ -14,9 +14,9 @@ Capture context affecting the design: task frequency, data volume, common versus
 
 Use this working statement:
 
-> Help the user accomplish [job] or improve [outcome] from [starting context], focusing on [aspects], excluding [aspects], preserving [capabilities/data], and checking [observable criteria].
+> Elevate [app or selected experience] for [audience and important jobs] into [concrete target experience], preserving [useful capabilities/data] and checking [observable quality criteria].
 
-Use focus areas and exclusions throughout the pass. Findings and cuts must belong to that scope. If an excluded area is a necessary dependency, state the limitation and a scoped alternative or required decision rather than silently including it.
+Carry any requested focus areas and exclusions through the pass. If an excluded area is a necessary dependency, explain the limitation and a scoped alternative or required decision rather than silently including it. Do not require users to specify every aspect before beginning a useful review.
 
 ## 2. Build a capability and evidence map
 
@@ -38,7 +38,11 @@ Keep a working evidence ledger:
 
 Make the final audit traceable to these sources. Verify current documentation when needed and use authoritative sources for technical, platform, and accessibility claims. Product dimensions, priorities, and defaults are recommendations rather than research findings. Prefer a few relevant references over a citation collection.
 
-## 3. Audit effort and uncertainty
+## 3. Assess design quality and opportunity
+
+Look across the assignment at three scales. **Shape:** product concepts, information architecture, core journeys, action ownership, and layout. **Refine:** interaction consistency, visual hierarchy, type, spacing, color roles, content, accessibility, and responsive behavior. **Hone:** precise language, states, focus, alignment, transitions, and continuity. Select the scale the product and request need; these are not mandatory phases.
+
+Review visual craft as substantive UX. Inspect representative screens for competing emphasis, weak composition, arbitrary type/spacing, inconsistent controls, unreadable density, and a lack of an intentional visual language. Identify what already works. Recommend a distinctive direction suited to the audience and platform rather than an interchangeable theme. A design opportunity can be an expert recommendation without being represented as a proven user defect.
 
 Explain friction through user consequences: waiting, scrolling, decoding, remembering, repeating, finding controls, reconstructing context, or checking whether something happened.
 
@@ -48,9 +52,13 @@ Inspect fictional certainty: capped counts described as totals, saved work descr
 
 Create an audit table with finding, consequence, evidence, correction, and priority. Identify useful baseline behavior and regression risks separately from new capability. Prioritize by user impact, frequency, prerequisite value, and integrity risk; define the priority scale rather than assuming another product's tiers.
 
-For a focused pass, treat the audit as working evidence and publish only the cuts that matter to the chosen accomplishment or improvement criteria within the requested focus and exclusions. Include evidence-backed capability gaps or result-quality opportunities when relevant, as well as friction. Buried primary actions, dead ends, guilt-inducing copy, unexplained icons, and flows that lose context are candidates to inspect, not automatic findings. Distinguish observed behavior from a hypothesis about user outcomes. Quantified outcome claims require actual evidence.
+Group findings into a coherent transformation rather than an unrelated checklist. Prioritize structural opportunities, refinements, and polish by their effect on the target experience and dependency chain. For a focused pass, publish changes relevant to that scope. Do not impose a small quota on a broad assignment or inflate a polishing request into a redesign. Buried primary actions, dead ends, guilt-inducing copy, unexplained icons, and lost context are candidates to inspect, not automatic findings. Quantified outcome claims require actual evidence.
 
-## 4. Choose a coherent product model
+## 4. Design a coherent target experience
+
+Review the product's conceptual model: what its names, metaphors, navigation, and onboarding teach people about its purpose, capabilities, and controls. Compare that mental model with how the app actually works. Human feedback can expose a framing problem even when the controls are functional. Propose concrete language and conceptual changes, map them to real behavior, and distinguish human design judgment from a measured usability finding. Use a metaphor to teach the product's range; avoid lore that users must decode to perform ordinary work.
+
+Describe how the upgraded product should work and feel. Relate the main design choices to the current app: what changes in its product structure, journeys, interaction, and visual language, and what deserves preservation. Give the implementer enough direction to create a unified experience. Do not leave a broad review at diagnosis plus isolated fixes.
 
 Decide information architecture and action ownership before component polish. Define default view, named scopes, primary content, global actions, contextual actions, and exceptional workflows. Give actions predictable homes; add alternate entry points when they shorten a real task.
 
@@ -58,9 +66,11 @@ Use labeled disclosure for optional complexity, with meaningful names, counts, d
 
 For spatial products, specify viewport-based geometry, panes/regions, maximum widths where justified, breakpoints, scroll ownership, content measure, height budgets, and overflow/reflow. Distinguish flexible budgets from hard constraints.
 
+Specify visual direction at the depth the change requires: content hierarchy, type roles and readable measures, spacing rhythm, surfaces and color roles, component states, icon conventions, and motion intent. Ground choices in the app's identity and platform. Use representative content and difficult states to test whether the composition holds together.
+
 For nonvisual tools, specify equivalent structure: command hierarchy, default/verbose output, progress stream, error remedies, prompts, exit codes, and machine-readable output. Do not impose a browser layout on a CLI.
 
-A preview can clarify selection, disclosure, density, reflow, and state changes. Use representative sample content including difficult cases. Label proposed behavior and disclose verification. A polished preview does not prove real data/runtime support.
+A preview can clarify composition, selection, disclosure, density, reflow, and state changes. Label proposed behavior and disclose verification. During authorized visual implementation, inspect rendered screens at relevant sizes and refine the actual composition as well as functional behavior. A polished preview does not prove real data/runtime support or measured usability.
 
 ## 5. Specify flows, continuity, and recovery
 

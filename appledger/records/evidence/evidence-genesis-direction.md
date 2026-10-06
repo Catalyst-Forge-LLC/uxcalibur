@@ -5,7 +5,7 @@ kind: evidence
 title: Supplied product direction
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-06T03:20:43.674Z
+updated_at: 2026-10-06T10:29:13.425Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -15,17 +15,16 @@ claims: []
 data:
   evidence_kind: document
   repository_id: repo-home
-  result: Read the supplied genesis and its focused-pass, domains, local developer
-    edition, service, and setup direction. Reviewed the current owner-authorized
-    update for accomplishment/improvement and focus/exclusions. Current
-    direction reflects locked MIT developer launch; historical bootstrap remains
-    distinguished.
+  result: Reviewed current owner-guided genesis direction for expert UX
+    transformation, broad-to-fine design scales, sword-in-code metaphor, and
+    conceptual-model UX. Earlier locked briefs remain release history; published
+    0.1.0 remains the baseline; SaaS is deferred.
   source: GENESIS.md
   limitations:
-    - Product direction is not evidence of shipped software or approval of the
-      new draft.
-  digest: 019bcdb10d69b2553c1679ad8fb583501c4ab5249ced6ea63421171112931f73
-  checked_at: 2026-10-06T03:20:43.674Z
+    - Source/design direction review does not establish measured usability or a
+      published new release.
+  digest: 3cc18b047efef426e8c031c4776ca5a694de46640a0f9f3717af810fabfbaa05
+  checked_at: 2026-10-06T10:29:13.425Z
 ---
 
 

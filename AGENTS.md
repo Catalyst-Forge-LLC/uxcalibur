@@ -6,7 +6,7 @@ Start each session by reading `appledger/profiles/forgetrail.yaml`, the latest s
 
 The initial brief and developer release brief are **locked** (2026-10-05). P1–P4/A1–A8 are verified. The owner authorizes the bounded MIT skill/npm, FilePress/Cloudflare Pages, and public GitHub launch for Codex, Claude Code, and Cursor. SaaS remains deferred. Current phase and R1–R4 progress live in the ledger. The owner attaches uxcalibur.dev after Pages publication.
 
-Preserve the spelling **UXcalibur**. Help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Keep the focused pass as the default and detailed specification as an explicit mode. Trace cuts to actual evidence and supporting behavior; never describe a predicted outcome improvement as measured.
+Preserve the spelling **UXcalibur**. Elevate an app's UX through expert assessment, coherent design, and authorized execution. The blade works at every scale: shape, refine, hone. Broad app requests cover meaningful surfaces and core journeys; focused requests retain that design depth at their chosen scale. Include conceptual models/metaphors and visual craft. Respect supplied focus areas and exclusions without making them the product proposition. Trace recommendations to evidence and supporting behavior; never describe predicted usability gains as measured. Current positioning: docs/POSITIONING.md. Historical locked briefs remain release evidence, not the current focused-default rule.
 
 The repository copy of the skill is the project source. Personal installed copies are separate installations. Keep fixtures synthetic and isolated from customer repositories and data.
 

@@ -1,40 +1,35 @@
 # UXcalibur product brief
 
-Status: Reusable agent skill, distributed with a small npm installation helper. An automatic audit CLI and hosted service remain future work.
+UXcalibur is an open-source UX design skill for coding agents, distributed with an npm installation helper. The agent uses the method to inspect an existing app or codebase, recognize its design potential, and turn that understanding into an expertly designed and executed experience.
 
-## Name and promise
+## The promise and the story
 
-**UXcalibur** keeps the Excalibur spelling with **-ur**, not -er or caliber. The sword-in-the-stone idea is the brief: pull a usable interface out of the mess.
+**Turn rough apps into exceptional experiences.** Give your coding agent an expert UX method to assess the app, design the upgrade, and implement it when requested.
 
-The work identifies knots and opportunities in a real interface and makes precise cuts that help people accomplish goals or improve outcomes. The user can specify aspects to focus on and aspects to exclude. Examples include buried primary actions, dead ends, missing support for a needed job, guilt-inducing copy, unexplained icons, and flows that lose people or their context. A finding needs evidence and relevance to the requested outcome; these examples are not a generic checklist to report against every app.
+The sword-from-the-stone story is about elevation: drawing UXcalibur brings the app's potential into reach. Keep the spelling **UXcalibur**, ending in **-ur** like Excalibur. Pair the metaphor with the concrete product capability so people understand what it does without decoding the name. The visual mark is a sword framed by code brackets; the larger illustration draws the sword from a stone shaped like a code block.
 
-## Two domains, two jobs
+The blade works at every scale:
 
-| Domain | Role | User | Delivery |
-| --- | --- | --- | --- |
-| uxcalibur.dev | The blade: open source skill or CLI, run locally against the user's own app | Engineers who want to run the analysis themselves | Evidence-backed cuts; optional implementation-ready specification or authorized diff |
-| uxcalibur.com | The service: the same method operated for the customer | People buying judgment and a concrete cut list | Fixed price, one app, one flow; punch list or requested PR |
+- **Shape:** rethink product structure, navigation, and core journeys.
+- **Refine:** develop coherent interactions, visual hierarchy, typography, layout, content, and responsive behavior.
+- **Hone:** perfect language, states, focus, continuity, alignment, and finishing details.
 
-Staging URL, repository, and build are proposed inputs to the service. Specific access, execution, hosting, pricing amounts, and submission mechanisms remain to be designed; do not imply those capabilities exist yet.
+An early prototype can need a transformation; an established app can need a focused refinement or precision polish. These are available scales, not a requirement to perform a large redesign before making a small improvement.
 
-## Depth underneath, focused delivery
+"World-class" is the design ambition. Give it substance through clear product structure, intuitive journeys, deliberate visual craft, accessible interaction, reliable state/recovery, and implementation quality. Do not promise that installing instructions guarantees measured usability or a particular business result.
 
-The default customer output is a narrow, ranked set of changes tied to the chosen job or outcome, usually within one flow. State the user's focus areas and exclusions and apply them to the analysis and recommendations. Do enough analysis to support judgment and implementation. Do not lead with a lengthy heuristic inventory or redesign unrelated surfaces to fill a report.
+## What the user gets
 
-A focused report contains:
+For a broad app review, deliver a clear assessment, a coherent target experience, and prioritized changes that explain how to get there. Cover the meaningful product surfaces rather than arbitrarily shrinking the assignment to one flow. Let the evidence and design judgment determine the breadth and scale of recommendations.
 
-1. App/flow or aspect boundary, intended outcome, focus areas, exclusions, and observable success or improvement criteria.
-2. A short ranked cut list; choose the number from impact rather than a quota.
-3. For each cut: observed obstacle or opportunity and source, likely effect on the chosen outcome, proposed behavior, implementation/data dependency, and acceptance check.
-4. Confidence and verification limits, including assumptions and what was not inspected.
-5. Current status, notes/issues, and next action for each cut or implementation packet.
+For a focused request, apply that same depth to the chosen flow or aspect. Users may name focus areas and exclusions, but those controls are optional and belong in supporting guidance rather than the headline promise.
 
-When the customer requests a PR, implement only the agreed changes within their focus and exclusions and verify them. Explain backend prerequisites instead of simulating guarantees. Do not report an improvement in accomplishment or outcome as measured unless there is corresponding evidence.
+For an implementation-ready specification, retain the target design, full flow/state/data contracts, visual and responsive direction, accessibility and recovery, dependency-ordered packets, acceptance scenarios, and living progress evidence. For authorized implementation, carry the design into reviewable code and verify both rendered quality and real behavior.
 
-The detailed specification mode remains available by explicit request. It retains full flow/state/data contracts, phase and packet tracking, acceptance coverage, and smaller-model handoff. That mode is suitable for a whole-app upgrade; it is not the default service report.
+The useful output combines diagnosis, expert design direction, and execution guidance. A cosmetic theme swap or a generic heuristic checklist is inadequate when the app needs a coherent redesign. A substantial redesign is unnecessary when precision honing serves the request.
 
-## Shared method and future implementation
+## Distribution and future offerings
 
-The reusable skill is the current method. The npm installer copies the method into supported agent directories; the agent performs the audit. A future audit CLI and service should share the method's evidence model, cut/packet IDs, acceptance contracts, and progress records. Define those interfaces when requested; do not prescribe unbuilt audit flags, integrations, or hosted architecture as existing behavior.
+The developer product at **uxcalibur.dev** is the skill, its source, installation/use guidance, examples, and contribution path. The npm command installs instructions and references; the user's coding agent supplies the model, tools, app access, and execution environment. It does not run an automatic audit or supply a model service.
 
-This brief captures the product direction. Domain deployment, public publishing, commercial checkout, and service delivery are separate work.
+MIT and Codex, Claude Code, and Cursor installation are the accepted developer launch direction. SaaS and the operated service remain deferred. Avoid introducing accounts, pricing, recurring scans, or a hosted runtime into the current product proposition.

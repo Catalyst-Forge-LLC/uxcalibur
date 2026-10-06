@@ -1,4 +1,4 @@
 interface:
   display_name: "UXcalibur"
-  short_description: "Help users accomplish goals and improve outcomes"
-  default_prompt: "Use $uxcalibur to review this app for my intended outcome, respecting my focus areas and exclusions, and return ranked cuts with evidence and acceptance checks."
+  short_description: "Elevate app UX, from broad strokes to precision polish"
+  default_prompt: "Use $uxcalibur to review this app, design an exceptional target experience, and prioritize the broad strokes, refinements, and precision polish it needs."

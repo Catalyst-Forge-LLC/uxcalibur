@@ -3,9 +3,9 @@ format_version: 0.1.0
 id: decision-genesis-direction
 kind: decision
 title: "D1: Preserve genesis product direction"
-record_status: active
+record_status: superseded
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-05T20:53:56Z
+updated_at: 2026-10-06T10:29:13.425Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -15,9 +15,9 @@ relations:
     target: evidence-genesis-direction
 claims:
   - id: decision-basis
-    statement: Keep UXcalibur naming, focused-pass default, explicit detailed-spec
-      mode, shared method, separate domain audience jobs, ForgeTrail tracking,
-      and FilePress site direction.
+    statement: At kickoff the direction used a focused-pass default and explicit
+      detailed-spec mode. D11 supersedes that positioning; naming, shared
+      method, ForgeTrail, and FilePress remain current.
     basis: declared
     status: supported
     evidence_refs:
@@ -28,7 +28,7 @@ claims:
         - Acceptance concerns direction/setup only; no implemented developer
           proof.
 data:
-  status: accepted
+  status: superseded
   choice: Keep UXcalibur naming, focused-pass default, explicit detailed-spec
     mode, shared method, separate domain audience jobs, ForgeTrail tracking, and
     FilePress site direction.
@@ -42,3 +42,5 @@ data:
 This decision records supplied direction or reversible kickoff setup.
 
 See docs/PHASE_1_BRIEF.md section 8.
+
+2026-10-06: D11 supersedes the focused-default positioning and deferred developer-distribution snapshot. This record retains the initial decision as history.

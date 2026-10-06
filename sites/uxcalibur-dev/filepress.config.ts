@@ -4,11 +4,11 @@ const github = 'https://github.com/Catalyst-Forge-LLC/uxcalibur';
 
 export default defineFilepressConfig({
   title: 'UXcalibur',
-  description: 'A versioned skill for evidence-backed interface changes. Help people accomplish goals or improve outcomes within the focus and exclusions you choose.',
+  description: 'An expert UX method for your coding agent. Elevate your app through broad strokes, thoughtful refinements, and precision polish.',
   url: 'https://uxcalibur.dev',
   author: 'Catalyst Forge LLC',
-  tagline: 'A sharper path through your app.',
-  lede: 'An open-source skill for your coding agent',
+  tagline: "Draw out your app’s potential.",
+  lede: 'The UX design skill for your coding agent',
   homePage: 'home',
   logo: '/blade.svg',
   ogImage: '/social.png',
