@@ -56,6 +56,14 @@ a:focus-visible, summary:focus-visible { outline: 3px solid #b15e13; outline-off
 .footer-links a { color: var(--ink-soft); }
 
 /* Home keeps the engine's semantic title and content, with a site-owned layout. */
+/* FilePress layers theme CSS below its component styles. These layout overrides
+   keep the product story full-width and the facts together after the article. */
+main.wrap .home-with-rail { display: block !important; }
+main.wrap .home-with-rail .xfacts-rail { position: static !important; width: 100% !important; display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule-strong); }
+main.wrap .home-with-rail .xfacts-label { max-width: 30rem; width: 100%; }
+@media (max-width: 640px) {
+  main.wrap .home-with-rail .xfacts-rail { grid-template-columns: minmax(0, 1fr); }
+}
 .home-page { max-width: none; position: relative; }
 .home-page .page-header { padding-top: 1rem; max-width: 44rem; padding-bottom: 0.1rem; }
 .home-page .page-header h1 { font-size: clamp(3.6rem, 6.6vw, 6rem); line-height: 0.98; font-weight: 450; max-width: 42rem; margin: 1.6rem 0 1.2rem; }

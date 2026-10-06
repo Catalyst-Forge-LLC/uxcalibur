@@ -8,7 +8,12 @@ repositories:
     url: https://github.com/Catalyst-Forge-LLC/uxcalibur
 record_roots:
   - records
-bindings: []
+bindings:
+  - id: appfacts-application
+    family: appfacts
+    subject_id: app-b7a2d51c-16c3-463f-b3b8-434a18bd2b41
+    repository_id: repo-home
+    path: APP_FACTS.md
 profiles:
   - id: forgetrail
     version: 0.1.0

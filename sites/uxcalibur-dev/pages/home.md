@@ -10,7 +10,7 @@ order: 0
 
 <p class="understated">For Codex, Claude Code & Cursor <span aria-hidden="true">/</span> Open source <span aria-hidden="true">/</span> MIT</p>
 
-<div class="origin-note"><p class="eyebrow">The sword from the stone</p><h2>Your app has potential. Draw it out.</h2><p>Drawing the legendary sword changes what its wielder can become. Drawing UXcalibur is the same invitation for your app: bring an ambitious prototype or an established product, and uncover the experience it could become.</p></div>
+<div class="origin-note"><p class="eyebrow">The sword from the stone</p><h2>Your app has potential. Draw it out.</h2><p>In the legend, the boy who draws the sword becomes king. Drawing UXcalibur is the same invitation for your app: bring an ambitious prototype or an established product, and uncover the experience it could become.</p></div>
 
 <div class="section-rule"><span>01 / Wield it at any scale</span><span>Broad strokes → precision honing</span></div>
 

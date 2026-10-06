@@ -13,5 +13,7 @@ coverage/
 .cache/
 .artifacts/
 .tmp/
+# Local FeatureFacts inventory is not a public label or part of the skill.
+.featurefacts/
 test-results/
 playwright-report/
