@@ -19,3 +19,5 @@ P1–P4 are verified. Baseline: `e9e9b3c53dfca371de1b4ed52094fe2cefde4810`. The 
 Locked developer launch: MIT, Codex/Claude Code/Cursor installation, read-only LocalHelm validation, FilePress, public GitHub and Cloudflare Pages via local Wrangler. Owner attaches uxcalibur.dev after deployment. npm package is installer plus skill; no analyzer/model service. See docs/DEVELOPER_RELEASE_BRIEF.md and ledger. SaaS deferred.
 
 Developer release is published: npm uxcalibur 0.1.0 MIT; GitHub public/tag v0.1.0; https://uxcalibur-dev.pages.dev. Release code commit 306e996. Live installation, artifact identity and site checks pass. See docs/RELEASE_VERIFICATION.md and latest session. Owner must attach uxcalibur.dev; SaaS remains deferred.
+
+Post-launch tooling fixes are verified: root Wrangler4.147.0, developerNode22.12+, sitecookie0.7.2 override; installed package remains Node20.19+. Root audit0; site1 unpatchedmoderate build CLI advisory documented. Refreshed Pages deployment df144f0c passes live checks. No private data/caches tracked.

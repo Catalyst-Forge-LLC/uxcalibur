@@ -5,7 +5,7 @@ kind: evidence
 title: Verified MIT developer release candidate
 record_status: active
 created_at: 2026-10-06T03:23:46.040Z
-updated_at: 2026-10-06T03:38:21.678Z
+updated_at: 2026-10-06T03:41:26.584Z
 recorded_by:
   id: codex
   type: agent
@@ -16,7 +16,7 @@ data:
   evidence_kind: test_run
   repository_id: repo-home
   source: docs/RELEASE_VERIFICATION.md
-  digest: 53b728cb221bab913d1a3ac75f93b0ded045342e7432864e64da35183c264b59
+  digest: adb4db570d6ad59ffcd9162538202ad08cec4041ef3e3b5532f38882cd8e0153
   checked_at: 2026-10-06T03:23:46.040Z
   result: "R1-R3 verified: focused/detailed real-app method contracts,
     source-identical licensed skill, 11-file packed
@@ -29,6 +29,5 @@ data:
       outcome gains unmeasured.
     - Publication and custom domain not established by candidate checks.
 ---
-
 
 Public verification summary links reproducible source and states evidence limits. Raw real-app artifacts are private and excluded from distribution.
