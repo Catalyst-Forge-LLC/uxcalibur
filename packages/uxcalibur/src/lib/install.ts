@@ -2,11 +2,26 @@ import { createHash } from 'node:crypto';
 import { cpSync, existsSync, lstatSync, mkdirSync, mkdtempSync, readdirSync, readFileSync, renameSync, writeFileSync } from 'node:fs';
 import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 
-export type Agent = 'codex' | 'claude' | 'cursor';
+interface AgentProfile { name: string; personal: readonly string[]; project: readonly string[]; invocation: string }
+export const agentProfiles = {
+  codex: { name: 'Codex', personal: ['.agents', 'skills'], project: ['.agents', 'skills'], invocation: 'Invoke $uxcalibur in Codex.' },
+  claude: { name: 'Claude Code', personal: ['.claude', 'skills'], project: ['.claude', 'skills'], invocation: 'Invoke /uxcalibur in Claude Code.' },
+  cursor: { name: 'Cursor', personal: ['.cursor', 'skills'], project: ['.cursor', 'skills'], invocation: 'Invoke /uxcalibur in Cursor.' },
+  grok: { name: 'Grok (xAI)', personal: ['.grok', 'skills'], project: ['.grok', 'skills'], invocation: 'Invoke /uxcalibur in Grok.' },
+  gemini: { name: 'Gemini CLI', personal: ['.gemini', 'skills'], project: ['.gemini', 'skills'], invocation: 'Ask Gemini CLI to use the uxcalibur skill.' },
+  copilot: { name: 'GitHub Copilot', personal: ['.copilot', 'skills'], project: ['.github', 'skills'], invocation: 'Ask GitHub Copilot to use the uxcalibur skill.' },
+  opencode: { name: 'OpenCode', personal: ['.config', 'opencode', 'skills'], project: ['.opencode', 'skills'], invocation: 'Ask OpenCode to use the uxcalibur skill with your selected model.' },
+  amp: { name: 'Amp', personal: ['.config', 'agents', 'skills'], project: ['.agents', 'skills'], invocation: 'Ask Amp to use the uxcalibur skill.' },
+  cline: { name: 'Cline', personal: ['.cline', 'skills'], project: ['.cline', 'skills'], invocation: 'Ask Cline to use the uxcalibur skill.' },
+  kilo: { name: 'Kilo Code', personal: ['.kilo', 'skills'], project: ['.kilo', 'skills'], invocation: 'Ask Kilo Code to use the uxcalibur skill.' },
+  roo: { name: 'Roo Code', personal: ['.roo', 'skills'], project: ['.roo', 'skills'], invocation: 'Ask Roo Code to use the uxcalibur skill.' },
+  generic: { name: 'Shared Agent Skills', personal: ['.agents', 'skills'], project: ['.agents', 'skills'], invocation: 'Ask your agent to read the installed SKILL.md and use UXcalibur.' },
+} as const satisfies Record<string, AgentProfile>;
+export type Agent = keyof typeof agentProfiles;
+export function isAgent(value: string): value is Agent { return Object.hasOwn(agentProfiles, value); }
 export interface Options { agent: Agent; project: boolean; target?: string; force: boolean }
 interface Receipt { format: 1; name: 'uxcalibur'; version: string; files: Record<string, string> }
 const receiptName = '.uxcalibur-install.json';
-const directories: Record<Agent, string> = { codex: '.agents', claude: '.claude', cursor: '.cursor' };
 
 function safeAncestors(path: string): void {
   let current = resolve(path);
@@ -53,12 +68,18 @@ function owned(directory: string, current: Record<string, string>): boolean {
   } catch { return false; }
 }
 
-export function skillsDirectory(options: Options, context: { home: string; cwd: string }): string {
+export function skillsDirectory(options: Options, context: { home: string; cwd: string; configHome?: string }): string {
   if (options.target !== undefined) return resolve(context.cwd, options.target);
-  return join(options.project ? context.cwd : context.home, directories[options.agent], 'skills');
+  if (!isAgent(options.agent)) throw new Error('Choose a supported agent or generic with an explicit --target.');
+  const parts = options.project ? agentProfiles[options.agent].project : agentProfiles[options.agent].personal;
+  if (!options.project && parts[0] === '.config' && context.configHome) {
+    if (!isAbsolute(context.configHome)) throw new Error('XDG_CONFIG_HOME must be absolute; use --target for another location.');
+    return join(context.configHome, ...parts.slice(1));
+  }
+  return join(options.project ? context.cwd : context.home, ...parts);
 }
 
-export function install(options: Options, context: { home: string; cwd: string; source: string; version: string }): { directory: string; unchanged: boolean; backup?: string } {
+export function install(options: Options, context: { home: string; cwd: string; configHome?: string; source: string; version: string }): { directory: string; unchanged: boolean; backup?: string } {
   const parent = skillsDirectory(options, context);
   if (dirname(parent) === parent) throw new Error('Choose a skills directory rather than a filesystem root.');
   const destination = join(parent, 'uxcalibur');
@@ -74,14 +95,13 @@ export function install(options: Options, context: { home: string; cwd: string; 
   }
 
   // A custom target can be a nested category. Keep backups outside every
-  // recognized host discovery root in its ancestry, not just the target.
+  // skills discovery root in its ancestry, including custom/new hosts.
   let storageParent = dirname(parent);
   let ancestor = parent;
   for (;;) {
     const owner = dirname(ancestor);
     const normalized = ancestor.split(sep).at(-1)?.toLowerCase();
-    const host = owner.split(sep).at(-1)?.toLowerCase();
-    if (normalized === 'skills' && ['.agents', '.claude', '.cursor', '.codex'].includes(host ?? '')) storageParent = owner;
+    if (normalized === 'skills') storageParent = owner;
     if (owner === ancestor) break;
     ancestor = owner;
   }

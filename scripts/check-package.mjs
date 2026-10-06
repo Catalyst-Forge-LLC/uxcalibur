@@ -41,15 +41,23 @@ for (const path of files(join(root, 'skills/uxcalibur'))) {
 const cli = join(installedPackage, 'bin/uxcalibur.js');
 assert.equal(run(process.execPath, [cli, '--version'], temp).trim(), metadata.version);
 assert.match(run(process.execPath, [cli, '--help'], temp), /--project/);
-for (const args of [['audit'], ['install'], ['install', '--agent', 'other'], ['install', '--agent', 'codex', '--project', '--target', 'skills'], ['install', '--agent', 'codex', '--target'], ['install', '--agent', 'codex', '--project', '--project'], ['install', '--agent', 'codex', '--bogus']]) run(process.execPath, [cli, ...args], temp, 1);
+for (const args of [['audit'], ['install'], ['install', '--agent', 'other'], ['install', '--agent', '__proto__'], ['install', '--agent', 'toString'], ['install', '--agent', 'codex', '--project', '--target', 'skills'], ['install', '--agent', 'codex', '--target'], ['install', '--agent', 'codex', '--project', '--project'], ['install', '--agent', 'codex', '--bogus']]) run(process.execPath, [cli, ...args], temp, 1);
 const { install, skillsDirectory } = await import(pathToFileURL(join(installedPackage, 'lib/install.js')).href);
-const hosts = { codex: '.agents', claude: '.claude', cursor: '.cursor' };
-for (const [agent, folder] of Object.entries(hosts)) {
+const hosts = {
+  codex: ['.agents', '.agents'], claude: ['.claude', '.claude'], cursor: ['.cursor', '.cursor'],
+  grok: ['.grok', '.grok'], gemini: ['.gemini', '.gemini'], copilot: ['.copilot', '.github'],
+  opencode: [join('.config', 'opencode'), '.opencode'], amp: [join('.config', 'agents'), '.agents'],
+  cline: ['.cline', '.cline'], kilo: ['.kilo', '.kilo'], roo: ['.roo', '.roo'], generic: ['.agents', '.agents'],
+};
+const listed = run(process.execPath, [cli, '--list-agents'], temp);
+for (const [agent, [personalFolder, folder]] of Object.entries(hosts)) {
+  assert(listed.split(/\r?\n/).some(line => line.startsWith(agent + ' ')), `Listed host: ${agent}`);
   const project = join(temp, 'project with spaces', agent);
   const home = join(temp, 'home with spaces', agent);
   mkdirSync(project, { recursive: true });
   const options = { agent, project: false, force: false };
-  assert.equal(skillsDirectory(options, { home, cwd: project }), join(home, folder, 'skills'));
+  assert.equal(skillsDirectory(options, { home, cwd: project }), join(home, personalFolder, 'skills'));
+  assert.equal(skillsDirectory({ ...options, project: true }, { home, cwd: project }), join(project, folder, 'skills'));
   const personal = install(options, { home, cwd: project, source: join(installedPackage, 'skill'), version: packed.version });
   assert(existsSync(join(personal.directory, 'SKILL.md')));
   run(process.execPath, [cli, 'install', '--agent', agent, '--project'], project);
@@ -94,6 +102,22 @@ run(process.execPath, [cli, 'install', '--agent', 'codex', '--target', dirname(u
 const linked = join(temp, 'linked skills');
 symlinkSync(dirname(unmanaged), linked, process.platform === 'win32' ? 'junction' : 'dir');
 run(process.execPath, [cli, 'install', '--agent', 'codex', '--target', linked, '--force'], temp, 1);
-const receipt = { checkedAt: new Date().toISOString(), version: packed.version, archive, sha256: createHash('sha256').update(readFileSync(archive)).digest('hex'), files: entries, hosts: Object.keys(hosts), checks: ['exact packed contents and source hashes', 'tarball package-manager install', 'three personal and project paths', 'idempotent install', 'modified/unmanaged refusal including unusual filenames', 'force backup preservation outside nested host discovery', 'managed upgrade', 'symlink refusal', 'invalid options'], limitations: ['Actual Claude Code and Cursor model invocation not exercised.'], isolatedInstall: temp };
+for (const [agent, directory] of [['opencode', 'opencode'], ['amp', 'agents']]) {
+  const home = join(temp, 'xdg home');
+  const configHome = join(temp, 'custom configuration');
+  assert.equal(skillsDirectory({ agent, project: false, force: false }, { home, cwd: temp, configHome }), join(configHome, directory, 'skills'));
+  assert.throws(() => skillsDirectory({ agent, project: false, force: false }, { home, cwd: temp, configHome: 'relative' }));
+  assert.equal(skillsDirectory({ agent, project: false, force: false, target: 'explicit' }, { home, cwd: temp, configHome: 'relative' }), join(temp, 'explicit'));
+}
+// Future hosts and nested/mixed discovery roots preserve backups outside all skills trees.
+const customRoot = join(temp, 'future agent', '.future', 'skills');
+const customParent = join(customRoot, 'team', '.grok', 'skills', 'design');
+run(process.execPath, [cli, 'install', '--agent', 'generic', '--target', customParent], temp);
+writeFileSync(join(customParent, 'uxcalibur/local.md'), 'Future host local edits.');
+const customOutput = run(process.execPath, [cli, 'install', '--agent', 'generic', '--target', customParent, '--force'], temp);
+const customBackup = customOutput.match(/Previous installation preserved: (.+)/)?.[1];
+assert(customBackup && relative(customRoot, customBackup).startsWith('..'));
+assert.equal(readFileSync(join(customBackup, 'local.md'), 'utf8'), 'Future host local edits.');
+const receipt = { checkedAt: new Date().toISOString(), version: packed.version, archive, sha256: createHash('sha256').update(readFileSync(archive)).digest('hex'), files: entries, hosts: Object.keys(hosts), checks: ['exact packed contents and source hashes', 'tarball package-manager install', 'all personal and project paths', 'agent listing and rejected prototype keys', 'idempotent install', 'modified/unmanaged refusal including unusual filenames', 'force backup preservation outside native/custom/mixed discovery roots', 'managed upgrade', 'symlink refusal', 'invalid options', 'XDG configuration paths and explicit override'], limitations: ['Host layouts verified in isolated directories; model invocation in new hosts not exercised.'], isolatedInstall: temp };
 writeFileSync(join(root, '.artifacts/package-verification.json'), JSON.stringify(receipt, null, 2) + '\n');
-console.log(`Verified uxcalibur ${packed.version}: ${entries.length} packed files; three hosts, update/backup/error paths.\n${archive}`);
+console.log(`Verified uxcalibur ${packed.version}: ${entries.length} packed files; ${Object.keys(hosts).length} install presets, update/backup/error paths.\n${archive}`);
