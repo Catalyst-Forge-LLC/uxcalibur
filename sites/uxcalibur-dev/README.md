@@ -41,6 +41,10 @@ The QA runner starts an ephemeral local FilePress production preview, checks all
 
 ## Cloudflare Pages handoff
 
+LocalHelm's Sites **Ship** action runs `pnpm ship` in this directory. It builds and validates the site, then calls the repository's existing `deploy:site` command to upload to Cloudflare Pages project `uxcalibur-dev` on branch `main`. This script also enables the site in Today's **Land** queue when its tree differs from the last successful Land. The `sites/` nesting and `-dev` name are supported through FilePress's registered extra-site path.
+
+From the repository root, use `pnpm --dir sites/uxcalibur-dev ship` when deployment is intended. Ship uploads publicly; building with `pnpm build` alone remains local.
+
 Publish **`build/`** using Wrangler Pages after the parent repository's release checks. This subtree does not create Cloudflare projects, upload content, or attach a custom domain.
 
 For a Git-connected Pages build, select framework **None**, root directory `sites/uxcalibur-dev`, build command `pnpm install --frozen-lockfile && pnpm build`, output `build`, and a current supported Node LTS. For a CLI upload, run Wrangler against this site's generated `build/` and the confirmed Pages project name. The owner attaches `uxcalibur.dev` after deployment; canonical URLs remain `https://uxcalibur.dev` even when validating the Pages preview origin.

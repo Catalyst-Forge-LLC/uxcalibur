@@ -6,6 +6,7 @@
     "dev": "filepress dev",
     "check": "node scripts/check-content.mjs && filepress check",
     "build": "filepress build && node scripts/finalize-build.mjs && node scripts/check-content.mjs --build",
+    "ship": "pnpm build && pnpm --dir ../.. run deploy:site",
     "preview": "filepress preview",
     "qa": "node scripts/browser-qa.mjs"
   },

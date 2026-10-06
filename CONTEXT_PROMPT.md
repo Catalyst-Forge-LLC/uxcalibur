@@ -1,5 +1,7 @@
 # UXcalibur project context
 
+LocalHelm deployment integration (2026-10-06): `sites/uxcalibur-dev` now has `ship: pnpm build && pnpm --dir ../.. run deploy:site`. It reuses the root's confirmed Pages project/branch after building and validating content. FilePress's extra-site registration already supports the nested path and `-dev` name. Ship detection now produces a tree fingerprint and enables Today's Land queue. No deployment or push was performed for this change.
+
 Current owner direction, 2026-10-06: **turn rough apps into exceptional experiences** through an expert UX method for coding agents. The sword-from-the-stone story means drawing out an app's potential. **Shape, refine, hone** explains the range, from broad structural changes through refinements to precision polish. The mark is a sword framed by code brackets.
 
 UX work includes the conceptual model: names, metaphors, language, navigation, and onboarding teach people what a product is, what it can do, and how to wield it. The owner is running a human-guided UXcalibur pass on UXcalibur's own positioning. Capture that as design feedback, not measured usability research.
