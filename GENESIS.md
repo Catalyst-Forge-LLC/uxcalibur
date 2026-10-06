@@ -2,7 +2,7 @@
 
 Created 2026-10-05. This is a ForgeTrail project at genesis stage, with a reusable skill foundation and a planned FilePress presence. Whether to launch one or two sites remains to be decided.
 
-**Current direction, 2026-10-05:** The [first developer proof](examples/review-inbox/verification.md) is complete: actual scoped pass, one implemented cut, and reproduced before/after checks. The installed skill matches the project source. The owner now prioritizes a solid skill, publication to npm as `uxcalibur`, and the FilePress developer site at **uxcalibur.dev**. **SaaS is explicitly deferred.** License, first supported hosts, real-app validation, hosting/DNS, and GitHub visibility are being resolved in the [developer release brief](docs/DEVELOPER_RELEASE_BRIEF.md). The bootstrap statements below describe the original genesis snapshot; consult `appledger/` for phase, decisions, and handoff.
+**Current direction, 2026-10-05:** The [first developer proof](examples/review-inbox/verification.md) is complete. The owner authorizes MIT, Codex/Claude Code/Cursor installation, read-only LocalHelm validation, npm publication as `uxcalibur`, public GitHub, and the FilePress developer site on Cloudflare Pages. The owner attaches **uxcalibur.dev** after publication. **SaaS remains deferred.** See the [locked release brief](docs/DEVELOPER_RELEASE_BRIEF.md). Statements below preserve the original genesis snapshot; consult `appledger/` for current phase and [release verification](docs/RELEASE_VERIFICATION.md) for delivery evidence.
 
 **Pull a usable interface out of the mess.**
 
@@ -137,7 +137,7 @@ The copied skill matches the installed personal skill at `C:\Users\acmegeek\.cod
 | Genesis and skill seed | Complete in this bootstrap | Product direction plus a versioned copy of the method |
 | ForgeTrail kickoff | Complete | Ledger initialized; revised brief locked; recommended initial Build approved |
 | Developer pass proof | Verified | Actual scoped report; K1 implemented; 12 current browser checks and four intended failures on the preserved baseline |
-| Developer distribution | Active next milestone | Solid skill and npm release as uxcalibur; MIT/Apache 2.0 choice pending |
+| Developer distribution | Active release milestone | MIT skill and installer for Codex/Claude Code/Cursor, npm uxcalibur |
 | FilePress developer presence | Active next milestone | Build and publish uxcalibur.dev with installation, method, examples, and contribution paths |
 | Operated service pilot | Later | Outside the current developer launch |
 | SaaS offering | Explicitly deferred | No SaaS planning or implementation in the current developer launch |

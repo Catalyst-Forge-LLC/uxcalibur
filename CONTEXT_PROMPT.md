@@ -1,6 +1,6 @@
 # UXcalibur project context
 
-The owner approved the revised Phase 1 brief on 2026-10-05 and delegated the recommended initial choices. Current phase: Build. Read the ledger and `docs/PHASE_1_BRIEF.md` for phase, authority, scope, packets, and acceptance.
+The owner approved the revised Phase 1 brief on 2026-10-05 and delegated the recommended initial choices. Current phase: Stabilize — bounded developer release. Read the ledger and `docs/PHASE_1_BRIEF.md` for phase, authority, scope, packets, and acceptance.
 
 UXcalibur helps people accomplish goals or improve outcomes through evidence-backed interface changes. Users can select focus areas and exclusions. A focused pass is the default; a detailed specification is explicit. The reusable skill is the product method; the browser fixture is a target being reviewed.
 
@@ -14,6 +14,6 @@ Decisions: preserve genesis method/domain jobs (D1); ForgeTrail/AppLedger memory
 
 Keep a baseline commit before implementing a cut. Report synthetic evidence as synthetic; a passing fixture check does not measure customer efficacy. Preserve the personal installed skill as a separate installation. Detailed-spec references remain available.
 
-P1–P4 are verified. Baseline: `e9e9b3c53dfca371de1b4ed52094fe2cefde4810`. The actual independent report ranks K1 (return context/history) and K2 (visible return while reading). K1 is implemented and checked; K2 remains unimplemented. `pnpm verify` runs fresh skill-copy/reference checks, types, build, 12 current browser cases, and four intended behavioral failures against the baseline. Evidence and limits: `examples/review-inbox/verification.md`. Build criteria are met; no transition to another phase is authorized.
+P1–P4 are verified. Baseline: `e9e9b3c53dfca371de1b4ed52094fe2cefde4810`. The actual independent report ranks K1 (return context/history) and K2 (visible return while reading). K1 is implemented and checked; K2 remains unimplemented. `pnpm verify` runs fresh skill-copy/reference checks, types, build, 12 current browser cases, and four intended behavioral failures against the baseline. Evidence and limits: `examples/review-inbox/verification.md`. Build criteria are met; owner authorized the developer-release milestone.
 
-The owner now wants the skill solid and published to npm and uxcalibur.dev up using FilePress (2026-10-05). SaaS is explicitly deferred; .com/service work is outside this milestone. See docs/DEVELOPER_RELEASE_BRIEF.md for current scope and unresolved license/hosts/validation/hosting/visibility choices. The first proof's authorization did not cover publishing; the new developer launch instruction establishes the desired public milestone. Do not interpret that as permission to change GitHub visibility without its pending decision. Current phase remains Build while the next milestone is being made concrete.
+Locked developer launch: MIT, Codex/Claude Code/Cursor installation, read-only LocalHelm validation, FilePress, public GitHub and Cloudflare Pages via local Wrangler. Owner attaches uxcalibur.dev after deployment. npm package is installer plus skill; no analyzer/model service. See docs/DEVELOPER_RELEASE_BRIEF.md and ledger. SaaS deferred.

@@ -1,0 +1,16 @@
+{
+  "name": "uxcalibur",
+  "version": "0.1.0",
+  "description": "Evidence-backed UX audits and implementation specifications for your coding agent",
+  "author": "Catalyst Forge, LLC",
+  "license": "MIT",
+  "homepage": "https://uxcalibur.dev",
+  "repository": { "type": "git", "url": "git+https://github.com/Catalyst-Forge-LLC/uxcalibur.git" },
+  "bugs": { "url": "https://github.com/Catalyst-Forge-LLC/uxcalibur/issues" },
+  "keywords": ["skills", "codex", "claude-code", "cursor", "ux", "accessibility", "audit"],
+  "type": "module",
+  "bin": { "uxcalibur": "bin/uxcalibur.js" },
+  "files": ["bin/", "lib/", "skill/", "README.md", "LICENSE"],
+  "engines": { "node": ">=20.19.0" },
+  "publishConfig": { "access": "public" }
+}

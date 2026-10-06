@@ -5,7 +5,7 @@ kind: work
 title: Solid skill, npm distribution, and uxcalibur.dev launch
 record_status: active
 created_at: 2026-10-06T02:58:17.004Z
-updated_at: 2026-10-06T02:58:17.004Z
+updated_at: 2026-10-06T03:23:46.040Z
 recorded_by:
   id: codex
   type: agent
@@ -17,26 +17,28 @@ relations:
     target: app-b7a2d51c-16c3-463f-b3b8-434a18bd2b41
 claims: []
 data:
-  status: proposed
-  objective: Prepare and verify the developer delivery, package the skill for npm as
-    uxcalibur, build uxcalibur.dev with FilePress, and complete the requested launch using
-    resolved release choices.
+  status: in_progress
+  objective: Prepare and verify the developer delivery, package the skill for npm
+    as uxcalibur, build uxcalibur.dev with FilePress, and complete the requested
+    launch using resolved release choices.
   intake: task
   acceptance_criteria:
     - id: R1
       text: Selected-host installation and real method outputs verified with
         outcome/focus/exclusions
-      status: pending
+      status: met
     - id: R2
       text: Intentional licensed npm package verified through packed install/update
-      status: pending
+      status: met
     - id: R3
-      text: Rendered FilePress .dev site accurately documents and demonstrates released delivery
-      status: pending
+      text: Rendered FilePress .dev site accurately documents and demonstrates
+        released delivery
+      status: met
     - id: R4
       text: Requested npm/site launch verified and evidence saved
       status: pending
-  verification_refs: []
+  verification_refs:
+    - evidence-developer-release-candidate
 ---
 
-Outcome authorized; concrete release choices are being resolved. Current phase remains Build; no release packet is marked implemented. SaaS is excluded.
+R1–R3 verified; R4 publication/live verification in progress. Custom domain attachment remains the owner step. SaaS excluded.

@@ -7,13 +7,13 @@
 
 Acceptance A1–A8 and packet status live in `docs/PHASE_1_BRIEF.md`; phase and decision authority live in `appledger/`.
 
-Evidence: `examples/review-inbox/verification.md`. K2 remains a ranked recommendation outside the one-cut proof. Current phase remains Build until an authorized transition.
+Evidence: `examples/review-inbox/verification.md`. K2 remains a ranked recommendation outside the one-cut proof. Initial Build is complete; current milestone is the owner-authorized Stabilize developer release.
 
 Next developer launch (owner direction, 2026-10-05):
 
-- [ ] R1 — solidify the skill: clean-checkout setup, supported-host installation, both output modes, and a second real-app pass.
-- [ ] R2 — package the method for npm as uxcalibur, with intentional contents, versioning, license, installation/update instructions, and packed-install verification.
-- [ ] R3 — build uxcalibur.dev with FilePress: purpose, install/use, worked example, detailed-spec mode, limits, and contribution path.
-- [ ] R4 — complete release checks and publish the concrete package/site to the confirmed accounts; resolve GitHub visibility separately.
+- [x] R1 — solidify the skill: clean-checkout setup, supported-host installation, both output modes, and a second real-app pass.
+- [x] R2 — package the method for npm as uxcalibur, with intentional contents, versioning, license, installation/update instructions, and packed-install verification.
+- [x] R3 — build uxcalibur.dev with FilePress: purpose, install/use, worked example, detailed-spec mode, limits, and contribution path.
+- [ ] R4 — complete release checks and publish the concrete package/site to the confirmed accounts; use the accepted public GitHub launch.
 
-Release intake: docs/DEVELOPER_RELEASE_BRIEF.md. SaaS is explicitly deferred. .com/service remains later work.
+Locked release brief: docs/DEVELOPER_RELEASE_BRIEF.md. SaaS is explicitly deferred. .com/service remains later work.

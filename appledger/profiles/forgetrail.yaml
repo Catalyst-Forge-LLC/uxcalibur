@@ -2,7 +2,7 @@ profile: forgetrail
 profile_version: 0.1.0
 archetype: product
 project_status: active
-current_phase_instance: phase-build-1
+current_phase_instance: phase-stabilize-release-1
 phase_instances:
   - id: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
     phase: plan
@@ -34,7 +34,7 @@ phase_instances:
     completed_at: 2026-10-05T22:50:42Z
   - id: phase-build-1
     phase: build
-    status: in_progress
+    status: completed
     started_at: 2026-10-05T22:50:42Z
     criteria:
       - id: A1
@@ -80,9 +80,41 @@ phase_instances:
         evidence_refs:
           - evidence-scoped-audit
           - evidence-initial-proof
+    completed_at: 2026-10-06T03:12:42.675Z
+  - id: phase-stabilize-release-1
+    phase: stabilize
+    status: in_progress
+    started_at: 2026-10-06T03:12:42.675Z
+    criteria:
+      - id: R1
+        text: Verify developer release acceptance R1 in locked brief
+        status: met
+        evidence_refs:
+          - evidence-developer-release-candidate
+      - id: R2
+        text: Verify developer release acceptance R2 in locked brief
+        status: met
+        evidence_refs:
+          - evidence-developer-release-candidate
+      - id: R3
+        text: Verify developer release acceptance R3 in locked brief
+        status: met
+        evidence_refs:
+          - evidence-developer-release-candidate
+      - id: R4
+        text: Verify developer release acceptance R4 in locked brief
+        status: pending
+        evidence_refs: []
 transitions:
   - id: transition-plan-build-1
     from_instance: phase-ec83c8b0-6e4c-4c84-b746-a8015f02c04a
     to_instance: phase-build-1
     at: 2026-10-05T22:50:42Z
     authorized_by: "Owner: proceed and use recommended choices; evidence-build-approval."
+  - id: transition-build-stabilize-release
+    from_instance: phase-build-1
+    to_instance: phase-stabilize-release-1
+    at: 2026-10-06T03:12:42.675Z
+    authorized_by: Owner requests solid skill/npm/.dev launch and selects release
+      choices; evidence-developer-launch-direction,
+      decision-developer-release-contract.

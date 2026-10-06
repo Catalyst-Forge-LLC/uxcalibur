@@ -4,7 +4,7 @@ This repository develops UXcalibur. Product direction is in `GENESIS.md`; the ve
 
 Start each session by reading `appledger/profiles/forgetrail.yaml`, the latest session record, and `docs/PHASE_1_BRIEF.md`. Read `CONTEXT_PROMPT.md` and `TODO.md` when they exist. Follow `.forgetrail/AGENTS.md` and consult `.forgetrail/FORGETRAIL_LITE.md` for the current phase. The ledger is the authority for phase, decisions, questions, and handoffs.
 
-The brief is **locked** and the recommended initial Build is authorized (2026-10-05). Implement its P1–P4 scope and verify A1–A8. The selected fixture/tooling is approved; the license, publication, sites, and CLI remain later milestones. Follow the ledger for subsequent phase transitions.
+The initial brief and developer release brief are **locked** (2026-10-05). P1–P4/A1–A8 are verified. The owner authorizes the bounded MIT skill/npm, FilePress/Cloudflare Pages, and public GitHub launch for Codex, Claude Code, and Cursor. SaaS remains deferred. Current phase and R1–R4 progress live in the ledger. The owner attaches uxcalibur.dev after Pages publication.
 
 Preserve the spelling **UXcalibur**. Help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Keep the focused pass as the default and detailed specification as an explicit mode. Trace cuts to actual evidence and supporting behavior; never describe a predicted outcome improvement as measured.
 

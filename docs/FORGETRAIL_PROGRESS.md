@@ -1,12 +1,13 @@
 # UXcalibur progress
 
-Current phase: **Build**. The approved initial proof is verified; criteria A1–A8 have evidence. The authoritative profile remains `appledger/profiles/forgetrail.yaml`; no transition to Stabilize has been authorized.
+Current phase: **Stabilize — bounded developer release**. Initial Build A1–A8 are met; the owner's explicit release request and intake answers authorize this next milestone. Authoritative state: `appledger/profiles/forgetrail.yaml`.
 
 | Packet | State | Evidence |
 | --- | --- | --- |
-| P1 | Verified | Runnable synthetic inbox, 3 original core checks, baseline commit e9e9b3c |
-| P2 | Verified | [Actual scoped report](../examples/review-inbox/report.md) and preserved rendered evidence |
-| P3 | Verified | K1 implemented; four intended failures before and passing cases after |
-| P4 | Verified | Fresh-copy invocation/reference resolution, truthful docs, `pnpm verify` |
+| P1–P4 | Verified | Synthetic proof, actual scoped report, K1 cut, baseline/current checks |
+| R1 | Verified | Three host layouts, installed Codex copy, private focused/detailed LocalHelm validation |
+| R2 | Verified candidate | Exact 11-file MIT tarball; install/update/error paths; independent review |
+| R3 | Verified candidate | Six-page FilePress site; desktop/narrow source/build/render checks |
+| R4 | In progress | Public npm/GitHub/Pages publication and live verification |
 
-See [verification and limits](../examples/review-inbox/verification.md). K2, license/distribution, FilePress sites, and service mechanics remain later work.
+See [release scope](DEVELOPER_RELEASE_BRIEF.md) and [verification](RELEASE_VERIFICATION.md). Custom-domain attachment belongs to the owner after Pages publication. SaaS remains deferred; no private validation data is distributed.

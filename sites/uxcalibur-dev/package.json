@@ -1,0 +1,30 @@
+{
+  "name": "uxcalibur-dev-site",
+  "version": "0.1.0",
+  "description": "Content-only FilePress developer site for UXcalibur",
+  "scripts": {
+    "dev": "filepress dev",
+    "check": "node scripts/check-content.mjs && filepress check",
+    "build": "filepress build && node scripts/finalize-build.mjs && node scripts/check-content.mjs --build",
+    "preview": "filepress preview",
+    "qa": "node scripts/browser-qa.mjs"
+  },
+  "keywords": [],
+  "author": "Catalyst Forge LLC",
+  "license": "MIT",
+  "packageManager": "pnpm@10.30.1",
+  "type": "module",
+  "private": true,
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "getfilepress",
+      "esbuild"
+    ]
+  },
+  "devDependencies": {
+    "getfilepress": "0.1.50"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}

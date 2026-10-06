@@ -1,5 +1,6 @@
 ---
 name: uxcalibur
+license: MIT
 description: Audit an existing app or tool to help users accomplish goals or improve outcomes within their requested focus areas and exclusions. Produce a ranked, actionable cut list; when requested, expand into a detailed UX upgrade spec with implementation packets, acceptance criteria, and progress tracking.
 ---
 
@@ -20,6 +21,8 @@ State the chosen app/flow or aspect, intended outcome, and observable success or
 ## Scope and outcome
 
 Capture which aspects the user wants focused on or excluded, and carry those boundaries through inspection, ranking, recommendations, and implementation. For example, a request may focus on navigation and accessibility while excluding visual branding. If a necessary supporting change touches an excluded area, explain the dependency or offer a narrower alternative; do not silently expand the scope.
+
+For a read-only review, inspect entry-point side effects before interacting. Opening a plan or review can write activity or request an app-side model draft; its label, `apply:false`, or HTTP method does not establish safety. Exercise authorized inspection paths and identify source-supported paths that remain untested. State the evidence destination and privacy boundary; retain only needed evidence, and keep private app content out of public examples or repositories unless its publication is authorized.
 
 For a whole-product review, inspect meaningful surfaces and supporting workflows within those boundaries, including setup, maintenance, recovery, and integrations where relevant. For a narrower request, produce the same depth within that scope.
 

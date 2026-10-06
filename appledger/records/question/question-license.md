@@ -5,7 +5,7 @@ kind: question
 title: "Q2: License and distribution"
 record_status: active
 created_at: 2026-10-05T20:53:56Z
-updated_at: 2026-10-06T02:58:17.004Z
+updated_at: 2026-10-06T03:12:42.675Z
 recorded_by:
   id: codex-kickoff
   type: agent
@@ -15,11 +15,11 @@ relations:
     target: app-b7a2d51c-16c3-463f-b3b8-434a18bd2b41
 claims: []
 data:
-  issue: Choose MIT or Apache 2.0 for the requested developer npm/.dev launch. Owner is open
-    to either and has not chosen; recommendation MIT pending answer.
-  status: open
+  issue: Choose the developer release license. Owner selected MIT on 2026-10-05.
+  status: answered
   affected_ids:
     - work-developer-release
 ---
 
-Publication is the requested outcome; license selection is still open. No license is applied yet.
+
+MIT accepted and applied; upstream ForgeTrail retains Apache-2.0.

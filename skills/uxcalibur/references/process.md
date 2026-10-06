@@ -24,6 +24,10 @@ Read project instructions and existing product/design documents. Inspect impleme
 
 Inventory relevant surfaces: default/landing/navigation; browse/search/filter/sort; selection/detail/edit; creation/capture/import/submission; background jobs/notifications; organization/saved states/bulk actions; removal/restore/export; first use/preferences/settings; startup/help/diagnostics; permissions and integrations; CLI/API/automation when actually used.
 
+Before read-only interaction, classify entry-point effects from implementation or reliable documentation. Opening a plan may record activity; opening a review may request an app-side model draft. Labels, `apply:false`, and HTTP methods alone do not establish a read-only operation. Set an inspection boundary appropriate to the assignment, use safe navigation or isolated synthetic reproduction, and distinguish exercised behavior from source-supported behavior. Existing authorization for implementation or actions still governs those requests; this check does not add a repeated approval loop.
+
+Record the evidence destination and whether it contains private app/workspace content. Capture the minimum content needed to support a finding, rather than logging unrelated API bodies. Retain private reports/screenshots in an authorized private location; release validation does not automatically authorize a public worked example. Use synthetic or appropriately authorized public evidence for distribution, and state redactions or missing evidence that limit a conclusion.
+
 Follow representative operations end to end. Check what success proves, how failure reaches the user, whether writes are acknowledged, what survives restart, and whether client or server owns filtering/scope/sort. Inspect state and integrity before promising an easier interface.
 
 Keep a working evidence ledger:
@@ -114,6 +118,6 @@ Check coverage against the selected jobs, outcomes, focus areas, and exclusions.
 
 Read as the next implementer: are defaults, combinations, boundaries, failures, source fields, modules, and checks explicit? Fill product-decision gaps rather than adding generic advice.
 
-Verify structure, links, existing paths, new-file labels, example types, and status/evidence consistency. Validate supplied scripts and inspect previews when permitted. Record limits and respect tool/security blocks.
+Verify structure, links, existing paths, new-file labels, example types, status/evidence consistency, and the evidence destination/privacy boundary. Validate supplied scripts and inspect previews when permitted. Record limits and respect tool/security blocks.
 
 Show the saved spec. Lead with its coverage, key recommendation, review choices, and next packet. Keep conversation concise and implementation depth in the document.

@@ -1,0 +1,10 @@
+node_modules/
+build/
+.svelte-kit/
+.filepress-genie/
+.filepress/
+.npm-cache/
+.pnpm-store/
+.artifacts/
+.tmp/
+*.log

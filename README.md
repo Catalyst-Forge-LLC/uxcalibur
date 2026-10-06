@@ -2,7 +2,15 @@
 
 **Pull a usable interface out of the mess.** Help users accomplish goals or improve outcomes through a few evidence-backed, implementable changes. Choose which aspects to focus on or exclude.
 
-The current delivery is a reusable coding-agent skill in [skills/uxcalibur](skills/uxcalibur/SKILL.md) and a private local proof harness. The agent performs the analysis using its configured model and tools. A local fixture does not imply that the agent's processing is offline; use only evidence you authorize your host to process.
+UXcalibur ships a reusable coding-agent skill and a small npm installer. The agent performs the analysis using its configured model and tools. Use only evidence you authorize your host to process. The repository also includes a synthetic developer proof and the FilePress developer site.
+
+```sh
+npx uxcalibur@0.1.0 install --agent codex
+npx uxcalibur@0.1.0 install --agent claude
+npx uxcalibur@0.1.0 install --agent cursor
+```
+
+Add `--project` from the intended project directory for a project installation. Default personal locations are `~/.agents/skills`, `~/.claude/skills`, and `~/.cursor/skills`. `--target` selects another parent skills directory, including legacy Codex `.codex/skills`; it is exclusive with `--project`. Modified/unmanaged installs require `--force`, which preserves a backup and prints its path. See the [package README](packages/uxcalibur/README.md) for installation, update behavior, and host verification limits.
 
 ## Use the method
 
@@ -41,6 +49,6 @@ The [actual scoped report](examples/review-inbox/report.md) ranks two cuts. The 
 
 `pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches, rerun evidence, and temporary copies stay out of Git. Only Windows/Chromium execution is verified here; the shell wrappers are provided for other platforms without a runtime claim.
 
-The repository remains private and the development package is marked `private`. The UXcalibur license and public distribution are later decisions; no analyzer CLI or hosted service is shipped here. ForgeTrail's own license is scoped to `.forgetrail/`.
+The root development package is `private`; the deliberate npm release is assembled from `packages/uxcalibur` and `skills/uxcalibur`. `pnpm package:check` builds a clean package, checks exact tar contents, installs the tarball, and verifies all three host layouts plus upgrade/backup/error paths. `pnpm verify:release` also verifies the proof and builds/checks the FilePress site. Site dependencies use a separate lockfile: `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`.
 
-The next owner-requested milestone is a solid skill published to npm and the FilePress site at uxcalibur.dev. SaaS is deferred. [Developer release scope and pending decisions](docs/DEVELOPER_RELEASE_BRIEF.md) track that work; the private harness above is the current delivery.
+UXcalibur is MIT licensed. Attributed ForgeTrail materials retain Apache-2.0. The npm installer has no model runtime, telemetry, or audit execution command. SaaS remains deferred. [Release scope](docs/DEVELOPER_RELEASE_BRIEF.md), [operator runbook](docs/RELEASING.md), and [release verification](docs/RELEASE_VERIFICATION.md) document the developer delivery.

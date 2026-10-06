@@ -1,6 +1,6 @@
 # UXcalibur product brief
 
-Status: Product direction and reusable skill draft. A CLI and hosted service have not been implemented by this work.
+Status: Reusable agent skill, distributed with a small npm installation helper. An automatic audit CLI and hosted service remain future work.
 
 ## Name and promise
 
@@ -35,6 +35,6 @@ The detailed specification mode remains available by explicit request. It retain
 
 ## Shared method and future implementation
 
-The reusable skill is the current method. A future CLI and service should share its evidence model, cut/packet IDs, acceptance contracts, and progress records. Define the CLI interface and service workflow when their implementation is requested; do not prescribe unbuilt flags, integrations, or hosted architecture as existing behavior.
+The reusable skill is the current method. The npm installer copies the method into supported agent directories; the agent performs the audit. A future audit CLI and service should share the method's evidence model, cut/packet IDs, acceptance contracts, and progress records. Define those interfaces when requested; do not prescribe unbuilt audit flags, integrations, or hosted architecture as existing behavior.
 
 This brief captures the product direction. Domain deployment, public publishing, commercial checkout, and service delivery are separate work.
