@@ -1,5 +1,7 @@
 # UXcalibur project context
 
+Release preparation, 2026-10-14: the public package version is now **0.1.1** in `packages/uxcalibur/release.json`; the private root harness remains `0.1.0-dev`. README/install examples and AppFacts/SkillFacts describe 0.1.1, including all 12 host presets. See `docs/RELEASE_0.1.1.md` for verification and the owner's exact tarball publish command. LocalHelm still sees the private enrolled root and skips Publish; generated release-target support is pending, with the manual tarball path documented per the ecosystem rule. No publication, push, deployment, or personal skill update is authorized by this preparation. Earlier source-candidate notes below describe the prior state; the historical 0.1.0 launch/proof evidence remains unchanged.
+
 LocalHelm deployment integration (2026-10-06): `sites/uxcalibur-dev` now has `ship: pnpm build && pnpm --dir ../.. run deploy:site`. It reuses the root's confirmed Pages project/branch after building and validating content. FilePress's extra-site registration already supports the nested path and `-dev` name. Ship detection now produces a tree fingerprint and enables Today's Land queue. No deployment or push was performed for this change.
 
 Current owner direction, 2026-10-06: **turn rough apps into exceptional experiences** through an expert UX method for coding agents. The sword-from-the-stone story means drawing out an app's potential. **Shape, refine, hone** explains the range, from broad structural changes through refinements to precision polish. The mark is a sword framed by code brackets.

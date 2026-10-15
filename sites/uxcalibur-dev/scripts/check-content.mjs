@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = ['home', 'install', 'example', 'spec', 'method', 'contribute'];
 const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
+const release = JSON.parse(readFileSync(resolve(root, '../../packages/uxcalibur/release.json'), 'utf8'));
 assert.equal(pkg.devDependencies.getfilepress, '0.1.50', 'Keep the published engine pin exact.');
 assert.equal(pkg.private, true, 'The content site must not be an npm release.');
 const config = readFileSync(resolve(root, 'filepress.config.ts'), 'utf8');
@@ -26,7 +27,7 @@ for (const slug of pages) {
   for (const link of localReferences(markdown)) assert.ok(existsSync(sourceTarget(link)), `${slug}: missing ${link}`);
 }
 const install = readFileSync(resolve(root, 'pages/install.md'), 'utf8');
-for (const agent of ['codex', 'claude', 'cursor']) assert.ok(install.includes(`npx uxcalibur@0.1.0 install --agent ${agent}`));
+for (const agent of ['codex', 'claude', 'cursor', 'grok']) assert.ok(install.includes(`npx uxcalibur@${release.version} install --agent ${agent}`), `${agent}: install command must match the public release version`);
 for (const path of ['~/.agents/skills/uxcalibur', '~/.claude/skills/uxcalibur', '~/.cursor/skills/uxcalibur']) assert.ok(install.includes(path));
 const example = readFileSync(resolve(root, 'pages/example.md'), 'utf8');
 assert.ok(example.includes('Not started') && example.includes('Verified'), 'Keep proposed and verified cuts separate.');

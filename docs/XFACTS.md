@@ -2,7 +2,7 @@
 
 [AppFacts](../APP_FACTS.md) describes the skill/installer stack and developer site. [SkillFacts](../skills/uxcalibur/SKILL_FACTS.md) describes the method, provenance, instructional reach, and host boundary. FilePress discovers these labels and displays them on the homepage. Their visual viewers contain public metadata encoded in the link.
 
-These labels describe the current `0.1.0-dev` source revision. npm `0.1.0` remains the published baseline. The installer is dependency-free; site and proof dependencies belong to development. The agent host supplies its model, tools, permissions, and data-processing environment. SkillFacts does not describe that host's privacy policy or guarantee review quality.
+These labels describe version `0.1.1`. See npm for published availability and [release preparation](RELEASE_0.1.1.md) for the verified package and pending publication. The private harness version is not the public package version. The installer is dependency-free; site and proof dependencies belong to development. The agent host supplies its model, tools, permissions, and data-processing environment. SkillFacts does not describe that host's privacy policy or guarantee review quality.
 
 The sibling AppFacts and SkillFacts generators scaffolded the labels without a model call. Codex corrected the inferred type, identity, source version, dependencies, and reach against the actual source. A schema check establishes format, not truth or measured UX efficacy.
 

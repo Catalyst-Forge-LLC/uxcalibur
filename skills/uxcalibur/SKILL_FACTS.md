@@ -2,7 +2,7 @@
 skill_facts_version: 0.1.0
 name: UXcalibur
 developer: Catalyst Forge LLC
-version: 0.1.0-dev
+version: 0.1.1
 status: preview
 license: MIT
 kind: agents-skill
@@ -35,7 +35,7 @@ egress:
   telemetry: none
   destinations: []
 generated:
-  date: 2026-10-06
+  date: 2026-10-14
   generator: skillfacts-from-pack
 credits:
   generated_with: https://skillfacts.dev
@@ -51,10 +51,10 @@ repository: https://github.com/Catalyst-Forge-LLC/uxcalibur
 | Field | Value |
 |---|---|
 | Developer | Catalyst Forge LLC |
-| Source version | 0.1.0-dev, an unpublished next-release revision |
-| Status | Preview of the revised source method; npm 0.1.0 remains the published baseline |
+| Source version | 0.1.1 |
+| Status | Preview; check npm for published availability |
 | License | MIT |
-| Kind | Agent Skills bundle, with 12 source installer presets |
+| Kind | Agent Skills bundle, with 12 installer presets |
 
 ## Purpose
 
@@ -62,7 +62,7 @@ Elevate an existing app's user experience through expert UX review, design direc
 
 Review an app broadly, refine a chosen aspect, or hone finishing details. The method produces a coherent design direction and prioritized changes. A detailed specification or implementation follows the user's assignment.
 
-The source installer supports Codex, Claude Code, Cursor, Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. Published npm 0.1.0 supports only the original Codex, Claude Code, and Cursor presets. See the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) for source-build installation and documented host paths.
+The 0.1.1 installer supports Codex, Claude Code, Cursor, Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. See the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) for installation and documented host paths.
 
 ## Provenance
 
@@ -102,4 +102,4 @@ All 12 source install presets pass packed-file, isolated personal/project placem
 
 *Scaffolded with [SkillFacts](https://skillfacts.dev), then reviewed against the full method by Codex for Catalyst Forge.*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl178sXvNrYQsLE17yS4sLEuQ7Yk9RJaMNHY2hPz3PjlttoU2tCdJTzOjpzdvTnrSi_tMO9OTXujnl9pYrsagM93QRNYPFIAvjRh7jKIefGhJrddLBEwUInuH67vivrjLkQA0ipExAhwCTUwHQJZrcjHV__r4hPOeXYODaclJzOOerQU6jGHwc9TK0mSElHGK3jkKu1aZYfgU1RgpAAMpJleTki74se0ukKjnF3V5NFMNRW6dajhQLWCZoVqjzLw3lSXF_WCpBwOTINWO3BiULBKT4Cdy6aQXJx39GNJOdyJDXJRly9KNVVH7vvypSz7rkkOXcnz_IWEpgajsDbty_mL8uJp_W1mO3d_UPWeaXZQwzoTjNpCpu5lNR1BroRN9pgaVHMnBhz0wqACpWQDu2FJESeqBI7nJD4GFUl3x3qaCOwpJQ3Ti9S3T1egaS83WBOEdZEIHX096MIJX9ebL43pd9M1H77wk6ufsGnJpZgm_OMPF0fT2RvD6cbn6tlndiLjSiyW6gSXefv73-Aay5RU8svvnrDhQndfeScDnb2fNamwfPi-fNn8KhJjUBjBO7RJKJpNwxL3zjua5So6eXZdEfkNLOt_TAAV_MdnVK8VlrAJhOFj8XOk_nYh0OMnVmCnwxJbO3wHHD1_X
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl1780VxzKyELoWkv2YWFZQmyPbGHyJKRxsmGkP_eJ6fNttAN7UnS08zo6c2bsz7o-SzTzvSk5_rpuTaWqzHoTDd0IOsHCsAXRow9RVEPPrSk1usFAg4UInuH68_FrJgBiWJkjACGQAemIyDLNbmYan9bPeK8Z9fgYFpyEvO4Z2uBDmMY_BS1tHQwQso4RW8chV2rzDB8imqMFICBEJOrSUkX_Nh2V0jU07O6PpqphiK3TjUcqBYwzFCtUWbam8qS4n6w1IOBSZBqR24MShaJSfAHcumk52cd_RjSTnciQ5yXZcvSjVVR-778pUk-aZJDk3J8-ylfKYGo7A27cvpifL-afltZjt1Hyl4yzS5KGCfCcRvI1N3EpiOoNdeJPlODSo7k6MMeGFSA1CwAd2wpoiT1wJHc5MfAQqmueG9TwR2FpCE68fKa6Wp0jaVma4LwDjKhgy9nPRjBq3rzdbVeF33z3jsvifolu4Vcm1nCK85wcTK9vRO8Xi2W3zfLOxE3erFEN7DE-8__Gd9AtryCR3b_nBUHqvPaOwn4_P2sSY3tw5fF4-ZvgRCT2gDGqV1CyWQSTrh33tE0U8nRk-uSyK9oSed7GqDgbya7eaXADCIrEIaDxU-V_tOJSIeTXI2ZAk9s6fIDNO5ebA

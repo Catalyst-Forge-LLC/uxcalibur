@@ -4,7 +4,14 @@ UXcalibur is an Agent Skills bundle: `SKILL.md`, relative references, a license,
 
 ## Release boundary
 
-Published npm **0.1.0** has `codex`, `claude`, and `cursor` presets. This **unpublished source candidate** adds Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills preset. New preset commands require the source build until a new npm version is published.
+Version **0.1.1** includes all 12 presets below: Codex, Claude Code, Cursor, Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. Check npm for published availability. Once published, install from your app's directory:
+
+```sh
+npx uxcalibur@0.1.1 --list-agents
+npx uxcalibur@0.1.1 install --agent grok --project
+```
+
+For a local build before publication, or to use a later source revision:
 
 From the UXcalibur checkout:
 

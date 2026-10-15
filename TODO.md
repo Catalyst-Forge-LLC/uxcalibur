@@ -1,5 +1,14 @@
 # UXcalibur delivery
 
+Current release preparation, 2026-10-14:
+
+- [x] Assign public package version 0.1.1 and align package README, install examples, and xFacts labels.
+- [x] Complete and record 0.1.1 package/site verification and commit the prepared release.
+- [ ] Owner publishes the verified 0.1.1 tarball; verify registry contents afterward.
+- [ ] Add verified generated-package release-target support to LocalHelm (manual release path recorded meanwhile).
+
+Current release contract and owner command: `docs/RELEASE_0.1.1.md`. Historical milestones below retain their original release boundary.
+
 - [x] P1 — runnable synthetic review-inbox baseline with task, data, checks, and preserved source revision.
 - [x] P2 — actual scoped skill invocation, rendered/source evidence, and portable cut report.
 - [x] P3 — implement K1 and demonstrate four targeted checks fail before and pass after.

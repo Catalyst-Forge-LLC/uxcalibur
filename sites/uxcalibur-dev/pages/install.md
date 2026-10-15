@@ -1,6 +1,6 @@
 ---
 title: Draw UXcalibur on your app.
-description: Use UXcalibur with your coding agent, including Grok/xAI and other Agent Skills hosts in the source build. Transform an app, refine its design, or hone the details.
+description: Use UXcalibur with your coding agent, including Grok/xAI and other Agent Skills hosts. Transform an app, refine its design, or hone the details.
 order: 1
 ---
 
@@ -10,16 +10,16 @@ order: 1
 
 You need **Node.js 20.19+** with npm/npx and a supported coding agent. The npm command installs the method files; your agent works with the app and codebase using its configured model and tools.
 
-<nav class="page-jumps" aria-label="On this page"><a href="#choose-your-agent">Install</a><a href="#more-agents-in-the-source-build">More agents</a><a href="#wield-the-skill">Use</a><a href="#choose-the-installation-scope">Installation scope</a><a href="#update-and-local-edits">Update</a></nav>
+<nav class="page-jumps" aria-label="On this page"><a href="#choose-your-agent">Install</a><a href="#more-agents">More agents</a><a href="#wield-the-skill">Use</a><a href="#choose-the-installation-scope">Installation scope</a><a href="#update-and-local-edits">Update</a></nav>
 
 ## Choose your agent
 
-The current published release is **0.1.0**. The revised shape/refine/hone method shown in this local site draft is being prepared for the next release. To use that revision now, point your agent at this checkout's `skills/uxcalibur/SKILL.md`. The commands below install the published version.
+These instructions target **0.1.1**, with the shape/refine/hone method and 12 installer presets. Check [npm](https://www.npmjs.com/package/uxcalibur) for published availability. Before publication, use the local build described below or point your agent at this checkout's `skills/uxcalibur/SKILL.md`.
 
 ### Codex
 
 ```sh
-npx uxcalibur@0.1.0 install --agent codex
+npx uxcalibur@0.1.1 install --agent codex
 ```
 
 The personal destination is `~/.agents/skills/uxcalibur`. Invoke it with **`$uxcalibur`**.
@@ -27,7 +27,7 @@ The personal destination is `~/.agents/skills/uxcalibur`. Invoke it with **`$uxc
 ### Claude Code
 
 ```sh
-npx uxcalibur@0.1.0 install --agent claude
+npx uxcalibur@0.1.1 install --agent claude
 ```
 
 The personal destination is `~/.claude/skills/uxcalibur`. Invoke it with **`/uxcalibur`**.
@@ -35,18 +35,23 @@ The personal destination is `~/.claude/skills/uxcalibur`. Invoke it with **`/uxc
 ### Cursor
 
 ```sh
-npx uxcalibur@0.1.0 install --agent cursor
+npx uxcalibur@0.1.1 install --agent cursor
 ```
 
 The personal destination is `~/.cursor/skills/uxcalibur`. Invoke it with **`/uxcalibur`**.
 
-Refresh or reopen the agent session if the new skill is not visible. Installation and packed-file checks cover all three hosts; actual runtime invocation has been verified in Codex.
+Refresh or reopen the agent session if the new skill is not visible. Installation and packed-file checks cover all 12 presets; actual runtime invocation has been verified in Codex.
 
-## More agents in the source build
+## More agents
 
-Use UXcalibur with **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**. Their presets are in the next-release source candidate, together with a shared Agent Skills preset. They are not yet in npm 0.1.0.
+Use UXcalibur with **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**, together with a shared Agent Skills preset:
 
-Build the installer from the UXcalibur checkout:
+```sh
+npx uxcalibur@0.1.1 --list-agents
+npx uxcalibur@0.1.1 install --agent grok --project
+```
+
+To use a local build before publication, build the installer from the UXcalibur checkout:
 
 ```sh
 pnpm package:build
@@ -125,7 +130,7 @@ A review request produces the review. You can request design and implementation 
 Personal installation is the default. For a project installation, run from the intended project's root:
 
 ```sh
-npx uxcalibur@0.1.0 install --agent codex --project
+npx uxcalibur@0.1.1 install --agent codex --project
 ```
 
 Codex uses `.agents/skills/uxcalibur`; Claude Code uses `.claude/skills/uxcalibur`; Cursor uses `.cursor/skills/uxcalibur`. Share the project copy with your team according to repository policy.
@@ -133,7 +138,7 @@ Codex uses `.agents/skills/uxcalibur`; Claude Code uses `.claude/skills/uxcalibu
 To select a particular parent skills directory:
 
 ```sh
-npx uxcalibur@0.1.0 install --agent codex --target ./my-skills
+npx uxcalibur@0.1.1 install --agent codex --target ./my-skills
 ```
 
 This creates `./my-skills/uxcalibur`. `--target` and `--project` are mutually exclusive. Select a legacy Codex directory with `--target ~/.codex/skills`; use an absolute path if your shell does not expand `~`.
@@ -143,7 +148,7 @@ This creates `./my-skills/uxcalibur`. `--target` and `--project` are mutually ex
 Reinstall or upgrade with the explicit release version and the same agent/scope. The installer records hashes and protects modified or unmanaged copies. When you intend to replace one, `--force` preserves a backup and prints its location.
 
 ```sh
-npx uxcalibur@0.1.0 install --agent codex --force
+npx uxcalibur@0.1.1 install --agent codex --force
 ```
 
 The repository skill is the method source; personal installations are separate. Inspect the [published package](https://www.npmjs.com/package/uxcalibur) and [source](https://github.com/Catalyst-Forge-LLC/uxcalibur/tree/main/skills/uxcalibur) before installing.

@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -8,6 +8,7 @@ import { startPreview } from '../node_modules/getfilepress/scripts/preview.mjs';
 
 const site = fileURLToPath(new URL('../', import.meta.url));
 const repository = fileURLToPath(new URL('../../../', import.meta.url));
+const releaseVersion = JSON.parse(readFileSync(resolve(repository, 'packages/uxcalibur/release.json'), 'utf8')).version;
 const rootRequire = createRequire(resolve(repository, 'package.json'));
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(repository, '.cache/ms-playwright');
 const { chromium } = rootRequire('@playwright/test');
@@ -72,7 +73,7 @@ try {
   const offline = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 1280, height: 800 } });
   const staticPage = await offline.newPage();
   assert.equal((await staticPage.goto(`${origin}/install`)).status(), 200);
-  assert.ok((await staticPage.locator('main').innerText()).includes('npx uxcalibur@0.1.0 install --agent codex'));
+  assert.ok((await staticPage.locator('main').innerText()).includes(`npx uxcalibur@${releaseVersion} install --agent codex`));
   await offline.close();
   const missing = await fetch(`${origin}/route-that-does-not-exist`);
   assert.equal(missing.status, 404);

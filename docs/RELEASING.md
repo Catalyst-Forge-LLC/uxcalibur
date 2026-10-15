@@ -2,6 +2,30 @@
 
 The root package is a private developer harness. Publish only the generated, verified skill package. The developer checkout/deployment requires Node 22.12+ and pnpm 10; the released installer supports Node 20.19+. Windows execution is verified. No runtime dependency is needed by the installer.
 
+## Package release contract
+
+| Field | Source / target |
+| --- | --- |
+| Public package | `uxcalibur` |
+| Checked-in release sources | `packages/uxcalibur/` and `skills/uxcalibur/` |
+| Authoritative version and manifest | `packages/uxcalibur/release.json` |
+| npm README source | `packages/uxcalibur/README.md` |
+| Build | `pnpm package:build` assembles `.artifacts/npm-package/` |
+| Pack and verify | `pnpm package:check` creates `.artifacts/uxcalibur-VERSION.tgz` and checks its installed contents |
+| Publish target | The verified `.artifacts/uxcalibur-VERSION.tgz`, never the root harness |
+
+LocalHelm currently reads the enrolled repository root's `package.json`, which
+is deliberately private. Its read-only Publish plan skips UXcalibur as `private`;
+it does not discover this generated package or its release version. Generated
+release-target support in LocalHelm remains pending. Use the explicit tarball
+release below until that support is implemented and verified. Do not remove
+`private` from the harness or enroll disposable `.artifacts` output as a workaround.
+Site Ship and personal skill updates do not publish the npm package.
+
+For the current version and ready-to-run owner command, see [0.1.1 release preparation](RELEASE_0.1.1.md).
+
+## Prepare and release
+
 1. Update the version in `packages/uxcalibur/release.json`, installation examples in package/site docs, and any changed skill instructions. Add dependencies with pnpm. Keep skill source under `skills/uxcalibur`.
 2. Install root and site dependencies with `pnpm install --frozen-lockfile` and `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`. Install the pinned browser with `pnpm test:e2e:install` when needed.
 3. Run `pnpm verify:release`. Run `pnpm --dir sites/uxcalibur-dev qa` for saved desktop/narrow browser checks and inspect screenshots. Check the current independent review, private validation limits, and public contents.

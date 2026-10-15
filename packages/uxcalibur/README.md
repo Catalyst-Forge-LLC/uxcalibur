@@ -4,16 +4,16 @@
 
 UXcalibur is a reusable agent skill. The npm command installs its Markdown instructions and references. You supply your agent and app access.
 
-This source README describes the revised next-release method. Published npm 0.1.0 remains unchanged. Use this checkout's `skills/uxcalibur/SKILL.md` to try the revision before it is released.
+Version 0.1.1 includes the shape/refine/hone method and 12 installation presets, including Grok/xAI and other Agent Skills hosts.
 
 ## Install
 
 Requires Node.js 20.19 or later and a supported coding agent.
 
 ```sh
-npx uxcalibur@0.1.0 install --agent codex
-npx uxcalibur@0.1.0 install --agent claude
-npx uxcalibur@0.1.0 install --agent cursor
+npx uxcalibur@0.1.1 install --agent codex
+npx uxcalibur@0.1.1 install --agent claude
+npx uxcalibur@0.1.1 install --agent cursor
 ```
 
 | Host | Personal default | With `--project` |
@@ -26,17 +26,24 @@ Run `--project` from the intended project directory. `--target <parent skills di
 
 The installer records file hashes. A repeat install is unchanged; an intact installer-managed version can be upgraded. Local edits, extra files, and unmanaged installations require `--force`, which preserves the previous directory outside the host's skill discovery folder and prints its backup path. Linked installation directories or entries are refused. Restore a backup manually after moving the active copy aside. The installer does not alter other skills or agent settings.
 
-Installation paths and packed file integrity are tested for all three hosts. Agent runtime invocation is verified in Codex; Claude Code and Cursor runtime results have not been independently verified.
+Installation paths and packed file integrity are tested for all 12 presets. Agent runtime invocation is verified in Codex; other hosts' runtime results have not been independently verified.
 
 Host installation references: [Codex](https://learn.chatgpt.com/docs/build-skills), [Claude Code](https://code.claude.com/docs/en/skills), [Cursor](https://prod.cursor.com/help/customization/skills).
 
-## More agents in the source candidate
+## More agents
 
-The unpublished installer adds `grok`, `gemini`, `copilot`, `opencode`, `amp`, `cline`, `kilo`, `roo`, and `generic` presets. Build from the repository with `pnpm package:build`, then run `node .artifacts/npm-package/bin/uxcalibur.js --list-agents`. From your app's directory, use the absolute path to that built CLI with `install --agent grok --project`, replacing `grok` with your host. npm 0.1.0 does not yet recognize the new presets.
+Choose `grok`, `gemini`, `copilot`, `opencode`, `amp`, `cline`, `kilo`, `roo`, or `generic` for additional hosts. List every preset or install into your app:
 
-The [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) lists documented destinations and source-build commands. Grok Build uses `.grok/skills`; Grok models can also run through OpenCode's xAI provider. Other providers work through the selected host. For future Agent Skills hosts, use the shared `generic` preset or `--target` with their documented skills directory.
+```sh
+npx uxcalibur@0.1.1 --list-agents
+npx uxcalibur@0.1.1 install --agent grok --project
+```
 
-All 12 source installer presets are checked in isolated directories, including updates and preserved backups. Model invocation has been exercised in Codex; other hosts' execution is not independently verified. UXcalibur does not install hosts, configure providers, or alter agent settings.
+Replace `grok` with your host. Omit `--project` for a personal installation.
+
+The [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) lists documented destinations and invocation. Grok Build uses `.grok/skills`; Grok models can also run through OpenCode's xAI provider. Other providers work through the selected host. For future Agent Skills hosts, use the shared `generic` preset or `--target` with their documented skills directory.
+
+All 12 installer presets are checked in isolated directories, including updates and preserved backups. Model invocation has been exercised in Codex; other hosts' execution is not independently verified. UXcalibur does not install hosts, configure providers, or alter agent settings.
 
 ## Use
 
