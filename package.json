@@ -1,6 +1,6 @@
 {
   "name": "uxcalibur",
-  "version": "0.1.0-dev",
+  "version": "0.1.1",
   "description": "UXcalibur versioned skill and private developer-proof harness",
   "scripts": {
     "dev": "vite",
