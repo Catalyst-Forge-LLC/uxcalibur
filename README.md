@@ -1,72 +1,80 @@
 # UXcalibur
 
-**Turn rough apps into exceptional experiences.** Give your coding agent an expert UX method to assess the app, design a coherent upgrade, and carry it through implementation. Wield it at every scale: **shape, refine, hone**.
+**Turn rough apps into exceptional experiences.** Give your coding agent an expert UX method to inspect an app, design a coherent upgrade, and carry it through implementation.
 
-UXcalibur ships a reusable coding-agent skill and a small npm installer. The agent performs the analysis using its configured model and tools. Use only evidence you authorize your host to process. The repository also includes a synthetic developer proof and the FilePress developer site.
+Like the sword drawn from the stone, UXcalibur draws out the potential already in your app. It looks beyond surface polish: product structure, navigation, user journeys, interaction, language, visual design, and accessibility all shape the experience.
 
-[npm](https://www.npmjs.com/package/uxcalibur) · [Developer site](https://uxcalibur-dev.pages.dev) · [0.1.1 release preparation](docs/RELEASE_0.1.1.md) · [Initial release evidence](docs/RELEASE_VERIFICATION.md). The commands below target 0.1.1; check npm for published availability. The owner connects uxcalibur.dev to the Pages project.
+[Website](https://uxcalibur.dev) · [npm](https://www.npmjs.com/package/uxcalibur) · [Agent compatibility](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md)
 
-```sh
-npx uxcalibur@0.1.1 install --agent codex
-npx uxcalibur@0.1.1 install --agent claude
-npx uxcalibur@0.1.1 install --agent cursor
-```
+## Install
 
-Add `--project` from the intended project directory for a project installation. Default personal locations are `~/.agents/skills`, `~/.claude/skills`, and `~/.cursor/skills`. `--target` selects another parent skills directory, including legacy Codex `.codex/skills`; it is exclusive with `--project`. Modified/unmanaged installs require `--force`, which preserves a backup and prints its path. See the [package README](packages/uxcalibur/README.md) for installation, update behavior, and host verification limits.
-
-Version 0.1.1 also supports **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**, plus a shared Agent Skills preset:
+Requires Node.js 20.19+ and a coding agent. Choose your host:
 
 ```sh
-npx uxcalibur@0.1.1 --list-agents
-npx uxcalibur@0.1.1 install --agent grok --project
+npx uxcalibur@latest install --agent codex
+npx uxcalibur@latest install --agent claude
+npx uxcalibur@latest install --agent cursor
 ```
 
-Before publication, use `pnpm package:build` and `node .artifacts/npm-package/bin/uxcalibur.js --list-agents` from this checkout. See [agent compatibility](docs/AGENT_COMPATIBILITY.md) for local installation commands, host directories, invocation, Grok through OpenCode, and additional agents. The installer and method require no fixed model provider.
+The default is a personal installation. Add `--project` to install into the current app's project instead.
 
-## Use the method
+UXcalibur also includes presets for **Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code**, and shared Agent Skills directories:
 
-An agent that can read this checkout can use the repository version directly:
+```sh
+npx uxcalibur@latest --list-agents
+npx uxcalibur@latest install --agent grok --project
+```
+
+Use `--target <skills-directory>` for a custom location or an existing legacy install. Rerun the installation command to update. If you changed the installed files, `--force` preserves a backup before replacing them. The [installation guide](https://uxcalibur.dev/install) covers destinations and updates; the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) covers host discovery and invocation.
+
+## Draw UXcalibur
+
+Open your app in your coding agent and invoke `$uxcalibur` in Codex, `/uxcalibur` in Claude Code, Cursor, or Grok Build, or ask your host to use the UXcalibur skill. Reload the agent's skills if it is not yet visible.
+
+Start with a broad assessment:
 
 ```text
-Use skills/uxcalibur/SKILL.md to elevate this app's UX.
-Inspect the codebase and running interface. Show me the experience it could
-become, with a coherent design direction and prioritized implementation guidance.
-Review product structure, journeys, interaction, visual craft, and details.
-Do not implement yet.
+$uxcalibur Review this app's UX. Inspect the codebase and running interface.
+Show me what an exceptional experience could look like, with a coherent
+design direction and a prioritized upgrade plan. Do not implement yet.
 ```
 
-For a normal personal skill installation, copy the entire `skills/uxcalibur` folder into your agent's documented skill directory, including its references and metadata. Invoke `$uxcalibur` in Codex, `/uxcalibur` in Claude Code, Cursor, or Grok Build, or ask your host to use the UXcalibur skill. `agents/openai.yaml` is optional Codex UI metadata; other hosts use the same method files. This checkout's verification uses a fresh isolated copy without modifying a personal installation.
+Or give it a concrete assignment:
 
-A broad app review covers meaningful surfaces and core journeys. A focused refinement or precision polish pass brings the same depth to the selected part. Ask for a detailed upgrade specification to resolve design/flow/state/data contracts and tracked implementation packets, or request implementation when you want changes applied.
-
-The sword-from-the-stone story is about drawing out an app's potential. The mark puts the sword in code; **shape, refine, hone** explains how to wield it. See [positioning and the human-guided pass](docs/POSITIONING.md). Version 0.1.1 carries this revised method; package publication and site deployment are separate operations tracked in the [release preparation](docs/RELEASE_0.1.1.md).
-
-## Run the local proof
-
-The developer checkout requires Node 22.12+, pnpm 10, and the pinned Chromium test browser. The released skill installer supports Node 20.19+. On Windows, `setup.bat` installs development dependencies and the browser, and `run.bat` starts the fixture. macOS/Linux equivalents are `setup.sh` and `run.sh`.
-
-```sh
-pnpm install --frozen-lockfile
-pnpm test:e2e:install
-pnpm dev
+```text
+$uxcalibur Improve onboarding so a new user can reach their first useful
+result confidently. Include empty states, errors, and recovery. Implement
+the improvements and verify the complete journey.
 ```
 
-The synthetic review inbox runs at <http://127.0.0.1:5191>. Its [task and data contract](fixtures/review-inbox/README.md) cover finding a known note, reading its content, and returning to continue reviewing. `pnpm status` checks the local server.
+Tell the agent which aspects to focus on or leave alone. You can request a review, a detailed upgrade specification, implementation, or a combination. An agent with access to this checkout can also use `skills/uxcalibur/SKILL.md` directly.
 
-The [actual scoped report](examples/review-inbox/report.md) ranks two cuts. The first is implemented: app/browser return restores the originating row, keyboard focus, query, and scroll position, with correct history and safe direct-link recovery. The second, keeping return visible while reading, remains unimplemented. See the [invocation](examples/review-inbox/invocation.md) and [verification evidence](examples/review-inbox/verification.md).
+## Shape, refine, hone
 
-`pnpm verify` validates a fresh isolated skill copy and all method references, checks types, builds the fixture, runs 12 rendered Chromium checks, and replays the preserved baseline against four targeted checks. Those four must fail at the intended continuity assertion before the cut; unexpected failures fail verification. Each browser run owns an isolated local server and port. The verifier needs Git and the baseline commit in the checkout's history. `pnpm test` runs the current built fixture; use `pnpm build` after source changes, or run the complete verifier.
+The same blade works from broad strokes to precision polish.
 
-`pnpm skill:copy` validates a fresh isolated skill copy. Browser/dependency caches, rerun evidence, and temporary copies stay out of Git. Only Windows/Chromium execution is verified here; the shell wrappers are provided for other platforms without a runtime claim.
+| Scale | What UXcalibur improves |
+| --- | --- |
+| **Shape** | The app's overall structure, concepts, navigation, and core journeys. |
+| **Refine** | A feature or flow: clearer choices, stronger hierarchy, smoother interactions, and helpful feedback. |
+| **Hone** | The finishing details: wording, spacing, focus, keyboard use, responsive behavior, and recovery. |
 
-The root development package is `private`; the deliberate npm release is assembled from `packages/uxcalibur` and `skills/uxcalibur`. `pnpm package:check` builds a clean package, checks exact tar contents, installs the tarball, and verifies all 12 install presets plus upgrade/backup/error paths. These are installer checks; actual host model invocation has been exercised in Codex. `pnpm verify:release` also verifies the proof and builds/checks the FilePress site. Site dependencies use a separate lockfile: `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`.
+A broad review covers meaningful surfaces and core journeys, then proposes a coherent target experience and prioritized changes. A focused assignment brings the same design depth to the chosen area. A detailed specification resolves the design, flow, state, and data contracts into implementation packets and acceptance checks.
 
-UXcalibur is MIT licensed. Attributed ForgeTrail materials retain Apache-2.0. The npm installer has no model runtime, telemetry, or audit execution command. SaaS remains deferred. [Release scope](docs/DEVELOPER_RELEASE_BRIEF.md), [operator runbook](docs/RELEASING.md), and [release verification](docs/RELEASE_VERIFICATION.md) document the developer delivery.
+## What runs where
+
+UXcalibur is a reusable agent skill. The npm command installs Markdown instructions and references; your agent performs the review and implementation with its configured model, tools, permissions, and app access. The installer has no runtime dependencies, model service, or telemetry.
+
+All twelve installer presets are checked in isolated directories, including updates and backups. Actual host invocation has been exercised in Codex. The [worked example](https://uxcalibur.dev/example) shows a verified interaction improvement on a synthetic app; it does not claim measured customer usability gains.
+
+## Develop and contribute
+
+The checkout includes the skill source, TypeScript installer, synthetic browser proof, and FilePress developer site. See the [development guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/DEVELOPMENT.md) to run them, or the [release guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/RELEASING.md) to prepare a package. Report issues and contribute through [GitHub](https://github.com/Catalyst-Forge-LLC/uxcalibur).
+
+MIT © 2026 Catalyst Forge, LLC. Attributed ForgeTrail materials retain Apache-2.0.
 
 <!-- xfacts-label -->
 ## xFacts label
 
 - **AppFacts:** [visual label](https://appfacts.dev/v#af1.eNptU11r20AQ_CvLPbVEkWNDH2q9pLiEujjF0ARSSglnaSVdfbo77k5yhPF_764ku2nJk8_7MbMzuzqKTizniTCyQbEUj0-51GrXepGI2DsOyQpNhLBXWsMMVps1KBOi1Bq5iF6xDVyWR9UhRbTK0QTuvF8_jBX5XiyPQktTtYTGGen3hT2YBH58ut8k8EBU33OvXEzgq-zk-KZm35qohsm-2QLT3wEWN-n84xW8uwzxPoOGchqkKSBaqwOE1jmtsIBdD7FGGCXUNjBkUJHx7pTGrccQgADTDzcZsBSVQ4EdauvQA1eCNbDSti1KLT3ClqACe0M8ylSE44xrMrhMt0jniysorT_jNEQtToko0JFNP4_CUFOFsSR-x_yE5ij0-V_aXat0QeS6z0DuAs9fetsMcojx1Q5OyYjJ6wpn3xhxfS6B3DZOaVJHYtgl51UnicR5a0uopTfsA5Nd0G6dlv3Bq6qOs4jhjLmdOkv1Elvyg9GGeTv0qlT5yDEi_SKvu_yi-Q0XPYW_0FbCIOtN_zMwFvgfsRbw-AQeO4UHCOg7OrSBZfCKL8zRpRH0cyMN_fhpO0Q0GoBTAKa65dhI22SB_-XyGulsL-cy5Pg9JWijtW3Qjfdcx-jCcjZrX6bPJyUVLBCdpSbr-1dFlYp1u0tpptlK0ob6EK_vrK_werNZ_YUQpz_ipj3m) · [source](APP_FACTS.md)
-- **SkillFacts:** [visual label](https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl1780VxzKyELoWkv2YWFZQmyPbGHyJKRxsmGkP_eJ6fNttAN7UnS08zo6c2bsz7o-SzTzvSk5_rpuTaWqzHoTDd0IOsHCsAXRow9RVEPPrSk1usFAg4UInuH68_FrJgBiWJkjACGQAemIyDLNbmYan9bPeK8Z9fgYFpyEvO4Z2uBDmMY_BS1tHQwQso4RW8chV2rzDB8imqMFICBEJOrSUkX_Nh2V0jU07O6PpqphiK3TjUcqBYwzFCtUWbam8qS4n6w1IOBSZBqR24MShaJSfAHcumk52cd_RjSTnciQ5yXZcvSjVVR-778pUk-aZJDk3J8-ylfKYGo7A27cvpifL-afltZjt1Hyl4yzS5KGCfCcRvI1N3EpiOoNdeJPlODSo7k6MMeGFSA1CwAd2wpoiT1wJHc5MfAQqmueG9TwR2FpCE68fKa6Wp0jaVma4LwDjKhgy9nPRjBq3rzdbVeF33z3jsvifolu4Vcm1nCK85wcTK9vRO8Xi2W3zfLOxE3erFEN7DE-8__Gd9AtryCR3b_nBUHqvPaOwn4_P2sSY3tw5fF4-ZvgRCT2gDGqV1CyWQSTrh33tE0U8nRk-uSyK9oSed7GqDgbya7eaXADCIrEIaDxU-V_tOJSIeTXI2ZAk9s6fIDNO5ebA) · [source](skills/uxcalibur/SKILL_FACTS.md)
-
-These labels describe version 0.1.1. See [label scope and maintenance](docs/XFACTS.md) and [release preparation](docs/RELEASE_0.1.1.md) for publication status.
+- **SkillFacts:** [visual label](https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl1780e0xtxKyEJr2kl1YWJYg2xN7iCwZaexsCPnvfXLa3Rba0J4kPc2Mnt68OetJL-4y7UxPeqEfn2pjuRqDznRDE1k_UAC-NGLsKYq696EltdksETBRiOwdrj8Wd8UnIFGMjBHAEGhiOgKyXJOLqfbX9QPOB3YNDqYlJzGPB7YW6DCGwc9RK0uTEVLGKXrlKOxaZYbhQ1RjpAAMhJhcTUq64Me2u0KiHp_U9dFMNRS5darhQLWAYYZqjTLz3lSWFPeDpR4MTIJUO3JjULJITIKfyKWTXpx19GNIO92JDHFRli1LN1ZF7fvypyb5rEkOTcrx9Yd8pQSisjfsyvmL8f1q_m1lOXZ_U_aSaXZRwjgTjrtApu5mNh1BrYVO9JkaVHIkRx8OwKACpGYBuGdLESWpB47kJj8GFkp1xXubCu4pJA3RieeXTFejayw1OxOE95AJHXw-68EIXtXbL-vNpuib9955SdQv2VvItZklvOIMFyfT2xvBm_Vy9W27uhHxRi-W6AaWePv53-MbyJZX8Mj-n7PiQHVeeycBn7-dNauxu_-8fNj-KRBiUhvAOLVLKJlMwgn3zjuaZyo5enZdEvkFLel8TwMU_MVkb14pMIPICoThYPFzpf90ItLhJFdjpsATW7p8BziYXm0) · [source](skills/uxcalibur/SKILL_FACTS.md)

@@ -8,7 +8,7 @@ import { startPreview } from '../node_modules/getfilepress/scripts/preview.mjs';
 
 const site = fileURLToPath(new URL('../', import.meta.url));
 const repository = fileURLToPath(new URL('../../../', import.meta.url));
-const releaseVersion = JSON.parse(readFileSync(resolve(repository, 'packages/uxcalibur/release.json'), 'utf8')).version;
+const releaseVersion = JSON.parse(readFileSync(resolve(repository, 'package.json'), 'utf8')).version;
 const rootRequire = createRequire(resolve(repository, 'package.json'));
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(repository, '.cache/ms-playwright');
 const { chromium } = rootRequire('@playwright/test');

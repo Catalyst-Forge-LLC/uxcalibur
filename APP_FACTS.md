@@ -4,7 +4,7 @@ name: UXcalibur
 type: agent skill / CLI installer
 status: active
 license: MIT
-version: 0.1.1
+version: 0.1.2
 repository: https://github.com/Catalyst-Forge-LLC/uxcalibur
 stack:
   language: Markdown, YAML, TypeScript, JavaScript
@@ -29,7 +29,7 @@ build:
 generated:
   date: 2026-10-14
   generator: appfacts-cli v0.1.0 (scaffold)
-  inputs_fingerprint: 213d0c44cafc8601
+  inputs_fingerprint: 5053f1766677177f
 credits:
   generated_with: https://appfacts.dev
   built_by: Catalyst Forge — https://www.catalystforge.com/
@@ -50,7 +50,7 @@ An expert UX method for coding agents, with a dependency-free npm installer.
 | Type | Agent skill / CLI installer |
 | Status | Active, pre-1.0 |
 | License | MIT |
-| Source version | 0.1.1 |
+| Source version | 0.1.2 |
 | Package | uxcalibur; check npm for published availability |
 
 ## Stack and services
@@ -65,7 +65,7 @@ An expert UX method for coding agents, with a dependency-free npm installer.
 
 The published installer has no runtime dependencies, model runtime, telemetry, or automatic audit command. FilePress, TypeScript, and Playwright are development dependencies. Cloudflare serves the developer site; it does not perform UX reviews. The agent host governs any model calls or data disclosure during a review or implementation.
 
-Version 0.1.1 includes Grok/xAI and other Agent Skills hosts, for 12 install presets including a shared directory. The method has no fixed model provider. [Compatibility and verification limits](docs/AGENT_COMPATIBILITY.md) describe the supported layouts and available runtime evidence.
+Version 0.1.2 includes Grok/xAI and other Agent Skills hosts, for 12 install presets including a shared directory. The method has no fixed model provider. [Compatibility and verification limits](docs/AGENT_COMPATIBILITY.md) describe the supported layouts and available runtime evidence.
 
 ## Build and verification
 

@@ -14,10 +14,10 @@ function run(command, args, cwd, expected = 0) {
   assert.equal(result.status, expected, `${command} ${args.join(' ')}\n${result.stdout}\n${result.stderr}`);
   return result.stdout;
 }
-run(process.execPath, [join(root, 'scripts/build-package.mjs')], root);
-const metadata = JSON.parse(readFileSync(join(root, 'packages/uxcalibur/release.json'), 'utf8'));
+const metadata = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const archive = join(root, `.artifacts/uxcalibur-${metadata.version}.tgz`);
-run(process.execPath, [pnpm, 'pack', '--out', archive], join(root, '.artifacts/npm-package'));
+// Pack the exact enrolled directory LocalHelm publishes, including its prepack build.
+run(process.execPath, [pnpm, 'pack', '--out', archive], root);
 mkdirSync(join(root, '.tmp'), { recursive: true });
 const temp = mkdtempSync(join(root, '.tmp/packed-install-'));
 copyFileSync(archive, join(temp, 'archive.tgz'));
@@ -25,7 +25,7 @@ const entries = run('tar', ['-tzf', 'archive.tgz'], temp).trim().split(/\r?\n/).
 function files(directory) {
   return readdirSync(directory, { withFileTypes: true }).flatMap(entry => entry.isDirectory() ? files(join(directory, entry.name)) : [join(directory, entry.name)]);
 }
-const expected = ['LICENSE', 'README.md', 'package.json', 'bin/uxcalibur.js', 'lib/install.js', ...files(join(root, 'skills/uxcalibur')).map(path => 'skill/' + relative(join(root, 'skills/uxcalibur'), path).replaceAll('\\', '/'))].map(name => 'package/' + name).sort();
+const expected = ['LICENSE', 'README.md', 'package.json', 'dist/bin/uxcalibur.js', 'dist/lib/install.js', ...files(join(root, 'skills/uxcalibur')).map(path => 'dist/skill/' + relative(join(root, 'skills/uxcalibur'), path).replaceAll('\\', '/'))].map(name => 'package/' + name).sort();
 assert.deepEqual(entries, expected, 'Tarball includes exactly the public skill and installer.');
 // Install the tarball through the package manager; exercise its installed executable.
 writeFileSync(join(temp, 'package.json'), '{"name":"uxcalibur-packed-test","private":true,"type":"module"}\n');
@@ -34,15 +34,18 @@ const installedPackage = join(temp, 'node_modules/uxcalibur');
 const packed = JSON.parse(readFileSync(join(installedPackage, 'package.json'), 'utf8'));
 assert.equal(packed.license, 'MIT');
 assert.equal(packed.version, metadata.version);
-assert(!packed.dependencies && !packed.devDependencies && !packed.scripts);
+assert(!packed.dependencies, 'The installed CLI needs no runtime dependencies.');
+assert.equal(packed.bin.uxcalibur, 'dist/bin/uxcalibur.js');
+assert.deepEqual(readFileSync(join(root, 'README.md')), readFileSync(join(installedPackage, 'README.md')), 'GitHub and npm use the same README.');
 for (const path of files(join(root, 'skills/uxcalibur'))) {
-  assert.deepEqual(readFileSync(path), readFileSync(join(installedPackage, 'skill', relative(join(root, 'skills/uxcalibur'), path))));
+  assert.deepEqual(readFileSync(path), readFileSync(join(installedPackage, 'dist/skill', relative(join(root, 'skills/uxcalibur'), path))));
 }
-const cli = join(installedPackage, 'bin/uxcalibur.js');
+const cli = join(installedPackage, packed.bin.uxcalibur);
+assert.equal(run(process.execPath, [pnpm, 'exec', 'uxcalibur', '--version'], temp).trim(), metadata.version, 'Package-manager executable resolution works.');
 assert.equal(run(process.execPath, [cli, '--version'], temp).trim(), metadata.version);
 assert.match(run(process.execPath, [cli, '--help'], temp), /--project/);
 for (const args of [['audit'], ['install'], ['install', '--agent', 'other'], ['install', '--agent', '__proto__'], ['install', '--agent', 'toString'], ['install', '--agent', 'codex', '--project', '--target', 'skills'], ['install', '--agent', 'codex', '--target'], ['install', '--agent', 'codex', '--project', '--project'], ['install', '--agent', 'codex', '--bogus']]) run(process.execPath, [cli, ...args], temp, 1);
-const { install, skillsDirectory } = await import(pathToFileURL(join(installedPackage, 'lib/install.js')).href);
+const { install, skillsDirectory } = await import(pathToFileURL(join(installedPackage, 'dist/lib/install.js')).href);
 const hosts = {
   codex: ['.agents', '.agents'], claude: ['.claude', '.claude'], cursor: ['.cursor', '.cursor'],
   grok: ['.grok', '.grok'], gemini: ['.gemini', '.gemini'], copilot: ['.copilot', '.github'],
@@ -58,7 +61,7 @@ for (const [agent, [personalFolder, folder]] of Object.entries(hosts)) {
   const options = { agent, project: false, force: false };
   assert.equal(skillsDirectory(options, { home, cwd: project }), join(home, personalFolder, 'skills'));
   assert.equal(skillsDirectory({ ...options, project: true }, { home, cwd: project }), join(project, folder, 'skills'));
-  const personal = install(options, { home, cwd: project, source: join(installedPackage, 'skill'), version: packed.version });
+  const personal = install(options, { home, cwd: project, source: join(installedPackage, 'dist/skill'), version: packed.version });
   assert(existsSync(join(personal.directory, 'SKILL.md')));
   run(process.execPath, [cli, 'install', '--agent', agent, '--project'], project);
   const destination = join(project, folder, 'skills/uxcalibur');

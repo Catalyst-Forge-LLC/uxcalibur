@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { agentProfiles, install, isAgent } from '../lib/install.js';
 import type { Options } from '../lib/install.js';
 
-const metadata = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8')) as { version: string };
+const metadata = JSON.parse(readFileSync(new URL('../../package.json', import.meta.url), 'utf8')) as { version: string };
 const choices = Object.keys(agentProfiles).join('|');
 const usage = `UXcalibur ${metadata.version}
 Install the UXcalibur skill for your coding agent.

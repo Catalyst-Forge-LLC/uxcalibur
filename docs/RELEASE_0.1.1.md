@@ -1,5 +1,7 @@
 # UXcalibur 0.1.1 release preparation
 
+> Historical preparation evidence. npm received a different root package without the executable. Use [the repair release](RELEASE_0.1.2.md) and current [release runbook](RELEASING.md).
+
 Prepared on 2026-10-14 for owner publication. npm was checked during preparation:
 its latest version was 0.1.0, and 0.1.1 was unused. This document does not claim
 0.1.1 has been published. No publication, Git push, site deployment, or personal

@@ -2,7 +2,7 @@
 skill_facts_version: 0.1.0
 name: UXcalibur
 developer: Catalyst Forge LLC
-version: 0.1.1
+version: 0.1.2
 status: preview
 license: MIT
 kind: agents-skill
@@ -51,7 +51,7 @@ repository: https://github.com/Catalyst-Forge-LLC/uxcalibur
 | Field | Value |
 |---|---|
 | Developer | Catalyst Forge LLC |
-| Source version | 0.1.1 |
+| Source version | 0.1.2 |
 | Status | Preview; check npm for published availability |
 | License | MIT |
 | Kind | Agent Skills bundle, with 12 installer presets |
@@ -62,7 +62,7 @@ Elevate an existing app's user experience through expert UX review, design direc
 
 Review an app broadly, refine a chosen aspect, or hone finishing details. The method produces a coherent design direction and prioritized changes. A detailed specification or implementation follows the user's assignment.
 
-The 0.1.1 installer supports Codex, Claude Code, Cursor, Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. See the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) for installation and documented host paths.
+The 0.1.2 installer supports Codex, Claude Code, Cursor, Grok Build (xAI), Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. See the [compatibility guide](https://github.com/Catalyst-Forge-LLC/uxcalibur/blob/main/docs/AGENT_COMPATIBILITY.md) for installation and documented host paths.
 
 ## Provenance
 
@@ -102,4 +102,4 @@ All 12 source install presets pass packed-file, isolated personal/project placem
 
 *Scaffolded with [SkillFacts](https://skillfacts.dev), then reviewed against the full method by Codex for Catalyst Forge.*
 
-[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl1780VxzKyELoWkv2YWFZQmyPbGHyJKRxsmGkP_eJ6fNttAN7UnS08zo6c2bsz7o-SzTzvSk5_rpuTaWqzHoTDd0IOsHCsAXRow9RVEPPrSk1usFAg4UInuH68_FrJgBiWJkjACGQAemIyDLNbmYan9bPeK8Z9fgYFpyEvO4Z2uBDmMY_BS1tHQwQso4RW8chV2rzDB8imqMFICBEJOrSUkX_Nh2V0jU07O6PpqphiK3TjUcqBYwzFCtUWbam8qS4n6w1IOBSZBqR24MShaJSfAHcumk52cd_RjSTnciQ5yXZcvSjVVR-778pUk-aZJDk3J8-ylfKYGo7A27cvpifL-afltZjt1Hyl4yzS5KGCfCcRvI1N3EpiOoNdeJPlODSo7k6MMeGFSA1CwAd2wpoiT1wJHc5MfAQqmueG9TwR2FpCE68fKa6Wp0jaVma4LwDjKhgy9nPRjBq3rzdbVeF33z3jsvifolu4Vcm1nCK85wcTK9vRO8Xi2W3zfLOxE3erFEN7DE-8__Gd9AtryCR3b_nBUHqvPaOwn4_P2sSY3tw5fF4-ZvgRCT2gDGqV1CyWQSTrh33tE0U8nRk-uSyK9oSed7GqDgbya7eaXADCIrEIaDxU-V_tOJSIeTXI2ZAk9s6fIDNO5ebA
+[skillfacts-label]: https://skillfacts.dev/v#sf1.eNqVU02L2zAQ_StCl1780e0xtxKyEJr2kl1YWJYg2xN7iCwZaexsCPnvfXLa3Rba0J4kPc2Mnt68OetJL-4y7UxPeqEfn2pjuRqDznRDE1k_UAC-NGLsKYq696EltdksETBRiOwdrj8Wd8UnIFGMjBHAEGhiOgKyXJOLqfbX9QPOB3YNDqYlJzGPB7YW6DCGwc9RK0uTEVLGKXrlKOxaZYbhQ1RjpAAMhJhcTUq64Me2u0KiHp_U9dFMNRS5darhQLWAYYZqjTLz3lSWFPeDpR4MTIJUO3JjULJITIKfyKWTXpx19GNIO92JDHFRli1LN1ZF7fvypyb5rEkOTcrx9Yd8pQSisjfsyvmL8f1q_m1lOXZ_U_aSaXZRwjgTjrtApu5mNh1BrYVO9JkaVHIkRx8OwKACpGYBuGdLESWpB47kJj8GFkp1xXubCu4pJA3RieeXTFejayw1OxOE95AJHXw-68EIXtXbL-vNpuib9955SdQv2VvItZklvOIMFyfT2xvBm_Vy9W27uhHxRi-W6AaWePv53-MbyJZX8Mj-n7PiQHVeeycBn7-dNauxu_-8fNj-KRBiUhvAOLVLKJlMwgn3zjuaZyo5enZdEvkFLel8TwMU_MVkb14pMIPICoThYPFzpf90ItLhJFdjpsATW7p8BziYXm0

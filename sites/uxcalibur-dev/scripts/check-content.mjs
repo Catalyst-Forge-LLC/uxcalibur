@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = ['home', 'install', 'example', 'spec', 'method', 'contribute'];
 const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
-const release = JSON.parse(readFileSync(resolve(root, '../../packages/uxcalibur/release.json'), 'utf8'));
+const release = JSON.parse(readFileSync(resolve(root, '../../package.json'), 'utf8'));
 assert.equal(pkg.devDependencies.getfilepress, '0.1.50', 'Keep the published engine pin exact.');
 assert.equal(pkg.private, true, 'The content site must not be an npm release.');
 const config = readFileSync(resolve(root, 'filepress.config.ts'), 'utf8');

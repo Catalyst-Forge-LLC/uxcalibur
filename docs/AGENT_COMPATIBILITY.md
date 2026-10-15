@@ -4,11 +4,11 @@ UXcalibur is an Agent Skills bundle: `SKILL.md`, relative references, a license,
 
 ## Release boundary
 
-Version **0.1.1** includes all 12 presets below: Codex, Claude Code, Cursor, Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. Check npm for published availability. Once published, install from your app's directory:
+Version **0.1.2** includes all 12 presets below: Codex, Claude Code, Cursor, Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, Roo Code, and a shared Agent Skills directory. Check npm for published availability. Once published, install from your app's directory:
 
 ```sh
-npx uxcalibur@0.1.1 --list-agents
-npx uxcalibur@0.1.1 install --agent grok --project
+npx uxcalibur@0.1.2 --list-agents
+npx uxcalibur@0.1.2 install --agent grok --project
 ```
 
 For a local build before publication, or to use a later source revision:
@@ -17,13 +17,13 @@ From the UXcalibur checkout:
 
 ```sh
 pnpm package:build
-node .artifacts/npm-package/bin/uxcalibur.js --list-agents
+node dist/bin/uxcalibur.js --list-agents
 ```
 
 From the app you want to review, use the absolute path to that built installer:
 
 ```sh
-node /absolute/path/to/uxcalibur/.artifacts/npm-package/bin/uxcalibur.js install --agent grok --project
+node /absolute/path/to/uxcalibur/dist/bin/uxcalibur.js install --agent grok --project
 ```
 
 Omit `--project` for a personal installation. Replace `grok` with a preset below. The installer adds `uxcalibur/` under the listed parent directory. Keep one active copy in your host's discovery paths and reload its skills after installation.

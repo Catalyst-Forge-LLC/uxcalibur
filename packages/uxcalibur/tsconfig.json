@@ -7,7 +7,7 @@
     "skipLibCheck": true,
     "types": ["node"],
     "rootDir": "src",
-    "outDir": "../../.artifacts/npm-package",
+    "outDir": "../../dist",
     "verbatimModuleSyntax": true
   },
   "include": ["src/**/*.ts"]

@@ -1,7 +1,14 @@
 {
   "name": "uxcalibur",
-  "version": "0.1.1",
-  "description": "UXcalibur versioned skill and private developer-proof harness",
+  "version": "0.1.2",
+  "description": "Expert UX review, design direction, and implementation guidance for your coding agent",
+  "homepage": "https://uxcalibur.dev",
+  "repository": { "type": "git", "url": "git+https://github.com/Catalyst-Forge-LLC/uxcalibur.git" },
+  "bugs": { "url": "https://github.com/Catalyst-Forge-LLC/uxcalibur/issues" },
+  "keywords": ["agent-skills", "skills", "codex", "claude-code", "cursor", "grok", "xai", "ux", "design", "accessibility"],
+  "bin": { "uxcalibur": "dist/bin/uxcalibur.js" },
+  "files": ["dist/bin/", "dist/lib/", "dist/skill/", "README.md", "LICENSE"],
+  "publishConfig": { "access": "public" },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,6 +23,7 @@
     "proof:baseline": "node scripts/prove-baseline.mjs",
     "package:build": "node scripts/build-package.mjs",
     "package:check": "node scripts/check-package.mjs",
+    "prepack": "node scripts/build-package.mjs",
     "site:check": "pnpm --dir sites/uxcalibur-dev check && pnpm --dir sites/uxcalibur-dev build",
     "verify:release": "pnpm verify && pnpm package:check && pnpm site:check",
     "deploy:site": "node node_modules/wrangler/bin/wrangler.js pages deploy sites/uxcalibur-dev/build --project-name uxcalibur-dev --branch main"
@@ -33,6 +41,6 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=20.19.0"
   }
 }
