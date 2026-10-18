@@ -1,16 +1,10 @@
 ---
-title: Turn rough apps into exceptional experiences.
-description: Give your coding agent an expert UX method to transform your app's structure, journeys, interactions, and visual design—from broad strokes to precision polish.
+title: "Make your app easier to understand and use."
+description: "Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass."
 order: 0
 ---
 
-<p class="lead">Give your coding agent an expert UX method to <strong>see your app's potential and bring it to life.</strong> Rethink the core experience, refine its design, and hone the details that make it feel exceptional.</p>
-
-<div class="cta-row"><a class="cta cta-primary" href="/install">Draw UXcalibur <span aria-hidden="true">↗</span></a><a class="cta cta-secondary" href="/method">See how it works <span aria-hidden="true">→</span></a></div>
-
-<p class="understated">For your coding agent <span aria-hidden="true">/</span> Open source <span aria-hidden="true">/</span> MIT</p>
-
-<div class="origin-note"><p class="eyebrow">The sword from the stone</p><h2>Your app has potential. Draw it out.</h2><p>In the legend, the boy who draws the sword becomes king. Drawing UXcalibur is the same invitation for your app: bring an ambitious prototype or an established product, and uncover the experience it could become.</p></div>
+<section class="value-hero" aria-label="UXcalibur overview"><div class="value-intro"><p class="value-kind">UX design skill for your coding agent</p><h1>Make your app easier to understand and use.</h1><p class="value-lede">Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install UXcalibur</a><a class="cta cta-secondary" href="/method">See the design method</a></div><p class="value-limit">The skill works through your existing agent. Ask for an assessment, a design handoff, or implementation at the scope you choose.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A project page gives every status and action the same weight.</p><div class="value-result"><p><strong>What you get</strong><br>A clearer hierarchy: project identity, what needs attention, then the next useful action.</p></div><p>People can see where to go without reading every label first.</p><p class="value-note">Illustrative design direction. Examples below show navigation, hierarchy, and feedback.</p></figure></section>
 
 <div class="section-rule"><span>01 / Wield it at any scale</span><span>Broad strokes → precision honing</span></div>
 
@@ -61,3 +55,4 @@ The method works through your existing coding agent. Install the skill, open you
 <p class="examples-note">Illustrative before-and-after designs. <a href="/example">Explore a worked example with implementation and verification <span aria-hidden="true">→</span></a></p>
 
 <div class="start-strip"><div><h2>Bring the app. Draw the blade.</h2><p>From an early prototype to a product ready for its next level, give your agent a method for exceptional UX.</p></div><a class="cta cta-primary" href="/install">Install UXcalibur <span aria-hidden="true">↗</span></a></div>
+<div class="origin-note"><p class="eyebrow">The sword from the stone</p><h2>Your app has potential. Draw it out.</h2><p>The name carries the invitation to uncover the experience your app could become.</p></div>
