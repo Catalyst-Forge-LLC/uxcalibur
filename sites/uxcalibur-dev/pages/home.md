@@ -4,7 +4,25 @@ description: "Give your coding agent a method for reviewing the experience, choo
 order: 0
 ---
 
-<section class="value-hero" aria-label="UXcalibur overview"><div class="value-intro"><p class="value-kind">UX design skill for your coding agent</p><h1>Make your app easier to understand and use.</h1><p class="value-lede">Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install UXcalibur</a><a class="cta cta-secondary" href="/method">See the design method</a></div><p class="value-limit">The skill works through your existing agent. Ask for an assessment, a design handoff, or implementation at the scope you choose.</p></div><figure class="value-proof"><figcaption>Illustrative example</figcaption><p><strong>Starting point</strong><br>A project page gives every status and action the same weight.</p><div class="value-result"><p><strong>What you get</strong><br>A clearer hierarchy: project identity, what needs attention, then the next useful action.</p></div><p>People can see where to go without reading every label first.</p><p class="value-note">Illustrative design direction. Examples below show navigation, hierarchy, and feedback.</p></figure></section>
+<section class="value-hero" aria-label="UXcalibur overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">UX design skill for your coding agent</p><h1>Make your app easier to understand and use.</h1></div><div class="value-pitch"><p class="value-lede">Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install UXcalibur</a><a class="cta cta-secondary" href="#design-example">See the design change</a></div><p class="value-limit">The skill works through your existing agent. Ask for an assessment, a design handoff, or implementation at the scope you choose.</p></div></div>
+<figure class="value-proof worked-example" id="design-example" tabindex="-1">
+<figcaption>Turn a status list into a clear next step</figcaption>
+<p class="example-context">Illustrative project screen and proposed design. This is a visible design recommendation, not a measured usability result or a live app.</p>
+<section class="example-step" aria-labelledby="example-step-1">
+<h2 id="example-step-1"><span>1 · Before</span> The next action looks like another status</h2>
+<div class="mini-ui mini-project before"><span>Project: Atlas</span><span>Status: On track</span><span>Next step: Review your draft</span><span>Updated today</span></div><p>Four equally weighted lines make the reader scan for what to do.</p>
+</section>
+<section class="example-step example-report" aria-labelledby="example-step-2">
+<h2 id="example-step-2"><span>2 · UXcalibur recommendation</span> Separate identity, status, and action</h2>
+<p><strong>Surface:</strong> Project overview.</p><p>Make <strong>Atlas</strong> the title. Keep <strong>On track</strong> beside it as a compact status. Put <strong>Review your draft</strong> on its own prominent action row. Make the update time secondary.</p><p><strong>Check after implementation:</strong> The action is visible at narrow widths and reachable by keyboard.</p>
+</section>
+<section class="example-step" aria-labelledby="example-step-3">
+<h2 id="example-step-3"><span>3 · Proposed design</span> The next step has a place of its own</h2>
+<div class="mini-ui mini-project after"><div class="mini-project-heading"><strong>Atlas</strong><span class="mini-status">On track</span></div><span class="mini-muted">Updated today</span><span class="mini-primary-action">Review your draft <span aria-hidden="true">→</span></span></div><p class="example-payoff">The same information now distinguishes “where am I?” from “what can I do?”</p>
+</section>
+<p class="value-note">The agent produces design guidance. Ask for implementation to turn the proposal into working controls, then verify the result.</p>
+<p class="example-links"><a href="/example">Explore a separate example with implementation evidence</a> · <a href="/method">Read the design method</a></p>
+</figure></section>
 
 <div class="section-rule"><span>01 / Wield it at any scale</span><span>Broad strokes → precision honing</span></div>
 
@@ -39,11 +57,6 @@ The method works through your existing coding agent. Install the skill, open you
 <div class="example-intro"><p class="eyebrow">Shape / navigation</p><h3>Find your way.</h3><p>Give features clear names and predictable homes, so people know where to go.</p></div>
 <figure class="experience-illustration"><figcaption>Before</figcaption><div class="mini-ui mini-navigation before"><span class="mini-app-title">Your workspace</span><span class="mini-nav-item">Workspace <span aria-hidden="true">›</span></span><span class="mini-nav-item">Manager <span aria-hidden="true">›</span></span><span class="mini-nav-item">Tools <span aria-hidden="true">›</span></span></div></figure>
 <figure class="experience-illustration"><figcaption>After</figcaption><div class="mini-ui mini-navigation after"><span class="mini-app-title">Your workspace</span><span class="mini-nav-item">Projects <span aria-hidden="true">›</span></span><span class="mini-nav-item">Tasks <span aria-hidden="true">›</span></span><span class="mini-nav-item selected">Files <span aria-hidden="true">›</span></span></div></figure>
-</section>
-<section class="experience-example">
-<div class="example-intro"><p class="eyebrow">Refine / visual hierarchy</p><h3>See what matters.</h3><p>Bring the important content and next action into focus with deliberate visual design.</p></div>
-<figure class="experience-illustration"><figcaption>Before</figcaption><div class="mini-ui mini-project before"><span>Project: Atlas</span><span>Status: On track</span><span>Next step: Review your draft</span><span>Updated today</span></div></figure>
-<figure class="experience-illustration"><figcaption>After</figcaption><div class="mini-ui mini-project after"><div class="mini-project-heading"><strong>Atlas</strong><span class="mini-status">On track</span></div><span class="mini-muted">Updated today</span><span class="mini-primary-action">Review your draft <span aria-hidden="true">→</span></span></div></figure>
 </section>
 <section class="experience-example">
 <div class="example-intro"><p class="eyebrow">Hone / helpful feedback</p><h3>Recover with confidence.</h3><p>Explain what needs attention and how to fix it, right where the person needs help.</p></div>
