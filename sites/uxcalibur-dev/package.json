@@ -26,7 +26,7 @@
     }
   },
   "devDependencies": {
-    "getfilepress": "0.1.50"
+    "getfilepress": "0.1.51"
   },
   "engines": {
     "node": "^20.19.0 || >=22.12.0"
