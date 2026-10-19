@@ -17,7 +17,7 @@ The synthetic review inbox runs at <http://127.0.0.1:5191>. Windows wrappers are
 | Agent method | `skills/uxcalibur/` | `pnpm skill:check` |
 | Installer | `packages/uxcalibur/src/` | `pnpm package:check` |
 | Synthetic app | `fixtures/review-inbox/` | `pnpm verify` |
-| FilePress site | `sites/uxcalibur-dev/` | `pnpm site:check` |
+| FilePress site | `site/` | `pnpm site:check` |
 
 `pnpm package:build` compiles the CLI and copies the skill into `dist/`. `prepack` runs that build automatically. The root `package.json` owns the public version, executable, and file allowlist; the root README is also npm's README. There is no second generated release manifest.
 
@@ -27,6 +27,6 @@ The synthetic review inbox runs at <http://127.0.0.1:5191>. Windows wrappers are
 
 The implemented fixture change preserves the originating row, focus, query, and scroll position on return. Keeping return visible during long reading remains proposed. This is interaction proof, not a measured customer outcome.
 
-Install the site's dependencies separately with `pnpm --dir sites/uxcalibur-dev install --frozen-lockfile`. `pnpm verify:release` covers the method, proof, packed installer, and site. Run `pnpm --dir sites/uxcalibur-dev qa` for desktop and narrow browser checks.
+Install the site's dependencies separately with `pnpm --dir site install --frozen-lockfile`. `pnpm verify:release` covers the method, proof, packed installer, and site. Run `pnpm --dir site qa` for desktop and narrow browser checks.
 
 Caches, generated output, and temporary skill copies stay out of Git. Keep private app evidence out of public examples and packages.

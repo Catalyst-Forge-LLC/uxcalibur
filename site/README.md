@@ -1,6 +1,6 @@
-# UXcalibur developer site
+# UXcalibur site
 
-Content-only FilePress site for **https://uxcalibur.dev**. The engine is the published `getfilepress` **0.1.50**, pinned exactly with this site's own pnpm lockfile. The product method lives at `../../skills/uxcalibur/`; this tree contains the developer website, not an analyzer or service.
+Content-only FilePress site for **https://uxcalibur.dev**. The engine is the published `getfilepress` **0.1.51**, pinned exactly with this site's own pnpm lockfile. The product method lives at `../skills/uxcalibur/`; this tree contains the website, not an analyzer or service.
 
 ## Local use
 
@@ -26,7 +26,7 @@ pnpm preview --port 27779
 - `scripts/browser-qa.mjs` — rendered Chromium checks and captures using the full repository's pinned Playwright harness/cache.
 - `scripts/render-artwork.mjs` — reproducible PNG favicon/social card rasterization from the code-native SVG source, using the same development browser.
 
-The worked example is the actual dated pass at `../../examples/review-inbox/`. K1 is implemented and verified; K2 stays Not started. The images are synthetic, not customer or private app evidence. The example demonstrates an actionable report and reproduced interaction change, not measured user efficacy.
+The worked example is the actual dated pass at `../examples/review-inbox/`. K1 is implemented and verified; K2 stays Not started. The images are synthetic, not customer or private app evidence. The example demonstrates an actionable report and reproduced interaction change, not measured user efficacy.
 
 ## Rendered QA
 
@@ -41,17 +41,17 @@ The QA runner starts an ephemeral local FilePress production preview, checks all
 
 ## Cloudflare Pages handoff
 
-LocalHelm's Sites **Ship** action runs `pnpm ship` in this directory. It builds and validates the site, then calls the repository's existing `deploy:site` command to upload to Cloudflare Pages project `uxcalibur-dev` on branch `main`. This script also enables the site in Today's **Land** queue when its tree differs from the last successful Land. The `sites/` nesting and `-dev` name are supported through FilePress's registered extra-site path.
+LocalHelm's Sites **Ship** action runs `pnpm ship` in this directory. It builds and validates the site, then calls the repository's existing `deploy:site` command to upload to Cloudflare Pages project `uxcalibur-dev` on branch `main`. This script also enables the site in Today's **Land** queue when its tree differs from the last successful Land. The site lives at `site/`, so FilePress lists it as uxcalibur.
 
-From the repository root, use `pnpm --dir sites/uxcalibur-dev ship` when deployment is intended. Ship uploads publicly; building with `pnpm build` alone remains local.
+From the repository root, use `pnpm --dir site ship` when deployment is intended. Ship uploads publicly; building with `pnpm build` alone remains local.
 
 Publish **`build/`** using Wrangler Pages after the parent repository's release checks. This subtree does not create Cloudflare projects, upload content, or attach a custom domain.
 
-For a Git-connected Pages build, select framework **None**, root directory `sites/uxcalibur-dev`, build command `pnpm install --frozen-lockfile && pnpm build`, output `build`, and a current supported Node LTS. For a CLI upload, run Wrangler against this site's generated `build/` and the confirmed Pages project name. The owner attaches `uxcalibur.dev` after deployment; canonical URLs remain `https://uxcalibur.dev` even when validating the Pages preview origin.
+For a Git-connected Pages build, select framework **None**, root directory `site`, build command `pnpm install --frozen-lockfile && pnpm build`, output `build`, and a current supported Node LTS. For a CLI upload, run Wrangler against this site's generated `build/` and the confirmed Pages project name. The owner attaches `uxcalibur.dev` after deployment; canonical URLs remain `https://uxcalibur.dev` even when validating the Pages preview origin.
 
 The default FilePress `_headers` are retained. Verify the live home, install/example routes, RSS, six-page sitemap, 404, redirects, and response headers after upload. Pages preview success does not establish custom-domain DNS or TLS readiness. Local FilePress preview does not apply hosting `_redirects`.
 
-The site retains FilePress 0.1.50 and applies a narrow pnpm override to cookie 0.7.2 for its security fix. A remaining unpatched moderate `sprintf-js` advisory is in the gray-matter → js-yaml → argparse build-tool chain; the npm skill package and served static site do not contain that dependency. Keep build inputs limited to trusted repository content. Root deployment tooling requires Node 22.12+; this standalone site retains its declared build engine range.
+The site retains FilePress 0.1.51 and applies a narrow pnpm override to cookie 0.7.2 for its security fix. A remaining unpatched moderate `sprintf-js` advisory is in the gray-matter → js-yaml → argparse build-tool chain; the npm skill package and served static site do not contain that dependency. Keep build inputs limited to trusted repository content. Root deployment tooling requires Node 22.12+; this standalone site retains its declared build engine range.
 
 ## License
 

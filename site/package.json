@@ -1,12 +1,12 @@
 {
-  "name": "uxcalibur-dev-site",
+  "name": "uxcalibur-site",
   "version": "0.1.0",
-  "description": "Content-only FilePress developer site for UXcalibur",
+  "description": "Content-only FilePress site for UXcalibur",
   "scripts": {
     "dev": "filepress dev",
     "check": "node scripts/check-content.mjs && filepress check",
     "build": "filepress build && node scripts/finalize-build.mjs && node scripts/check-content.mjs --build",
-    "ship": "pnpm build && pnpm --dir ../.. run deploy:site",
+    "ship": "pnpm build && pnpm --dir .. run deploy:site",
     "preview": "filepress preview",
     "qa": "node scripts/browser-qa.mjs"
   },

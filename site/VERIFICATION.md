@@ -41,4 +41,4 @@ This establishes these static page and Chromium behaviors, not a complete access
 
 ## Security dependency follow-up
 
-The root updated deployment Wrangler to 4.147.0 and the site applies cookie 0.7.2 through a narrow override. FilePress and SvelteKit pins remain unchanged. Production build/content checks and 12-state QA pass again; the npm tarball is unchanged. Root dependency audit is clear; site audit retains one unpatched moderate sprintf-js build CLI advisory, detailed in ../../docs/RELEASE_VERIFICATION.md. One diagnostic config-load transport timeout was observed; the subsequent build verifies the intended custom canonical/pages/links.
+The root updated deployment Wrangler to 4.147.0 and the site applies cookie 0.7.2 through a narrow override. FilePress and SvelteKit pins remain unchanged. Production build/content checks and 12-state QA pass again; the npm tarball is unchanged. Root dependency audit is clear; site audit retains one unpatched moderate sprintf-js build CLI advisory, detailed in ../docs/RELEASE_VERIFICATION.md. One diagnostic config-load transport timeout was observed; the subsequent build verifies the intended custom canonical/pages/links.

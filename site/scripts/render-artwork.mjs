@@ -6,7 +6,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const site = fileURLToPath(new URL('../', import.meta.url));
-const repository = fileURLToPath(new URL('../../../', import.meta.url));
+const repository = fileURLToPath(new URL('../../', import.meta.url));
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(repository, '.cache/ms-playwright');
 const { chromium } = createRequire(resolve(repository, 'package.json'))('@playwright/test');
 const browser = await chromium.launch({ headless: true });

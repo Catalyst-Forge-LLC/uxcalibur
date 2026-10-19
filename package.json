@@ -24,9 +24,9 @@
     "package:build": "node scripts/build-package.mjs",
     "package:check": "node scripts/check-package.mjs",
     "prepack": "node scripts/build-package.mjs",
-    "site:check": "pnpm --dir sites/uxcalibur-dev check && pnpm --dir sites/uxcalibur-dev build",
+    "site:check": "pnpm --dir site check && pnpm --dir site build",
     "verify:release": "pnpm verify && pnpm package:check && pnpm site:check",
-    "deploy:site": "node node_modules/wrangler/bin/wrangler.js pages deploy sites/uxcalibur-dev/build --project-name uxcalibur-dev --branch main"
+    "deploy:site": "node node_modules/wrangler/bin/wrangler.js pages deploy site/build --project-name uxcalibur-dev --branch main"
   },
   "author": "Catalyst Forge, LLC",
   "license": "MIT",

@@ -6,8 +6,14 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = ['home', 'install', 'example', 'spec', 'method', 'contribute'];
 const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
-const release = JSON.parse(readFileSync(resolve(root, '../../package.json'), 'utf8'));
-assert.equal(pkg.devDependencies.getfilepress, '0.1.50', 'Keep the published engine pin exact.');
+const release = JSON.parse(readFileSync(resolve(root, '../package.json'), 'utf8'));
+const requiredPin = '0.1.51';
+const actualPin = pkg.devDependencies?.getfilepress;
+assert.equal(
+	actualPin,
+	requiredPin,
+	`getfilepress in site/package.json is ${JSON.stringify(actualPin)}; site/scripts/check-content.mjs still requires ${JSON.stringify(requiredPin)}. Use the same exact version in both files.`
+);
 assert.equal(pkg.private, true, 'The content site must not be an npm release.');
 const config = readFileSync(resolve(root, 'filepress.config.ts'), 'utf8');
 assert.match(config, /url: 'https:\/\/uxcalibur\.dev'/, 'Use the canonical custom domain.');

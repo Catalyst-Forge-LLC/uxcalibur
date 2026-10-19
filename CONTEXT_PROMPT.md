@@ -1,5 +1,7 @@
 # UXcalibur project context
 
+The FilePress site is `site/`. FilePress lists it as uxcalibur. Cloudflare Pages project `uxcalibur-dev` and branch `main` stay the deploy target. `site/scripts/check-content.mjs` must require the same exact `getfilepress` version as `site/package.json`.
+
 Executable repair, 2026-10-14: the registry’s 0.1.1 is the wrong root development package (184 files, no bin). The corrected candidate is **0.1.2**. Root `package.json` now owns the public manifest/version, `prepack` builds `dist/bin/uxcalibur.js` and the skill, and the root README is shared by GitHub/npm. The obsolete generated release manifest is removed. LocalHelm uses its existing root enrollment; verify read-only status and Publish plan after commit. See `docs/RELEASE_0.1.2.md` and `docs/RELEASING.md`. No publication, registry deprecation, push, deployment, installed-skill update, or phase transition is part of this repair. Historical notes below describe earlier states.
 
 LocalHelm deployment integration (2026-10-06): `sites/uxcalibur-dev` now has `ship: pnpm build && pnpm --dir ../.. run deploy:site`. It reuses the root's confirmed Pages project/branch after building and validating content. FilePress's extra-site registration already supports the nested path and `-dev` name. Ship detection now produces a tree fingerprint and enables Today's Land queue. No deployment or push was performed for this change.

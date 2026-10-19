@@ -7,7 +7,7 @@ import { once } from 'node:events';
 import { startPreview } from '../node_modules/getfilepress/scripts/preview.mjs';
 
 const site = fileURLToPath(new URL('../', import.meta.url));
-const repository = fileURLToPath(new URL('../../../', import.meta.url));
+const repository = fileURLToPath(new URL('../../', import.meta.url));
 const releaseVersion = JSON.parse(readFileSync(resolve(repository, 'package.json'), 'utf8')).version;
 const rootRequire = createRequire(resolve(repository, 'package.json'));
 process.env.PLAYWRIGHT_BROWSERS_PATH ??= resolve(repository, '.cache/ms-playwright');
@@ -81,7 +81,7 @@ try {
   const receipt = {
     capturedAt: new Date().toISOString(),
     browser: browser.version(),
-    engine: 'getfilepress 0.1.50',
+    engine: `getfilepress ${JSON.parse(readFileSync(resolve(site, 'package.json'), 'utf8')).devDependencies.getfilepress}`,
     checks: ['12 desktop/mobile page states', 'loaded images/resources', 'single h1', 'canonical origin', 'document overflow', 'visible keyboard focus', 'narrow evidence disclosure', 'static content with JavaScript disabled', 'custom 404', 'RSS/sitemap/robots'],
     results,
     limits: ['Chromium only', 'No screen-reader or real-touch session', 'Screenshot visual review performed separately', 'External links/public release/custom domain verified by launch owner'],
