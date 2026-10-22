@@ -31,6 +31,14 @@ These are scales of design judgment, not a mandatory sequence or three deliverab
 
 Inspect across these scales within the assignment, then choose the changes that serve the product. Preserve effective design. A visual refresh can be the right solution; so can a deeper journey redesign or a targeted finishing pass. Avoid forcing every app into the same aesthetic, layout, or component recipe.
 
+## Decision principles
+
+**Clarity without clutter.** Remove redundant taglines, helper text, and secondary labels. Fix unclear structure, naming, and interactions before adding explanation. Keep concise guidance that helps people understand the value, make a decision, complete a task, or recover from a problem.
+
+**Consider UX, DX, and AX together.** Choose changes that improve the user’s outcome and make the product easier for developers and agents to understand, operate, and maintain. Seek improvements across user experience (UX), developer experience (DX), and agent experience (AX); make meaningful tradeoffs explicit. Preserve existing capabilities and user data, and verify the affected behavior.
+
+AX includes agents using the product and agents working on its code. Apply these principles within the assignment; they do not require every change to improve all three equally or authorize unrelated redesign.
+
 ## Define an exceptional target experience
 
 Start the deliverable with a concrete diagnosis and design direction: what the app does, where its experience falls short, and how the upgraded experience should work and feel. Describe recognizable before/after behavior rather than repeating "make it world-class." Explain the important product and visual choices so the implementer can create one coherent experience.

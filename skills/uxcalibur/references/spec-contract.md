@@ -21,6 +21,8 @@ Include these sections, combining only when detailed behavior remains easy to fi
 11. Implementation-model prompt: executable starting prompt with tracking updates.
 12. Review guide/sources: important choices, previous specs, architecture to preserve, source references.
 
+For material design decisions, record the intended user benefit, consequential DX/AX tradeoffs, and the behavior/data to preserve with corresponding checks. Keep this in the existing rationale and acceptance sections rather than adding a scorecard for every change.
+
 A large product can require a substantial document. Do not cut detailed flows to an arbitrary word count or invent features to imitate another spec's length.
 
 ## Per-flow contract
@@ -108,7 +110,8 @@ Read project instructions, dependencies/tracker, relevant interaction/data secti
 and the packet's acceptance scenarios first. Inspect current implementation;
 proposed contracts are not existing APIs. Preserve unrelated changes, user data,
 and accepted decisions, including the user's focus areas and exclusions.
-Use established architecture/conventions.
+Use established architecture/conventions. Apply the clarity and UX/DX/AX principles:
+retain useful guidance, explain material tradeoffs, and verify preservation needs.
 Set the packet In progress and keep dated notes/issues as work proceeds.
 Implement its owned frontend/server/data changes without simulating guarantees.
 Record exact unmet prerequisites and partial progress if delivery is blocked.
