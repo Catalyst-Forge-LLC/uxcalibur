@@ -21,7 +21,7 @@ Include these sections, combining only when detailed behavior remains easy to fi
 11. Implementation-model prompt: executable starting prompt with tracking updates.
 12. Review guide/sources: important choices, previous specs, architecture to preserve, source references.
 
-For material design decisions, record the intended user benefit, consequential DX/AX tradeoffs, and the behavior/data to preserve with corresponding checks. Keep this in the existing rationale and acceptance sections rather than adding a scorecard for every change.
+For material design decisions, record the intended user benefit, consequential DX/AX tradeoffs, and the tasks, useful guidance, behavior, and data to preserve with corresponding checks. Before removing or replacing content or behavior, specify where its supported tasks will remain covered and disclose any proposed material loss. For help changes, check that distinct uses, defaults, constraints, and recovery paths remain discoverable and usable; shorter text or fewer examples is not acceptance evidence. Keep this in the existing rationale and acceptance sections rather than adding a scorecard for every change.
 
 A large product can require a substantial document. Do not cut detailed flows to an arbitrary word count or invent features to imitate another spec's length.
 
@@ -110,8 +110,11 @@ Read project instructions, dependencies/tracker, relevant interaction/data secti
 and the packet's acceptance scenarios first. Inspect current implementation;
 proposed contracts are not existing APIs. Preserve unrelated changes, user data,
 and accepted decisions, including the user's focus areas and exclusions.
-Use established architecture/conventions. Apply the clarity and UX/DX/AX principles:
-retain useful guidance, explain material tradeoffs, and verify preservation needs.
+Use established architecture/conventions. Optimize for understanding and successful
+use; organize useful help before reducing coverage. Consider UX, DX, and AX together.
+Before removing content or behavior, identify supported tasks, plan their continued
+coverage, and explain material tradeoffs. Verify those tasks remain supported.
+Preserve capabilities and user data unless removal is explicitly authorized.
 Set the packet In progress and keep dated notes/issues as work proceeds.
 Implement its owned frontend/server/data changes without simulating guarantees.
 Record exact unmet prerequisites and partial progress if delivery is blocked.

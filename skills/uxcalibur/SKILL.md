@@ -33,9 +33,9 @@ Inspect across these scales within the assignment, then choose the changes that 
 
 ## Decision principles
 
-**Clarity without clutter.** Remove redundant taglines, helper text, and secondary labels. Fix unclear structure, naming, and interactions before adding explanation. Keep concise guidance that helps people understand the value, make a decision, complete a task, or recover from a problem.
+**Optimize for understanding and successful use.** Keep content that helps people or agents understand value, discover capabilities, make decisions, complete tasks, or recover. Remove content only when it adds no useful meaning or repeats information already clear in that context. Preserve useful examples, defaults, constraints, and recovery guidance. When help becomes long, improve its organization and navigation before reducing its coverage. Fix confusing structure and naming where possible, and retain the explanation people still need. Brevity is a means, not a success criterion.
 
-**Consider UX, DX, and AX together.** Choose changes that improve the user’s outcome and make the product easier for developers and agents to understand, operate, and maintain. Seek improvements across user experience (UX), developer experience (DX), and agent experience (AX); make meaningful tradeoffs explicit. Preserve existing capabilities and user data, and verify the affected behavior.
+**Improve UX, DX, and AX together.** Prefer changes that improve user outcomes while making the product easier for developers and agents to understand, operate, and maintain. Consider user experience (UX), developer experience (DX), and agent experience (AX), and make material tradeoffs explicit. Before removing or replacing content or behavior, identify the tasks it supports and verify that those tasks remain supported. Preserve existing capabilities and user data unless their removal is explicitly part of the authorized change.
 
 AX includes agents using the product and agents working on its code. Apply these principles within the assignment; they do not require every change to improve all three equally or authorize unrelated redesign.
 
