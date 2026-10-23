@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = ['home', 'install', 'example', 'spec', 'method', 'contribute'];
 const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
 const release = JSON.parse(readFileSync(resolve(root, '../package.json'), 'utf8'));
-const requiredPin = '0.1.51';
+const requiredPin = '^0.1.54';
 const actualPin = pkg.devDependencies?.getfilepress;
 assert.equal(
 	actualPin,

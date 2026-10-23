@@ -19,7 +19,7 @@ Choose your host below.
 ### Codex
 
 ```sh
-npx uxcalibur@0.1.2 install --agent codex
+npx uxcalibur@0.1.5 install --agent codex
 ```
 
 The personal destination is `~/.agents/skills/uxcalibur`. Invoke it with **`$uxcalibur`**.
@@ -27,7 +27,7 @@ The personal destination is `~/.agents/skills/uxcalibur`. Invoke it with **`$uxc
 ### Claude Code
 
 ```sh
-npx uxcalibur@0.1.2 install --agent claude
+npx uxcalibur@0.1.5 install --agent claude
 ```
 
 The personal destination is `~/.claude/skills/uxcalibur`. Invoke it with **`/uxcalibur`**.
@@ -35,7 +35,7 @@ The personal destination is `~/.claude/skills/uxcalibur`. Invoke it with **`/uxc
 ### Cursor
 
 ```sh
-npx uxcalibur@0.1.2 install --agent cursor
+npx uxcalibur@0.1.5 install --agent cursor
 ```
 
 The personal destination is `~/.cursor/skills/uxcalibur`. Invoke it with **`/uxcalibur`**.
@@ -47,8 +47,8 @@ Refresh or reopen the agent session if the new skill is not visible. Installatio
 Use UXcalibur with **Grok/xAI, Gemini CLI, GitHub Copilot, OpenCode, Amp, Cline, Kilo Code, and Roo Code**, together with a shared Agent Skills preset:
 
 ```sh
-npx uxcalibur@0.1.2 --list-agents
-npx uxcalibur@0.1.2 install --agent grok --project
+npx uxcalibur@0.1.5 --list-agents
+npx uxcalibur@0.1.5 install --agent grok --project
 ```
 
 To install directly from a development checkout, build the installer:
@@ -130,7 +130,7 @@ A review request produces the review. You can request design and implementation 
 Personal installation is the default. For a project installation, run from the intended project's root:
 
 ```sh
-npx uxcalibur@0.1.2 install --agent codex --project
+npx uxcalibur@0.1.5 install --agent codex --project
 ```
 
 Codex uses `.agents/skills/uxcalibur`; Claude Code uses `.claude/skills/uxcalibur`; Cursor uses `.cursor/skills/uxcalibur`. Share the project copy with your team according to repository policy.
@@ -138,7 +138,7 @@ Codex uses `.agents/skills/uxcalibur`; Claude Code uses `.claude/skills/uxcalibu
 To select a particular parent skills directory:
 
 ```sh
-npx uxcalibur@0.1.2 install --agent codex --target ./my-skills
+npx uxcalibur@0.1.5 install --agent codex --target ./my-skills
 ```
 
 This creates `./my-skills/uxcalibur`. `--target` and `--project` are mutually exclusive. Select a legacy Codex directory with `--target ~/.codex/skills`; use an absolute path if your shell does not expand `~`.
@@ -148,7 +148,7 @@ This creates `./my-skills/uxcalibur`. `--target` and `--project` are mutually ex
 Reinstall or upgrade with the explicit release version and the same agent/scope. The installer records hashes and protects modified or unmanaged copies. When you intend to replace one, `--force` preserves a backup and prints its location.
 
 ```sh
-npx uxcalibur@0.1.2 install --agent codex --force
+npx uxcalibur@0.1.5 install --agent codex --force
 ```
 
 The repository skill is the method source; personal installations are separate. Inspect the [published package](https://www.npmjs.com/package/uxcalibur) and [source](https://github.com/Catalyst-Forge-LLC/uxcalibur/tree/main/skills/uxcalibur) before installing.

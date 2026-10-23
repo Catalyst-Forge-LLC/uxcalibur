@@ -1,6 +1,6 @@
 # UXcalibur site
 
-Content-only FilePress site for **https://uxcalibur.dev**. The engine is the published `getfilepress` **0.1.51**, pinned exactly with this site's own pnpm lockfile. The product method lives at `../skills/uxcalibur/`; this tree contains the website, not an analyzer or service.
+Content-only FilePress site for **https://uxcalibur.dev**. The engine is the published `getfilepress` **^0.1.54**, the same pin as `site/package.json`, with this site's own pnpm lockfile. The product method lives at `../skills/uxcalibur/`; this tree contains the website, not an analyzer or service.
 
 ## Local use
 
@@ -51,7 +51,7 @@ For a Git-connected Pages build, select framework **None**, root directory `site
 
 The default FilePress `_headers` are retained. Verify the live home, install/example routes, RSS, six-page sitemap, 404, redirects, and response headers after upload. Pages preview success does not establish custom-domain DNS or TLS readiness. Local FilePress preview does not apply hosting `_redirects`.
 
-The site retains FilePress 0.1.51 and applies a narrow pnpm override to cookie 0.7.2 for its security fix. A remaining unpatched moderate `sprintf-js` advisory is in the gray-matter → js-yaml → argparse build-tool chain; the npm skill package and served static site do not contain that dependency. Keep build inputs limited to trusted repository content. Root deployment tooling requires Node 22.12+; this standalone site retains its declared build engine range.
+The site retains FilePress 0.1.54 and applies a narrow pnpm override to cookie 0.7.2 for its security fix. A remaining unpatched moderate `sprintf-js` advisory is in the gray-matter → js-yaml → argparse build-tool chain; the npm skill package and served static site do not contain that dependency. Keep build inputs limited to trusted repository content. Root deployment tooling requires Node 22.12+; this standalone site retains its declared build engine range.
 
 ## License
 
