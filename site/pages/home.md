@@ -1,10 +1,10 @@
 ---
-title: "Make your app easier to understand and use."
-description: "Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass."
+title: "Turn rough apps into exceptional experiences."
+description: "Give your coding agent an expert UX method to assess an app, design a coherent upgrade, and carry that design through implementation. Work across structure, navigation, interaction, visual design, and accessibility, from a whole-app transformation to a focused polish pass."
 order: 0
 ---
 
-<section class="value-hero" aria-label="UXcalibur overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">UX design skill for your coding agent</p><h1>Make your app easier to understand and use.</h1></div><div class="value-pitch"><p class="value-lede">Give your coding agent a method for reviewing the experience, choosing a coherent design direction, and carrying it into the product. Start with the whole app, one journey, or a focused polish pass.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install UXcalibur</a><a class="cta cta-secondary" href="#design-example">See the design change</a></div><p class="value-limit">The skill works through your existing agent. Ask for an assessment, a design handoff, or implementation at the scope you choose.</p></div></div>
+<section class="value-hero" aria-label="UXcalibur overview"><div class="value-intro"><div class="value-headline"><p class="value-kind">UX design skill for your coding agent</p><h1>Turn rough apps into exceptional experiences.</h1></div><div class="value-pitch"><p class="value-lede">Give your coding agent an expert UX method to assess an app, design a coherent upgrade, and carry that design through implementation. Work across structure, navigation, interaction, visual design, and accessibility, from a whole-app transformation to a focused polish pass.</p><div class="cta-row"><a class="cta cta-primary" href="/install">Install UXcalibur</a><a class="cta cta-secondary" href="#design-example">See the design change</a></div><p class="value-limit">The skill works through your existing agent. Ask for an assessment, a design handoff, or implementation at the scope you choose.</p></div></div>
 <figure class="value-proof worked-example" id="design-example" tabindex="-1">
 <figcaption>Turn a status list into a clear next step</figcaption>
 <p class="example-context">Illustrative project screen and proposed design. This is a visible design recommendation, not a measured usability result or a live app.</p>
