@@ -20,11 +20,11 @@ data:
     - "Bumped the package, AppFacts, and SkillFacts version from 0.1.5 to 0.1.6."
     - "Synced the site getfilepress pin from ^0.1.54 to ^0.1.55 and refreshed the site lockfile."
     - "Checked root scripts against ForgeTrail, AppLedger, and LocalHelm. The site package already has ship; the root package does not."
-  left_off: "Version labels read 0.1.6 and the site engine pin is getfilepress ^0.1.55. Local main is one commit ahead with that pin. Root pnpm ship is still absent; site ship builds and then calls root deploy:site. No deployment, publication, or phase transition."
+  left_off: "Version labels read 0.1.6 and the site engine pin is getfilepress ^0.1.55. The pin sync and this session update are local. Root pnpm ship is still absent; site ship builds and then calls root deploy:site. No deployment, publication, or phase transition."
   next_steps:
     - Add a root ship script, "pnpm --dir site run ship", so pnpm ship matches the other FilePress sites.
     - Owner reviews and releases the site and 0.1.6 through the established release workflow.
-    - Push stays with the owner. Local main is one commit ahead.
+    - Push stays with the owner.
 ---
 
 Cross-repository scope and verification: catalyst-forge/docs/reviews/tool-positioning-implementation-2026-10-28.md.
