@@ -2,7 +2,7 @@
 skill_facts_version: 0.1.0
 name: UXcalibur
 developer: Catalyst Forge LLC
-version: 0.1.7
+version: 0.1.8
 status: preview
 license: MIT
 kind: agents-skill
