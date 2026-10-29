@@ -26,6 +26,7 @@
     "prepack": "node scripts/build-package.mjs",
     "site:check": "pnpm --dir site check && pnpm --dir site build",
     "verify:release": "pnpm verify && pnpm package:check && pnpm site:check",
+    "ship": "pnpm --dir site run ship",
     "deploy:site": "node node_modules/wrangler/bin/wrangler.js pages deploy site/build --project-name uxcalibur-dev --branch main"
   },
   "author": "Catalyst Forge, LLC",
