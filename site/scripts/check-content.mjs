@@ -7,12 +7,26 @@ const root = fileURLToPath(new URL('../', import.meta.url));
 const pages = ['home', 'install', 'example', 'spec', 'method', 'contribute'];
 const pkg = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8'));
 const release = JSON.parse(readFileSync(resolve(root, '../package.json'), 'utf8'));
-const requiredPin = '^0.1.54';
-const actualPin = pkg.devDependencies?.getfilepress;
+// The engine version lives in site/package.json only. A copy here went stale on every engine update
+// and failed the ship. Check that the pin is a published version and that the lockfile builds with it.
+const enginePin = pkg.devDependencies?.getfilepress;
+assert.match(
+	String(enginePin),
+	/^\^?\d+\.\d+\.\d+$/,
+	`getfilepress in site/package.json is ${JSON.stringify(enginePin)}. Pin a published version such as "^0.1.57", not a link, file, or tag.`
+);
+const lockText = readFileSync(resolve(root, 'pnpm-lock.yaml'), 'utf8');
+const locked = lockText.match(/^ {6}getfilepress:\r?\n {8}specifier: (\S+)\r?\n {8}version: (\d+\.\d+\.\d+)/m);
+assert.ok(locked, 'site/pnpm-lock.yaml has no getfilepress entry. Run pnpm install in site/.');
 assert.equal(
-	actualPin,
-	requiredPin,
-	`getfilepress in site/package.json is ${JSON.stringify(actualPin)}; site/scripts/check-content.mjs still requires ${JSON.stringify(requiredPin)}. Use the same exact version in both files.`
+	locked[1],
+	enginePin,
+	`site/pnpm-lock.yaml was written for getfilepress ${locked[1]}; site/package.json pins ${enginePin}. Run pnpm install in site/.`
+);
+assert.equal(
+	locked[2],
+	enginePin.replace(/^\^/, ''),
+	`site/pnpm-lock.yaml builds with getfilepress ${locked[2]}; site/package.json pins ${enginePin}. Update one so the site builds with the version it names.`
 );
 assert.equal(pkg.private, true, 'The content site must not be an npm release.');
 const config = readFileSync(resolve(root, 'filepress.config.ts'), 'utf8');
