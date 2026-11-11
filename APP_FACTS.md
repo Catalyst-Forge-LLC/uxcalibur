@@ -4,7 +4,7 @@ name: UXcalibur
 type: agent skill / CLI installer
 status: active
 license: MIT
-version: 0.1.9
+version: 0.1.10
 repository: https://github.com/Catalyst-Forge-LLC/uxcalibur
 stack:
   language: Markdown, YAML, TypeScript, JavaScript
